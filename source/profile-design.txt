@@ -1,0 +1,135 @@
+# id | hp,tp,attack,defense,wisdom,speed (relative allocation) | behavior | disobedience | specialization | design rationale grounded in reference profile
+0|6,3,2,3,2,3|timid|.05|hp,defense|Newborn; bubbles deter threats rather than aggressive fighting.
+1|6,4,3,3,3,5|timid|.04|hp,speed|Vigorous movement; defensive foam.
+2|7,5,9,6,5,7|brawler|.08|attack,hp|Reckless claws and flame breath.
+3|7,8,5,6,8,5|caster|.03|tp,wisdom|Mild temperament; powerful electrical retaliation.
+4|9,6,10,8,7,6|brawler|.07|attack,hp|Claws, horns and intelligent flame attacks.
+5|10,5,9,7,5,5|brawler|.04|hp,attack|Powerful tail and fire; comparatively tame dinosaur.
+6|6,9,6,5,10,8|caster|.10|wisdom,tp|Cunning dark angel with extending claws and domination.
+7|7,8,10,5,5,7|brawler|.13|attack,tp|Volatile flames and burning punches; difficult to tame.
+8|7,9,7,5,9,10|ranger|.12|speed,wisdom|Aerial storms; intelligent but brutal and hard to control.
+9|10,8,8,7,3,5|ranger|.10|hp,tp|Instinctive aquatic constriction and freezing breath.
+10|8,4,3,4,2,3|timid|.12|hp,defense|Weak intellect and offense; defensive waste projectiles.
+11|10,9,10,10,6,4|artillery|.08|defense,attack|Mechanized viral dinosaur; heavy missiles and robust body.
+12|6,9,9,6,7,10|skirmisher|.06|speed,tp|Small agile bomber with detachable bomb-hands.
+13|10,9,6,9,8,4|guardian|.03|hp,wisdom|Durable mysterious puppet; pacifying hearts.
+14|10,10,10,9,8,7|artillery|.04|tp,defense|Electrical cannons, propulsion and plasma barrier.
+15|8,6,10,9,8,8|guardian|.04|attack,defense|Chivalrous gang protector; reinforced coat and cudgels.
+16|7,3,2,4,2,2|timid|.04|hp,defense|Soft newborn uses acidic bubbles defensively.
+17|7,4,4,4,3,4|timid|.05|hp,attack|Playful horned infant, little combat experience.
+18|7,6,6,8,6,6|guardian|.04|defense,tp|Timid reptile protected by fur; flame projectile.
+19|6,8,5,5,7,9|skirmisher|.08|speed,tp|Curious mischief-maker with electrical attacks.
+20|8,8,8,10,5,7|guardian|.04|defense,tp|Metal head, insect strength and ruthless anti-virus instinct.
+21|8,6,8,8,8,10|skirmisher|.025|speed,attack|Agile predator with hard fur and loyalty to its leader.
+22|7,9,9,7,10,7|guardian|.01|wisdom,attack|Composed guardian; holy fist, not generic healing magic.
+23|10,6,7,9,6,3|guardian|.03|hp,defense|Gentle slow ice body and freezing punch.
+24|7,9,6,4,7,10|ranger|.035|speed,tp|Defensive temperament; airborne burning feathers.
+25|12,7,8,8,5,3|artillery|.04|hp,tp|Massive aquatic endurance and destructive waves.
+26|7,5,5,5,6,3|caster|.10|wisdom,hp|Deceptive plant uses vines and noxious breath.
+27|8,9,12,8,2,4|artillery|.15|attack,tp|No restraint or reason; skeletal body and organic missile.
+28|7,10,8,10,7,6|artillery|.04|defense,tp|Mostly mechanized; arm cannon is the defining weapon.
+29|6,11,4,5,11,5|caster|.09|wisdom,tp|Alien ray-gun and mind-altering attacks.
+30|12,6,10,9,3,4|ranger|.12|hp,attack|Undead giant driven by destructive instinct.
+31|8,7,11,10,8,9|guardian|.025|attack,speed|Reflective armor and practiced bladed combat.
+32|5,4,2,2,3,5|timid|.03|speed,tp|Drifting primitive creature; acid bubbles for defense.
+33|6,4,6,4,3,4|brawler|.05|attack,hp|Innocent temperament conceals sudden sharp-toothed bite.
+34|6,8,5,5,8,4|ranger|.01|wisdom,tp|Highly obedient; slow flight and air blast.
+35|7,7,5,7,5,3|caster|.09|defense,tp|Prankster larva; electrical thread restrains foes.
+36|8,8,7,6,8,9|ranger|.035|speed,wisdom|Flying sacred beast uses air projectiles.
+37|8,8,8,9,7,8|artillery|.12|defense,speed|Mechanized limbs and rapid propulsion; hunting ray.
+38|9,6,11,7,8,7|brawler|.13|attack,hp|Destructive rival to Leomon, savage bone-club fighter.
+39|5,10,3,4,11,8|caster|.11|wisdom,tp|Avoids direct attacks; curses are its offense.
+40|11,8,8,10,3,3|guardian|.11|defense,hp|Protected shell, low intelligence and pressure-water weapon.
+41|9,5,9,7,5,8|skirmisher|.055|speed,attack|Shy subterranean prankster; fast drill attacks.
+42|9,4,4,5,2,4|timid|.13|hp,defense|Cowardly waste creature with crude projectiles.
+43|9,9,10,10,8,6|guardian|.005|defense,wisdom|Programmed cyborg; precise energy blades and missiles.
+44|6,10,9,8,7,9|artillery|.035|tp,speed|Patrolling guardian with bombs and flying movement.
+45|8,10,7,10,8,7|caster|.14|tp,defense|Conceited performer; reinforced suit and dark spheres.
+46|10,10,11,12,10,7|guardian|.01|defense,wisdom|Completed autonomous cyborg with accurate atomic beam.
+47|9,10,7,8,9,6|caster|.15|wisdom,tp|Highly conceited performer who undermines enemy morale.
+48|5,4,2,2,3,4|timid|.03|tp,hp|Drifting seed; adhesive bubbles buy time to escape.
+49|6,4,3,4,4,6|timid|.04|speed,defense|Skittish bulb hides underground on sensing danger.
+50|6,8,5,4,7,7|ranger|.05|speed,tp|Inquisitive bird; limited flight and spectral flames.
+51|8,7,6,6,8,4|caster|.04|wisdom,defense|Poisonous binding vines; deterrent fragrance.
+52|11,6,9,12,5,3|guardian|.035|defense,hp|Diamond-hard armor; docile until provoked.
+53|10,7,7,7,5,3|caster|.08|hp,tp|Flightless heavy bird using petrifying gaze.
+54|9,6,10,9,8,8|guardian|.01|attack,defense|Disciplined justice-seeking fighter with sword and fist.
+55|8,5,11,10,4,8|brawler|.085|attack,speed|Brutal giant pincers and armored insect mobility.
+56|9,5,9,10,4,5|guardian|.07|defense,attack|Primitive armored fish with oversized claws.
+57|10,7,8,8,5,4|ranger|.035|hp,tp|Gentle but territorial; thrown ice and bones.
+58|8,4,8,6,3,5|brawler|.15|attack,hp|Violent and unruly outsider using crude attacks.
+59|9,10,11,8,5,8|artillery|.035|attack,tp|Programmed destruction, missiles and slicing arms.
+60|6,11,5,6,12,10|caster|.085|wisdom,speed|Small elusive magical trainer with explosive fairy attacks.
+61|11,10,6,12,9,3|guardian|.065|defense,wisdom|Protective eggshell; nightmare and mental attacks.
+62|11,11,10,11,9,6|artillery|.025|tp,defense|Armored aquatic machine with heavy energy armament.
+63|12,9,13,9,7,6|brawler|.11|attack,hp|Vengeful giant; huge blade and spectral soldiers.
+64|6,5,2,3,3,3|timid|.08|tp,hp|Toxic crawling newborn; poison bubbles deter threats.
+65|5,6,4,3,5,7|skirmisher|.12|speed,tp|Taunting prankster, low flight and poison bubbles.
+66|6,7,8,4,5,9|skirmisher|.14|speed,attack|Wild trickster, claws, pitfalls and stun breath.
+67|7,4,8,6,3,8|skirmisher|.11|speed,hp|Timid on land, fierce underwater; slicing dorsal fins.
+68|10,6,11,8,3,6|brawler|.14|attack,hp|Virus-maddened dinosaur with relentless fire attacks.
+69|10,8,12,6,3,4|brawler|.145|attack,tp|Obsessive revenge, huge arm and melting heat.
+70|8,7,11,6,6,9|skirmisher|.14|speed,attack|Merciless clawed aerial predator.
+71|12,4,12,10,2,4|brawler|.13|hp,attack|Foolhardy charging tank; oversized tusks.
+72|7,8,7,8,5,12|ranger|.10|speed,tp|High-speed flight, venomous projectiles and tough shell.
+73|11,10,11,7,2,4|artillery|.15|tp,attack|Three conflicting destructive heads; combined energy blast.
+74|10,5,3,6,2,2|timid|.12|hp,defense|Decaying mechanically sustained body; weak instinctive attacks.
+75|11,9,12,11,6,5|artillery|.04|defense,attack|Enhanced tactical cyborg with nuclear arm weapon.
+76|5,12,3,7,13,5|repair|.08|wisdom,tp|Corrupted repair machine; healing adapted as self-repair.
+77|10,8,7,12,5,3|guardian|.07|defense,hp|Puppet shell protects hidden controller.
+78|13,12,13,13,8,3|artillery|.035|defense,tp|Emotionless heavy weapons platform and twin cannons.
+79|8,11,9,7,11,7|caster|.15|wisdom,tp|Malicious puppet manipulator with hammer and bullets.
+80|5,3,6,3,3,6|brawler|.09|attack,speed|Mischievous blade-bearing newborn, unstable rolling.
+81|6,4,7,4,4,7|brawler|.075|attack,speed|Two blades and more stable active movement.
+82|7,5,10,7,6,8|brawler|.04|attack,speed|Driven weapon Digimon, headlong blade charge.
+83|8,6,11,7,6,10|skirmisher|.03|speed,attack|Relentless forward motion and spinning blade.
+84|9,8,12,8,8,8|brawler|.025|attack,wisdom|Trained arm-blades with supporting chest beam.
+85|10,8,14,9,9,9|brawler|.015|attack,speed|Refined holy sword; overwhelming close-range cuts.
+86|7,6,8,6,8,9|skirmisher|.06|speed,attack|Adventurous learner; battle sense refined by training.
+87|8,7,10,8,8,10|skirmisher|.035|attack,speed|Disciplined martial development and mobile attacks.
+88|9,8,11,9,10,11|guardian|.02|speed,wisdom|Rescuer with honed blades and mature judgement.
+89|10,11,12,10,12,13|guardian|.01|wisdom,speed|Cooperative Royal Knight; autonomous support and counters.
+90|5,5,3,3,4,7|timid|.055|speed,tp|Light floating body escapes on hot-breath recoil.
+91|6,6,4,4,5,6|ranger|.065|tp,hp|Small dragon infant with heated breath.
+92|9,6,10,7,6,10|brawler|.10|attack,speed|Fierce ancient dragon with remarkable speed and strength.
+93|8,8,9,7,6,11|ranger|.075|speed,tp|Winged blue dragon specialized in aerial combat.
+94|9,9,10,7,7,14|ranger|.05|speed,tp|Extremely fast aerial dragon; sonic breath and diving lance.
+95|10,8,13,11,10,11|brawler|.015|attack,speed|Disciplined dragon swordmaster in scale armor.
+96|11,7,11,10,5,9|brawler|.085|attack,hp|Green dragon with strong terrestrial physique.
+97|13,6,13,12,4,4|brawler|.13|hp,attack|Brutal burrowing dragon with crushing limbs.
+98|14,8,14,11,3,3|brawler|.025|attack,defense|Emotionless construction machine that ignores damage.
+99|4,4,2,2,2,5|timid|.04|speed,hp|Tiny aquatic infant avoids direct battle.
+100|6,4,4,4,4,7|timid|.045|speed,hp|Playful aquatic infant with nimble swimming.
+101|7,7,9,6,7,7|brawler|.025|attack,tp|Just and simple-minded fiery fists and flame shots.
+102|8,8,10,7,8,11|skirmisher|.025|speed,attack|Protective flying leader with claw and dive attacks.
+103|10,9,12,8,10,9|brawler|.02|attack,wisdom|Helpful resilient martial artist with flame shockwaves.
+104|11,13,13,9,10,8|artillery|.075|tp,attack|Proud solar deity; solar orbs and scorching punches.
+105|6,9,5,5,9,7|caster|.045|wisdom,tp|Timid social rabbit with water and dark claw attacks.
+106|7,9,8,6,8,12|skirmisher|.06|speed,tp|Swift jumper with hypnotic bubbles and ice arrows.
+107|8,11,9,7,12,11|ranger|.03|wisdom,speed|Fluid dancing wizard, bowgun and close-range blades.
+108|9,14,8,9,14,10|caster|.05|wisdom,tp|Dual-nature moon deity; illusions, ice arrows and sleep.
+109|7,5,9,6,5,7|brawler|.04|attack,hp|Partner variant retains Agumon's anatomy with stronger cooperation.
+110|9,6,10,8,7,6|brawler|.035|attack,hp|Partner variant; intelligent horned dinosaur and flame breath.
+111|10,9,10,10,7,6|artillery|.025|defense,attack|Vaccine partner cyborg combines claws, flight and missiles.
+112|11,10,13,12,10,12|guardian|.01|attack,defense|Valorous dragon warrior with shield, claws and atmospheric energy.
+113|7,6,6,8,6,6|guardian|.025|defense,tp|Partner variant; shy protective pelt and fire breath.
+114|8,6,8,8,8,10|skirmisher|.015|speed,attack|Partner wolf whose loyalty channels predatory agility.
+115|9,7,12,9,9,9|brawler|.015|attack,speed|Bipedal wolf martial artist, precise claws and kicks.
+116|10,12,11,10,10,14|ranger|.015|speed,tp|Fast armored wolf with sensors and many ice weapons.
+117|6,4,5,5,3,4|brawler|.11|attack,hp|Aggressive infant with tough fur and iron beads.
+118|7,5,7,5,3,8|brawler|.14|speed,attack|Feral straight-line charger that resists taming.
+119|9,7,9,6,5,8|brawler|.11|attack,tp|Strong combat instinct; charges and metal projectile.
+120|10,9,10,8,8,9|ranger|.055|hp,tp|Savage in combat but otherwise intelligent and docile.
+121|12,10,12,11,7,7|artillery|.075|hp,attack|Large armored dragon overwhelms enemies with mass and metal shots.
+122|10,14,12,12,15,12|caster|.02|wisdom,tp|Aloof Royal Knight, magic-circle offense and defense.
+123|5,5,2,3,4,4|timid|.03|tp,wisdom|Cold-bodied infant produces freezing breath.
+124|6,4,4,4,5,7|skirmisher|.09|speed,wisdom|Whimsical curious cat; weak tail strikes.
+125|6,8,5,5,9,8|caster|.055|wisdom,tp|Unstable young holy nature; paralyzing sonic howl.
+126|7,8,8,5,8,10|skirmisher|.075|speed,attack|Shy but sharply clawed cat with data-destroying hairballs.
+127|9,10,9,7,10,12|skirmisher|.07|speed,wisdom|Conflict-averse, territorial and evasive; paralysis and decoys.
+128|10,15,7,9,16,8|caster|.015|wisdom,tp|Knowledge-centered angel uses elemental circles and miracles.
+129|12,13,14,13,12,11|guardian|.015|attack,tp|Cannon and blade fusion used only as a Colosseum opponent.
+130|14,12,14,13,5,3|artillery|.055|defense,attack|Heavy rusted cyborg; overwhelming firepower and armor.
+131|15,13,14,13,12,12|guardian|.015|hp,attack|Royal dragon with sentient defensive wings and versatile lance.
+132|15,16,14,12,15,10|artillery|.03|tp,wisdom|Solar-lunar fusion; great energy and seeking blades.
+133|12,13,14,13,12,13|guardian|.01|attack,tp|Versatile knight combines sword, shield and freezing cannon.

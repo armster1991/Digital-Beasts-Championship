@@ -1,0 +1,4 @@
+const assert=require('node:assert/strict'),C=require('../engine');require('../art');
+const g=new C.Game(),p=g.adopt('ver1');g.evolve(p,2);p.hunger=100;g.drop(p.instanceId,950,240);g.advance(105);assert.equal(p.fatigue,100);assert.equal(p.training.attack,21);g.drop(p.instanceId,150,240);g.advance(60);assert(Math.abs(p.fatigue-10)<.001);g.advance(7);assert.equal(p.fatigue,0);
+p.fatigue=0;p.hunger=100;p.zone='attack';g.train(p);assert.equal(p.actionUntil-p.actionStarted,1.5);assert.deepEqual([0,.499,.5,.999,1,1.499].map(d=>ChampArt.trainingStep(p,p.actionStarted+d)),[0,0,1,1,2,2]);const old=g.export();old.pets[0].actionUntil=999999;const loaded=new C.Game(old);assert.equal(loaded.s.pets[0].actionUntil,undefined);assert.equal(loaded.s.pets[0].action,'');assert.deepEqual(loaded.s.pets[0].training,p.training);
+console.log('PASS 105s training / 60s sleep, 67s full recovery; three non-looping training frames; save load clears transient animation and preserves stats.');

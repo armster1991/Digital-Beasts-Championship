@@ -1,0 +1,21 @@
+import assert from 'node:assert/strict';
+import {LobbyCore,PROTOCOL,fight} from '../server/core.mjs';
+import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),B=require('../battle.js'),P=require('../profiles.js');
+let now=1000;const core=new LobbyCore({now:()=>now});
+const call=(id,message)=>core.handle(id,{v:PROTOCOL,...message});
+for(const id of ['host','guest']){core.connect(id,id);await call(id,{type:'HELLO',nick:id});}
+await call('host',{type:'CREATE',name:'Test room',password:'secret'});let room=[...core.rooms.values()][0];
+await assert.rejects(call('guest',{type:'JOIN',id:room.id,password:'wrong'}),/wrongPassword/);
+await call('guest',{type:'JOIN',id:room.id,password:'secret'});
+const fighters=[{species:2,stats:P[2].stats},{species:18,stats:P[18].stats}];
+await call('host',{type:'READY',ready:true,fighter:fighters[0]});await call('guest',{type:'READY',ready:true,fighter:fighters[1]});
+await assert.rejects(call('guest',{type:'START'}),/hostOnly/);await call('host',{type:'START'});
+const starts=core.out.filter(o=>o.message.type==='BATTLE_START');assert.equal(starts.length,2);assert.deepEqual(starts[0].message.fighters,starts[1].message.fighters);assert.equal(starts[0].message.seed,starts[1].message.seed);
+const result=B.fight(...fighters,room.round.seed,false);assert.deepEqual(result,fight(...fighters,room.round.seed));
+await assert.rejects(call('host',{type:'DONE',round:room.round.id}),/battleNotFinished/);now+=200000;
+await call('host',{type:'DONE',round:room.round.id});assert.equal(room.phase,'battle');await call('guest',{type:'DONE',round:room.round.id});assert.equal(room.phase,'result');
+await call('host',{type:'REMATCH',round:room.round.id,fighter:fighters[0]});assert.equal(room.phase,'result');await call('guest',{type:'REMATCH',round:room.round.id,fighter:fighters[1]});assert.equal(room.phase,'battle');
+core.disconnect('guest');assert.equal(room.phase,'lobby');assert.equal(room.members.length,1);assert(core.out.some(o=>o.id==='host'&&o.message.type==='OPPONENT_LEFT'));
+core.connect('guest','guest');await call('guest',{type:'HELLO',nick:'guest'});await call('guest',{type:'JOIN',id:room.id,password:'secret'});await call('host',{type:'KICK',target:'guest'});assert.equal(room.members.length,1);await call('guest',{type:'JOIN',id:room.id,password:'secret'});core.disconnect('host');assert.equal(core.rooms.size,0);assert(core.out.some(o=>o.id==='guest'&&o.message.key==='hostLeft'));
+console.log('PASS: authoritative simulation equality, password, 2-player room, roles, ready/start, early-result rejection, mutual rematch, disconnect, kick, host closure.');

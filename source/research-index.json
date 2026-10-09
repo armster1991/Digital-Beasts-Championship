@@ -1,0 +1,1208 @@
+[
+  {
+    "id": 0,
+    "name": "Botamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=botamon",
+    "Level": "In-Training Ⅰ",
+    "Type": "Slime",
+    "Attribute": "",
+    "Special Move": "・Acid Bubbles"
+  },
+  {
+    "id": 1,
+    "name": "Koromon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=koromon",
+    "Level": "In-Training Ⅱ",
+    "Type": "Lesser",
+    "Attribute": "",
+    "Special Move": "・Foam"
+  },
+  {
+    "id": 2,
+    "name": "Agumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=agumon",
+    "Level": "Rookie",
+    "Type": "Reptile",
+    "Attribute": "Vaccine",
+    "Special Move": "・Pepper Breath"
+  },
+  {
+    "id": 3,
+    "name": "Betamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=betamon",
+    "Level": "Rookie",
+    "Type": "Amphibian",
+    "Attribute": "Virus",
+    "Special Move": "・Electric Shock"
+  },
+  {
+    "id": 4,
+    "name": "Greymon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=greymon-first",
+    "Level": "Champion",
+    "Type": "Dinosaur",
+    "Attribute": "Vaccine",
+    "Special Move": "・Mega Flame"
+  },
+  {
+    "id": 5,
+    "name": "Tyrannomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=tyranomon",
+    "Level": "Champion",
+    "Type": "Dinosaur",
+    "Attribute": "Data",
+    "Special Move": "・Fire Breath"
+  },
+  {
+    "id": 6,
+    "name": "Devimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=devimon",
+    "Level": "Champion",
+    "Type": "Dark Angel",
+    "Attribute": "Virus",
+    "Special Move": "・Death Claw"
+  },
+  {
+    "id": 7,
+    "name": "Meramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=meramon",
+    "Level": "Champion",
+    "Type": "Fire",
+    "Attribute": "Data",
+    "Special Move": "・Burning Fist"
+  },
+  {
+    "id": 8,
+    "name": "Airdramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=airdramon",
+    "Level": "Champion",
+    "Type": "Mythical Beast",
+    "Attribute": "Vaccine",
+    "Special Move": "・Spinning Needle"
+  },
+  {
+    "id": 9,
+    "name": "Seadramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=seadramon",
+    "Level": "Champion",
+    "Type": "Aquatic",
+    "Attribute": "Data",
+    "Special Move": "・Ice Blast"
+  },
+  {
+    "id": 10,
+    "name": "Numemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=numemon",
+    "Level": "Champion",
+    "Type": "Mollusk",
+    "Attribute": "Virus",
+    "Special Move": "・Poop Toss"
+  },
+  {
+    "id": 11,
+    "name": "MetalGreymon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=metalgreymon-v",
+    "Level": "Ultimate",
+    "Type": "Cyborg",
+    "Attribute": "Vaccine",
+    "Special Move": "・Trident Arm ・Giga Destroyer ・Giga Storm"
+  },
+  {
+    "id": 12,
+    "name": "Mamemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=mamemon",
+    "Level": "Ultimate",
+    "Type": "Mutant",
+    "Attribute": "Data",
+    "Special Move": "・Smiley Bomb"
+  },
+  {
+    "id": 13,
+    "name": "Monzaemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=monzaemon",
+    "Level": "Ultimate",
+    "Type": "Puppet",
+    "Attribute": "Vaccine",
+    "Special Move": "・Hearts Attack"
+  },
+  {
+    "id": 14,
+    "name": "BlitzGreymon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=blitzgreymon",
+    "Level": "Mega",
+    "Type": "Cyborg",
+    "Attribute": "Virus",
+    "Special Move": "・Plasma Stake ・Thunder Vernier ・Elec Guard"
+  },
+  {
+    "id": 15,
+    "name": "BanchoMamemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=banchomamemon",
+    "Level": "Mega",
+    "Type": "Mutant",
+    "Attribute": "Data",
+    "Special Move": "・Golden Rush ・Senbon Dokkan ・Bukkomi Otokodama"
+  },
+  {
+    "id": 16,
+    "name": "Punimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=punimon",
+    "Level": "In-Training Ⅰ",
+    "Type": "Slime",
+    "Attribute": "",
+    "Special Move": "・Acid Bubbles"
+  },
+  {
+    "id": 17,
+    "name": "Tsunomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=tunomon",
+    "Level": "In-Training Ⅱ",
+    "Type": "Lesser",
+    "Attribute": "",
+    "Special Move": "・Acid Bubbles"
+  },
+  {
+    "id": 18,
+    "name": "Gabumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=gabumon",
+    "Level": "Rookie",
+    "Type": "Reptile",
+    "Attribute": "Data",
+    "Special Move": "・Blue Blaster"
+  },
+  {
+    "id": 19,
+    "name": "Elecmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=elecmon",
+    "Level": "Rookie",
+    "Type": "Mammal",
+    "Attribute": "Data",
+    "Special Move": "・Sparkling Thunder"
+  },
+  {
+    "id": 20,
+    "name": "Kabuterimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=kabuterimon",
+    "Level": "Champion",
+    "Type": "Insectoid",
+    "Attribute": "Vaccine",
+    "Special Move": "・Electro Shocker"
+  },
+  {
+    "id": 21,
+    "name": "Garurumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=garurumon",
+    "Level": "Champion",
+    "Type": "Beast",
+    "Attribute": "Vaccine",
+    "Special Move": "・Fox Fire"
+  },
+  {
+    "id": 22,
+    "name": "Angemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=angemon",
+    "Level": "Champion",
+    "Type": "Angel",
+    "Attribute": "Vaccine",
+    "Special Move": "・Heaven's Knuckle"
+  },
+  {
+    "id": 23,
+    "name": "Frigimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=yukidarumon",
+    "Level": "Champion",
+    "Type": "Ice-Snow",
+    "Attribute": "Vaccine",
+    "Special Move": "・Sub-zero Ice Punch"
+  },
+  {
+    "id": 24,
+    "name": "Birdramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=birdramon",
+    "Level": "Champion",
+    "Type": "Giant Bird",
+    "Attribute": "Vaccine",
+    "Special Move": "・Meteor Wing"
+  },
+  {
+    "id": 25,
+    "name": "Whamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=whamon",
+    "Level": "Ultimate",
+    "Type": "Sea Animal",
+    "Attribute": "Vaccine",
+    "Special Move": "・Tidal Wave"
+  },
+  {
+    "id": 26,
+    "name": "Vegiemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=vegimon",
+    "Level": "Champion",
+    "Type": "Carnivorous Vegetation",
+    "Attribute": "Virus",
+    "Special Move": "・Poop Toss"
+  },
+  {
+    "id": 27,
+    "name": "SkullGreymon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=skullgreymon",
+    "Level": "Ultimate",
+    "Type": "Undead",
+    "Attribute": "Virus",
+    "Special Move": "・Oblivion Bird"
+  },
+  {
+    "id": 28,
+    "name": "MetalMamemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=metalmamemon",
+    "Level": "Ultimate",
+    "Type": "Cyborg",
+    "Attribute": "Data",
+    "Special Move": "・Energy Bomb"
+  },
+  {
+    "id": 29,
+    "name": "Vademon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=vademon",
+    "Level": "Ultimate",
+    "Type": "Alien",
+    "Attribute": "Virus",
+    "Special Move": "・Unidentified Flying Kiss"
+  },
+  {
+    "id": 30,
+    "name": "SkullMammothmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=skullmammon",
+    "Level": "Mega",
+    "Type": "Undead",
+    "Attribute": "Vaccine",
+    "Special Move": "・Spiral Bone"
+  },
+  {
+    "id": 31,
+    "name": "CresGarurumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=cresgarurumon",
+    "Level": "Mega",
+    "Type": "Beast Knight",
+    "Attribute": "Data",
+    "Special Move": "・Yellow Beast Crescent Blade ・Beast Cyclone ・Fury: Ice Moon Fang"
+  },
+  {
+    "id": 32,
+    "name": "Poyomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=poyomon",
+    "Level": "In-Training Ⅰ",
+    "Type": "Slime",
+    "Attribute": "",
+    "Special Move": "・Acid Bubbles"
+  },
+  {
+    "id": 33,
+    "name": "Tokomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=tokomon",
+    "Level": "In-Training Ⅱ",
+    "Type": "Lesser",
+    "Attribute": "",
+    "Special Move": "・Bite"
+  },
+  {
+    "id": 34,
+    "name": "Patamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=patamon",
+    "Level": "Rookie",
+    "Type": "Mammal",
+    "Attribute": "Data",
+    "Special Move": "・Air Shot ・Wing Slap"
+  },
+  {
+    "id": 35,
+    "name": "Kunemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=kunemon",
+    "Level": "Rookie",
+    "Type": "Larva",
+    "Attribute": "Virus",
+    "Special Move": "・Electric Thread"
+  },
+  {
+    "id": 36,
+    "name": "Unimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=yunimon",
+    "Level": "Champion",
+    "Type": "Mythical Beast",
+    "Attribute": "Vaccine",
+    "Special Move": "・Holy Shot"
+  },
+  {
+    "id": 37,
+    "name": "Centarumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=centalmon",
+    "Level": "Champion",
+    "Type": "Beast Man",
+    "Attribute": "Data",
+    "Special Move": "・Hunting Cannon"
+  },
+  {
+    "id": 38,
+    "name": "Ogremon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=orgemon",
+    "Level": "Champion",
+    "Type": "Demon",
+    "Attribute": "Virus",
+    "Special Move": "・Pummel Whack"
+  },
+  {
+    "id": 39,
+    "name": "Bakemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=bakemon",
+    "Level": "Champion",
+    "Type": "Ghost",
+    "Attribute": "Virus",
+    "Special Move": "・Hell's Hand ・Death Charm"
+  },
+  {
+    "id": 40,
+    "name": "Shellmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=shellmon",
+    "Level": "Champion",
+    "Type": "Mollusk",
+    "Attribute": "Data",
+    "Special Move": "・Hydro Blaster"
+  },
+  {
+    "id": 41,
+    "name": "Drimogemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=drimogemon",
+    "Level": "Champion",
+    "Type": "Beast",
+    "Attribute": "Data",
+    "Special Move": "・Drill Spin ・Crusher Bone"
+  },
+  {
+    "id": 42,
+    "name": "Sukamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=scumon",
+    "Level": "Champion",
+    "Type": "Abnormal",
+    "Attribute": "Virus",
+    "Special Move": "・Poop"
+  },
+  {
+    "id": 43,
+    "name": "Andromon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=andromon",
+    "Level": "Ultimate",
+    "Type": "Cyborg",
+    "Attribute": "Vaccine",
+    "Special Move": "・Gatling Missile ・Spiral Sword"
+  },
+  {
+    "id": 44,
+    "name": "Giromon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=giromon",
+    "Level": "Ultimate",
+    "Type": "Mine",
+    "Attribute": "Vaccine",
+    "Special Move": "・Deadly Bomb"
+  },
+  {
+    "id": 45,
+    "name": "Etemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=etemon",
+    "Level": "Ultimate",
+    "Type": "Puppet",
+    "Attribute": "Virus",
+    "Special Move": "・Love Serenade ・Dark Spirits"
+  },
+  {
+    "id": 46,
+    "name": "HiAndromon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=hiandromon",
+    "Level": "Mega",
+    "Type": "Cyborg",
+    "Attribute": "Vaccine",
+    "Special Move": "・Atomic Ray"
+  },
+  {
+    "id": 47,
+    "name": "KingEtemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=kingetemon",
+    "Level": "Mega",
+    "Type": "Puppet",
+    "Attribute": "Virus",
+    "Special Move": "・Monkey Wrench"
+  },
+  {
+    "id": 48,
+    "name": "Yuramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=yuramon",
+    "Level": "In-Training Ⅰ",
+    "Type": "Seed",
+    "Attribute": "",
+    "Special Move": "・Adhesive Bubble Blow"
+  },
+  {
+    "id": 49,
+    "name": "Tanemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=tanemon",
+    "Level": "In-Training Ⅱ",
+    "Type": "Bulb",
+    "Attribute": "",
+    "Special Move": "・Adhesive Bubble Blow"
+  },
+  {
+    "id": 50,
+    "name": "Biyomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=piyomon",
+    "Level": "Rookie",
+    "Type": "Baby Bird",
+    "Attribute": "Vaccine",
+    "Special Move": "・Spiral Twister"
+  },
+  {
+    "id": 51,
+    "name": "Palmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=palmon",
+    "Level": "Rookie",
+    "Type": "Vegetation",
+    "Attribute": "Data",
+    "Special Move": "・Poison Ivy"
+  },
+  {
+    "id": 52,
+    "name": "Monochromon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=monochromon",
+    "Level": "Champion",
+    "Type": "Armored Dragon",
+    "Attribute": "Data",
+    "Special Move": "・Volcanic Strike"
+  },
+  {
+    "id": 53,
+    "name": "Kokatorimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=cockatrimon",
+    "Level": "Champion",
+    "Type": "Giant Bird",
+    "Attribute": "Data",
+    "Special Move": "・Petra Fire"
+  },
+  {
+    "id": 54,
+    "name": "Leomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=leomon",
+    "Level": "Champion",
+    "Type": "Beast Man",
+    "Attribute": "Vaccine",
+    "Special Move": "・Fist of the Beast King"
+  },
+  {
+    "id": 55,
+    "name": "Kuwagamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=kuwagamon",
+    "Level": "Champion",
+    "Type": "Insectoid",
+    "Attribute": "Virus",
+    "Special Move": "・Scissor Claw"
+  },
+  {
+    "id": 56,
+    "name": "Coelamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=coelamon",
+    "Level": "Champion",
+    "Type": "Ancient Fish",
+    "Attribute": "Data",
+    "Special Move": "・Fossil Bite"
+  },
+  {
+    "id": 57,
+    "name": "Mojyamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=mojyamon",
+    "Level": "Champion",
+    "Type": "Rare Animal",
+    "Attribute": "Vaccine",
+    "Special Move": "・Icicle Rod ・Boomerang Bone"
+  },
+  {
+    "id": 58,
+    "name": "Nanimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=nanimon",
+    "Level": "Champion",
+    "Type": "Invader",
+    "Attribute": "Virus",
+    "Special Move": "・Poop ・Poop Dunk"
+  },
+  {
+    "id": 59,
+    "name": "Megadramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=megadramon",
+    "Level": "Ultimate",
+    "Type": "Cyborg",
+    "Attribute": "Virus",
+    "Special Move": "・Eradication Attack ・Ultimate Slicer"
+  },
+  {
+    "id": 60,
+    "name": "Piximon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=picklemon",
+    "Level": "Ultimate",
+    "Type": "Pixie",
+    "Attribute": "Data",
+    "Special Move": "・Pit Bomb"
+  },
+  {
+    "id": 61,
+    "name": "Digitamamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=digitamamon",
+    "Level": "Ultimate",
+    "Type": "Perfect",
+    "Attribute": "Data",
+    "Special Move": "・Enigma ・Nightmare Syndrome"
+  },
+  {
+    "id": 62,
+    "name": "Aegisdramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=ageisdramon",
+    "Level": "Mega",
+    "Type": "Cyborg",
+    "Attribute": "Vaccine",
+    "Special Move": "・Power Water ・Blaze Power ・Tera Hydro Breath ・Shine Breaker"
+  },
+  {
+    "id": 63,
+    "name": "Titamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=titamon",
+    "Level": "Mega",
+    "Type": "Deity",
+    "Attribute": "Virus",
+    "Special Move": "・Soul Core Attack ・Phantom Blade ・Dark Army Pact"
+  },
+  {
+    "id": 64,
+    "name": "Zurumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=zurumon",
+    "Level": "In-Training Ⅰ",
+    "Type": "Slime",
+    "Attribute": "",
+    "Special Move": "・Poison Bubbles"
+  },
+  {
+    "id": 65,
+    "name": "Pagumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=pagumon",
+    "Level": "In-Training Ⅱ",
+    "Type": "Lesser",
+    "Attribute": "",
+    "Special Move": "・Poison Bubbles"
+  },
+  {
+    "id": 66,
+    "name": "Gazimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=gazimon",
+    "Level": "Rookie",
+    "Type": "Mammal",
+    "Attribute": "Virus",
+    "Special Move": "・Electric Stun Blast"
+  },
+  {
+    "id": 67,
+    "name": "Gizamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=gizamon",
+    "Level": "Rookie",
+    "Type": "Sea Animal",
+    "Attribute": "Virus",
+    "Special Move": "・Spiral Edge"
+  },
+  {
+    "id": 68,
+    "name": "DarkTyrannomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=darktyranomon",
+    "Level": "Champion",
+    "Type": "Dinosaur",
+    "Attribute": "Virus",
+    "Special Move": "・Fire Blast"
+  },
+  {
+    "id": 69,
+    "name": "Cyclomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=cyclomon",
+    "Level": "Champion",
+    "Type": "Dragon Man",
+    "Attribute": "Virus",
+    "Special Move": "・Hyper Heat"
+  },
+  {
+    "id": 70,
+    "name": "Devidramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=devidramon",
+    "Level": "Champion",
+    "Type": "Evil Dragon",
+    "Attribute": "Virus",
+    "Special Move": "・Crimson Claw"
+  },
+  {
+    "id": 71,
+    "name": "Tuskmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=tuskmon",
+    "Level": "Champion",
+    "Type": "Dinosaur",
+    "Attribute": "Virus",
+    "Special Move": "・Slamming Tusk"
+  },
+  {
+    "id": 72,
+    "name": "Flymon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=flymon",
+    "Level": "Champion",
+    "Type": "Insectoid",
+    "Attribute": "Virus",
+    "Special Move": "・Brown Stingers"
+  },
+  {
+    "id": 73,
+    "name": "Deltamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=deltamon",
+    "Level": "Champion",
+    "Type": "Composite",
+    "Attribute": "Virus",
+    "Special Move": "・Triple Forces ・Skull Fang"
+  },
+  {
+    "id": 74,
+    "name": "Raremon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=raremon",
+    "Level": "Champion",
+    "Type": "Undead",
+    "Attribute": "Virus",
+    "Special Move": "・Sludge"
+  },
+  {
+    "id": 75,
+    "name": "MetalTyrannomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=metaltyranomon",
+    "Level": "Ultimate",
+    "Type": "Cyborg",
+    "Attribute": "Virus",
+    "Special Move": "・Giga DestroyerⅡ ・Nuclear Laser"
+  },
+  {
+    "id": 76,
+    "name": "Nanomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=nanomon",
+    "Level": "Ultimate",
+    "Type": "Machine",
+    "Attribute": "Virus",
+    "Special Move": "・Digital Bomb"
+  },
+  {
+    "id": 77,
+    "name": "Ex-Tyranomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=ex-tyranomon",
+    "Level": "Ultimate",
+    "Type": "Puppet",
+    "Attribute": "Vaccine",
+    "Special Move": "・Pretty Attack ・Black Matter"
+  },
+  {
+    "id": 78,
+    "name": "Machinedramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=mugendramon",
+    "Level": "Mega",
+    "Type": "Machine",
+    "Attribute": "Virus",
+    "Special Move": "・Infinity Cannon"
+  },
+  {
+    "id": 79,
+    "name": "Puppetmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=pinochimon",
+    "Level": "Mega",
+    "Type": "Puppet",
+    "Attribute": "Virus",
+    "Special Move": "・Puppet Pummel"
+  },
+  {
+    "id": 80,
+    "name": "Sakumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=sakumon",
+    "Level": "In-Training Ⅰ",
+    "Type": "Weapon",
+    "Attribute": "",
+    "Special Move": "・Sakkuri"
+  },
+  {
+    "id": 81,
+    "name": "Sakuttomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=sakuttomon",
+    "Level": "In-Training Ⅱ",
+    "Type": "Weapon",
+    "Attribute": "",
+    "Special Move": "・Sakusaku"
+  },
+  {
+    "id": 82,
+    "name": "Zubamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=zubamon",
+    "Level": "Rookie",
+    "Type": "Weapon",
+    "Attribute": "Vaccine",
+    "Special Move": "・Twenty Dive"
+  },
+  {
+    "id": 83,
+    "name": "Zubaeagermon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=zubaeagermon",
+    "Level": "Champion",
+    "Type": "Weapon",
+    "Attribute": "Vaccine",
+    "Special Move": "・Road T(w)o Decade ・Vantheon"
+  },
+  {
+    "id": 84,
+    "name": "Duramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=duramon",
+    "Level": "Ultimate",
+    "Type": "Weapon",
+    "Attribute": "Vaccine",
+    "Special Move": "・Glass Slash ・Blinded"
+  },
+  {
+    "id": 85,
+    "name": "Durandamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=durandamon",
+    "Level": "Mega",
+    "Type": "Holy Sword",
+    "Attribute": "Vaccine",
+    "Special Move": "・Zwei Glänze ・Thron Messer"
+  },
+  {
+    "id": 86,
+    "name": "Huckmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=huckmon",
+    "Level": "Rookie",
+    "Type": "Mini Dragon",
+    "Attribute": "Data",
+    "Special Move": "・Fifth Rush ・Teen Ram ・Pepper Breath"
+  },
+  {
+    "id": 87,
+    "name": "BaoHuckmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=baohuckmon",
+    "Level": "Champion",
+    "Type": "Dinosaur",
+    "Attribute": "Data",
+    "Special Move": "・Fif Cross ・Teen Blade ・Blazing Flame ・Dragless Spiker"
+  },
+  {
+    "id": 88,
+    "name": "SaviorHuckmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=saviorhuckmon",
+    "Level": "Ultimate",
+    "Type": "Dragon Man",
+    "Attribute": "Data",
+    "Special Move": "・Ledge Stride ・Meteor Flame ・Trident Saber"
+  },
+  {
+    "id": 89,
+    "name": "Jesmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=jesmon",
+    "Level": "Mega",
+    "Type": "Holy Knight",
+    "Attribute": "Data",
+    "Special Move": "・Judgment of the Blade ・Weltgeist ・Aus Generics"
+  },
+  {
+    "id": 90,
+    "name": "Petitmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=petitmon",
+    "Level": "In-Training Ⅰ",
+    "Type": "Slime",
+    "Attribute": "",
+    "Special Move": "・Hot Breath"
+  },
+  {
+    "id": 91,
+    "name": "Bebydomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=babydmon",
+    "Level": "In-Training Ⅱ",
+    "Type": "Baby Dragon",
+    "Attribute": "",
+    "Special Move": "・Hot Gas"
+  },
+  {
+    "id": 92,
+    "name": "Dracomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=dracomon",
+    "Level": "Rookie",
+    "Type": "Dragon",
+    "Attribute": "Data",
+    "Special Move": "・Baby Breath ・Tail Smash ・Great Strike"
+  },
+  {
+    "id": 93,
+    "name": "Coredramon (Blue)",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=coredramon_b",
+    "Level": "Champion",
+    "Type": "Dragon",
+    "Attribute": "Vaccine",
+    "Special Move": "・Blue Flare Breath ・Strike Bomber ・Great StrikeⅡ"
+  },
+  {
+    "id": 94,
+    "name": "Wingdramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=wingdramon",
+    "Level": "Ultimate",
+    "Type": "Sky Dragon",
+    "Attribute": "Vaccine",
+    "Special Move": "・Blaze Sonic Breath ・Exploding Sonic Lance ・Wing Blast"
+  },
+  {
+    "id": 95,
+    "name": "Slayerdramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=slayerdramon",
+    "Level": "Mega",
+    "Type": "Dragon Man",
+    "Attribute": "Vaccine",
+    "Special Move": "・Tenryu Slash ・Shoryu Slash ・Koryu Slash"
+  },
+  {
+    "id": 96,
+    "name": "Coredramon (Green)",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=coredramon_g",
+    "Level": "Champion",
+    "Type": "Dragon",
+    "Attribute": "Virus",
+    "Special Move": "・Green Flare Breath ・Strike Bomber ・Great StrikeⅡ"
+  },
+  {
+    "id": 97,
+    "name": "Groundramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=groundramon",
+    "Level": "Ultimate",
+    "Type": "Earth Dragon",
+    "Attribute": "Virus",
+    "Special Move": "・Scrapless Claw ・Megaton Hammer Crush ・Giga Crack"
+  },
+  {
+    "id": 98,
+    "name": "Breakdramon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=breakdramon",
+    "Level": "Mega",
+    "Type": "Machine Dragon",
+    "Attribute": "Virus",
+    "Special Move": "・Destroyed Rush ・Infinity Bowling ・Gravity Crush"
+  },
+  {
+    "id": 99,
+    "name": "Pichimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=pitchmon",
+    "Level": "In-Training Ⅰ",
+    "Type": "Slime",
+    "Attribute": "",
+    "Special Move": "・Bubble Blow"
+  },
+  {
+    "id": 100,
+    "name": "Bukamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=pukamon",
+    "Level": "In-Training Ⅱ",
+    "Type": "Lesser",
+    "Attribute": "",
+    "Special Move": "・Air Bubbles"
+  },
+  {
+    "id": 101,
+    "name": "Coronamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=coronamon",
+    "Level": "Rookie",
+    "Type": "Beast",
+    "Attribute": "Vaccine",
+    "Special Move": "・CoronaｰKnuckles ・Corona Flame ・Petit Prominence"
+  },
+  {
+    "id": 102,
+    "name": "Firamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=firamon",
+    "Level": "Champion",
+    "Type": "Beast",
+    "Attribute": "Vaccine",
+    "Special Move": "・Flame Dive ・Fira Claw ・Fira Bomb"
+  },
+  {
+    "id": 103,
+    "name": "Flaremon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=flaremon",
+    "Level": "Ultimate",
+    "Type": "Beast Man",
+    "Attribute": "Vaccine",
+    "Special Move": "・Crimson Wave of the Beast King ・Crimson Lion Dance ・Purifying Howl"
+  },
+  {
+    "id": 104,
+    "name": "Apollomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=apollomon",
+    "Level": "Mega",
+    "Type": "Deity",
+    "Attribute": "Vaccine",
+    "Special Move": "・Sol Blaster ・Phoebus Blow ・Arrow of Apollo"
+  },
+  {
+    "id": 105,
+    "name": "Lunamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=lunamon",
+    "Level": "Rookie",
+    "Type": "Mammal",
+    "Attribute": "Data",
+    "Special Move": "・Luna Claw ・Tearing Shot ・Lop-Ear Ripple"
+  },
+  {
+    "id": 106,
+    "name": "Lekismon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=lekismon",
+    "Level": "Champion",
+    "Type": "Beast Man",
+    "Attribute": "Data",
+    "Special Move": "・Moon Night Bomb ・Tear Arrow ・Moon Night Kick"
+  },
+  {
+    "id": 107,
+    "name": "Crescemon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=crescemon",
+    "Level": "Ultimate",
+    "Type": "Wizard",
+    "Attribute": "Data",
+    "Special Move": "・Lunatic Dance ・Ice Archery ・Dark Archery"
+  },
+  {
+    "id": 108,
+    "name": "Dianamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=dianamon",
+    "Level": "Mega",
+    "Type": "Deity",
+    "Attribute": "Data",
+    "Special Move": "・Crescent Harken ・Arrow of Artemis ・Good Night Moon"
+  },
+  {
+    "id": 109,
+    "name": "Tai's Agumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=agumon",
+    "Level": "Rookie",
+    "Type": "Reptile",
+    "Attribute": "Vaccine",
+    "Special Move": "・Pepper Breath"
+  },
+  {
+    "id": 110,
+    "name": "Tai's Greymon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=greymon-first",
+    "Level": "Champion",
+    "Type": "Dinosaur",
+    "Attribute": "Vaccine",
+    "Special Move": "・Mega Flame"
+  },
+  {
+    "id": 111,
+    "name": "Tai's MetalGreymon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=metalgreymon-v",
+    "Level": "Ultimate",
+    "Type": "Cyborg",
+    "Attribute": "Vaccine",
+    "Special Move": "・Trident Arm ・Giga Destroyer ・Giga Storm"
+  },
+  {
+    "id": 112,
+    "name": "Tai's WarGreymon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=wargreymon",
+    "Level": "Mega",
+    "Type": "Dragon Man",
+    "Attribute": "Vaccine",
+    "Special Move": "・Terra Force ・Great Tornado"
+  },
+  {
+    "id": 113,
+    "name": "Matt's Gabumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=gabumon",
+    "Level": "Rookie",
+    "Type": "Reptile",
+    "Attribute": "Data",
+    "Special Move": "・Blue Blaster"
+  },
+  {
+    "id": 114,
+    "name": "Matt's Garurumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=garurumon",
+    "Level": "Champion",
+    "Type": "Beast",
+    "Attribute": "Vaccine",
+    "Special Move": "・Fox Fire"
+  },
+  {
+    "id": 115,
+    "name": "Matt's WereGarurumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=weregarrumon",
+    "Level": "Ultimate",
+    "Type": "Beast Man",
+    "Attribute": "Vaccine",
+    "Special Move": "・Wolf Claw"
+  },
+  {
+    "id": 116,
+    "name": "Matt's MetalGarurumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=metalgarurumon",
+    "Level": "Mega",
+    "Type": "Cyborg",
+    "Attribute": "Data",
+    "Special Move": "・Freezing Breath ・Garuru Tomahawk ・Ice Wolf Claw"
+  },
+  {
+    "id": 117,
+    "name": "Dodomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=dodomon",
+    "Level": "In-Training Ⅰ",
+    "Type": "Slime",
+    "Attribute": "",
+    "Special Move": "・Little Iron Beads"
+  },
+  {
+    "id": 118,
+    "name": "Dorimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=dorimon",
+    "Level": "In-Training Ⅱ",
+    "Type": "Lesser",
+    "Attribute": "",
+    "Special Move": "・Metal Drop"
+  },
+  {
+    "id": 119,
+    "name": "Dorumon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=dorumon",
+    "Level": "Rookie",
+    "Type": "Beast",
+    "Attribute": "Data",
+    "Special Move": "・Dash Metal ・Metal Cannon"
+  },
+  {
+    "id": 120,
+    "name": "Dorugamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=dorugamon",
+    "Level": "Champion",
+    "Type": "Beast Dragon",
+    "Attribute": "Data",
+    "Special Move": "・Cannonball ・Power Metal"
+  },
+  {
+    "id": 121,
+    "name": "DoruGreymon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=doruguremon",
+    "Level": "Ultimate",
+    "Type": "Beast Dragon",
+    "Attribute": "Data",
+    "Special Move": "・Metal Meteor ・Bloody Tower"
+  },
+  {
+    "id": 122,
+    "name": "Alphamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=alphamon",
+    "Level": "Mega",
+    "Type": "Holy Knight",
+    "Attribute": "Vaccine",
+    "Special Move": "・Blade of the Dragon King ・Soul Digitalization"
+  },
+  {
+    "id": 123,
+    "name": "YukimiBotamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=yukimibotamon",
+    "Level": "In-Training Ⅰ",
+    "Type": "Slime",
+    "Attribute": "",
+    "Special Move": "・Diamond Dust"
+  },
+  {
+    "id": 124,
+    "name": "Nyaromon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=nyaromon",
+    "Level": "In-Training Ⅱ",
+    "Type": "Lesser",
+    "Attribute": "",
+    "Special Move": "・Fox Tail"
+  },
+  {
+    "id": 125,
+    "name": "Salamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=plotmon",
+    "Level": "Rookie",
+    "Type": "Mammal",
+    "Attribute": "Vaccine",
+    "Special Move": "・Puppy Howl"
+  },
+  {
+    "id": 126,
+    "name": "Meicoomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=meicoomon",
+    "Level": "Champion",
+    "Type": "Unidentified",
+    "Attribute": "Unknown",
+    "Special Move": "・Shut Claw ・Trichobezoar ・X Scratch"
+  },
+  {
+    "id": 127,
+    "name": "Meicrackmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=meicrackmon",
+    "Level": "Ultimate",
+    "Type": "Beast Man",
+    "Attribute": "Vaccine",
+    "Special Move": "・Modestly Stun ・Felt Made"
+  },
+  {
+    "id": 128,
+    "name": "Rasielmon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=rasielmon",
+    "Level": "Mega",
+    "Type": "Super Angel",
+    "Attribute": "Vaccine",
+    "Special Move": "・Knowledge Stream ・Sefer Raziel"
+  },
+  {
+    "id": 129,
+    "name": "Omnimon Alter-S",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=omegamon-alter-s",
+    "Level": "Mega",
+    "Type": "Holy Knight",
+    "Attribute": "Virus",
+    "Special Move": "・Supreme Sword ・Transcendent Cannon"
+  },
+  {
+    "id": 130,
+    "name": "RustTyrannomon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=rusttyranomon",
+    "Level": "Mega",
+    "Type": "Cyborg",
+    "Attribute": "Virus",
+    "Special Move": "・Terrors Cluster ・Rust Breath"
+  },
+  {
+    "id": 131,
+    "name": "Examon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=examon",
+    "Level": "Mega",
+    "Type": "Holy Knight",
+    "Attribute": "Data",
+    "Special Move": "・Avalon's Gate ・Pendragon's Glory ・Dragonic Impact"
+  },
+  {
+    "id": 132,
+    "name": "GraceNovamon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=gracenovamon",
+    "Level": "Mega",
+    "Type": "Galaxy",
+    "Attribute": "Vaccine",
+    "Special Move": "・Eclipse Finger ・Calydon Arcus"
+  },
+  {
+    "id": 133,
+    "name": "Omnimon",
+    "url": "https://digimon.net/reference_en/detail.php?directory_name=omegamon",
+    "Level": "Mega",
+    "Type": "Holy Knight",
+    "Attribute": "Vaccine",
+    "Special Move": "・Supreme Cannon ・Transcendent Sword"
+  }
+]

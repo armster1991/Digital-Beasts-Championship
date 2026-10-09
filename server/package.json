@@ -1,0 +1,1 @@
+{"name":"digital-beasts-championship","private":true,"type":"module","scripts":{"deploy":"wrangler deploy","dev":"wrangler dev","test":"node ../source/test_netplay.mjs"},"devDependencies":{"wrangler":"4.147.0"}}

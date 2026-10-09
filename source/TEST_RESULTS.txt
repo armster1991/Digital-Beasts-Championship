@@ -1,0 +1,37 @@
+Digital Beasts Championship v0.1 — validation
+
+PASS: runtime JS syntax (browser and Worker).
+PASS: original v1.6 extracted files byte-identical to original archive.
+PASS: 134 sourced behavior profiles; 129 reachable raisable species.
+PASS: 2230 route/egg witnesses; continuous post-deadline evolution.
+PASS: two independent same-species instances, no third slot, save/load.
+PASS: training, fatigue stop, rest, food reservation and consumption.
+PASS: sickness/injury treatment, ground waste cleanup, no automatic death.
+PASS: 134 deterministic species matchups and dynamic roster-sized Colosseum.
+PASS: two-dimensional movement, hesitation cooldown, self-repair behavior.
+PASS: byte-identical browser/Worker battle and profile files.
+PASS: authoritative lobby: passwords, roles, ready, start, result timing,
+      rematch, kick, guest disconnect and host room closure.
+PASS: actual Chromium desktop 1200x900, mobile portrait 390x844,
+      mobile landscape 844x390: mouse/touch dragging, feeding, UI, battle.
+PASS: mouse and touch medicine, clean, edge-pan while dragging,
+      Portuguese switch, two-step deletion and fade animation.
+PASS: two real browser WebSocket clients with shared LobbyCore:
+      full battle, result agreement, mutual rematch and host-leave notice.
+
+Not performed: public Cloudflare deployment (requires owner publication),
+physical Android/iOS device testing, exhaustive multi-hour human balance playtest.
+Mobile automation uses Chromium touch emulation, not Safari on an iPhone.
+
+Update 0.2: PASS per-stat stop, half-speed redistribution, 1930 recovery routes from full incorrect allocations, 2230 route witnesses, cage-only feeding, leftover cleaning, medicine eligibility, delayed hints. PASS desktop/portrait/landscape UI, transparent egg extraction, sprite aspect ratio, two-pet hints, encoded save import, double-confirm Coliseum reset retaining rewards, battle music start. PASS existing Worker core regression. Physical devices and audible playback quality were not evaluated.
+
+Update 0.3
+PASS: 400 Elecmon-vs-early-Coliseum simulations (86% untrained win rate, 30.5% average remaining HP); 1340 roster matchups (maximum 81 seconds in this sample); 134 legal high-HP/defense mirrors (41 Sudden Death fights, 3 safety timeouts, none over 135 seconds).
+PASS: four-corner and side-wall retreat, 90-second transition, double action recovery, halved armor/dodge, byte-identical client/Worker simulation.
+PASS: real WebSocket two-browser room, battle, matching outcome, rematch and host departure on protocol 4.
+PASS: mobile rotation gate, landscape fit without page scroll, single food render during eating, MAIN MENU return, disabled exit during combat.
+PASS: red arena and Sudden Death banner with controlled UI timeline.
+PASS: five menu returns with deliberately lagged frame timestamps, Save & exit, active album animation, no volume errors; malformed stored volume normalized.
+No physical iOS/Android device or public Cloudflare deployment tested in this update. Simulation statistics are a sample, not a guarantee for all trained builds.
+
+Update 0.3.1: PASS 105 seconds continuous training to fatigue 100; 60 seconds rest to fatigue 10, 67 to full recovery. PASS single 3-frame/1.5-second training sequence after loading, old transient animation cleared without changing training points. PASS three food crops retain the bone on the right and consume the meat first. Engine/evolution regression passed. Battle and server files unchanged.
