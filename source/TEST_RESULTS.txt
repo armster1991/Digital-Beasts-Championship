@@ -35,3 +35,5 @@ PASS: five menu returns with deliberately lagged frame timestamps, Save & exit, 
 No physical iOS/Android device or public Cloudflare deployment tested in this update. Simulation statistics are a sample, not a guarantee for all trained builds.
 
 Update 0.3.1: PASS 105 seconds continuous training to fatigue 100; 60 seconds rest to fatigue 10, 67 to full recovery. PASS single 3-frame/1.5-second training sequence after loading, old transient animation cleared without changing training points. PASS three food crops retain the bone on the right and consume the meat first. Engine/evolution regression passed. Battle and server files unchanged.
+
+0.3.2: PASS 20 valid training sessions over 300 seconds = 95 fatigue, 60 seconds rest = zero. Training gain/interval, save compatibility, combat and Worker unchanged.
