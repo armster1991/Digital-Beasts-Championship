@@ -68,3 +68,12 @@ PASS: player-facing Tutorial contains 12 indexed pages / 49 sections in both Eng
 PASS: Tutorial returns to its originating menu, uses a numbered desktop index plus compact mobile page selector and Previous/Next navigation; it is disabled on the battle/result screen to avoid stranding the player in an intermediate battle view.
 PASS: Portuguese MENU PRINCIPAL is forced to one line and uses smaller responsive font sizes; the three top-right actions have compact mobile-landscape widths while the v0.4.2 no-page-scroll main layout and compact Coliseum rules remain intact.
 PASS: v0.4.3 tutorial contract, v0.4.2 DIGIDEX/mobile regression, full v0.4 catalog/routes/sprites, engine, care, combat, update and netplay tests all pass. Browser-dependent Playwright tests are unavailable in this runtime. The dependency-light Chromium smoke test is also blocked by this container before app scripts load (chrome-error://chromewebdata/), matching the existing environment limitation.
+
+Update 0.4.4
+============
+PASS: Galemon (ID 238) and every battle-capable post-original-roster species were validated through server READY and an authoritative fight: 140/140, zero failures.
+PASS: client/server profiles.js are byte-identical and Worker roster handshake reports 282 species.
+PASS: portrait-first mobile contract removes the orientation lock, keeps nursery/tools/pet cards/navigation ordered vertically, and adds a mild 1.10x battle camera following the local fighter in Colosseum and Netplay.
+PASS: v0.4 core, DIGIDEX, tutorial, engine, care, combat, update, sprite atlas and netplay unit tests.
+ENVIRONMENT LIMITATION: the dependency-light Chromium smoke still stops at chrome-error://chromewebdata/ before app scripts load in this container, so no claim of a real-device visual screenshot pass is made here.
+

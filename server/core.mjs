@@ -2,6 +2,7 @@ import './profiles.js';
 import './battle.js';
 const CATALOG=globalThis.CHAMP_DATA.map(p=>({id:p.speciesId,...p}));
 export const PROTOCOL=4;
+export const ROSTER_VERSION=CATALOG.length;
 const LIMIT_ROOMS=24,MAX_CONNECTIONS=96;
 const BY_ID=new Map(CATALOG.map(s=>[s.id,s]));
 const clean=(s,max)=>typeof s==='string'&&s.trim().length>0&&s.trim().length<=max&&!/[\u0000-\u001f\u007f]/.test(s)?s.trim():null;
@@ -17,7 +18,7 @@ export class LobbyCore{
  lists(){for(const c of this.clients.values())if(c.nick&&!c.room)this.send(c.id,{type:'LIST',rooms:this.list()});}
  room(r){for(const id of r.members)this.send(id,{type:'ROOM',room:{id:r.id,name:r.name,host:r.host,phase:r.phase,players:r.members.map(pid=>({id:pid,nick:this.clients.get(pid)?.nick||'',ready:!!r.ready[pid],rematch:!!r.rematch[pid]}))}});}
  prune(){for(const r of [...this.rooms.values()]){if(!this.clients.has(r.host)||this.now()-r.touched>7200000){for(const id of r.members){const c=this.clients.get(id);if(c){c.room=null;this.send(id,{type:'LEFT',key:'roomClosed'});}}this.rooms.delete(r.id);}else{r.members=r.members.filter(id=>this.clients.has(id));if(r.members.length<2&&r.phase!=='lobby'){r.phase='lobby';r.ready={};r.rematch={};r.round=null;}}}}
- connect(id,ip='local'){if(this.clients.size>=MAX_CONNECTIONS)fail('lobbyFull');if([...this.clients.values()].filter(c=>c.ip===ip).length>=6)fail('tooManyConnections');this.clients.set(id,{id,ip,nick:'',room:null,rateAt:this.now(),rate:0,failedAt:0,failed:0});this.send(id,{type:'WELCOME',id});}
+ connect(id,ip='local'){if(this.clients.size>=MAX_CONNECTIONS)fail('lobbyFull');if([...this.clients.values()].filter(c=>c.ip===ip).length>=6)fail('tooManyConnections');this.clients.set(id,{id,ip,nick:'',room:null,rateAt:this.now(),rate:0,failedAt:0,failed:0});this.send(id,{type:'WELCOME',id,roster:ROSTER_VERSION});}
  leave(id,reason='leftRoom'){const c=this.clients.get(id),r=c&&this.rooms.get(c.room);if(!r){if(c)c.room=null;return;}if(r.host===id){for(const mid of r.members){const mc=this.clients.get(mid);if(mc)mc.room=null;this.send(mid,{type:'LEFT',key:mid===id?'leftRoom':'hostLeft'});}this.rooms.delete(r.id);}else{r.members=r.members.filter(mid=>mid!==id);c.room=null;r.phase='lobby';r.ready={};r.rematch={};r.round=null;this.send(id,{type:'LEFT',key:reason});this.send(r.host,{type:'OPPONENT_LEFT',key:reason==='kicked'?'playerKicked':'opponentLeft'});this.room(r);}this.lists();}
  disconnect(id){this.leave(id);this.clients.delete(id);this.lists();}
  start(r,raw){const fighters=raw.map(canonicalFighter),values=new Uint32Array(1);crypto.getRandomValues(values);const seed=values[0]||1,result=fight(fighters[0],fighters[1],seed);r.phase='battle';r.rematch={};r.round={id:crypto.randomUUID(),seed,fighters,done:[],winner:result.winner,earliest:this.now()+Math.max(0,result.duration-1)*1000};r.ready={};r.touched=this.now();this.room(r);r.members.forEach((id,local)=>this.send(id,{type:'BATTLE_START',round:r.round.id,seed,fighters,local}));this.lists();}

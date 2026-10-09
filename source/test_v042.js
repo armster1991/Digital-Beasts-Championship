@@ -94,7 +94,7 @@ assert(app.includes("screen==='album-detail'"));
 assert(app.includes(".album-card[data-dex-id]"));
 assert(app.includes("if(!game.s.album[id]){show('album');return;}"));
 assert(app.includes('Champ.evolutionRequirements(id)'));
-assert(app.includes('Digital Beasts Championship · v0.4.3'));
+assert(app.includes('Digital Beasts Championship · v0.4.4'));
 assert(lang.includes("album:['DIGIDEX','DIGIDEX']"));
 assert(lang.includes('dexEvolutionRequirements'));
 assert(lang.includes('dexHatchTime'));
@@ -106,4 +106,4 @@ assert(css.includes('#panel-content:has(.colosseum-layout){overflow:hidden'));
 assert(css.includes('.colosseum-card{height:100%'));
 assert(css.includes('.album-card.registered'));
 
-console.log('PASS v0.4.3 DIGIDEX + mobile layout:',DATA.species.length,'species');
+console.log('PASS v0.4.4 DIGIDEX + mobile layout:',DATA.species.length,'species');

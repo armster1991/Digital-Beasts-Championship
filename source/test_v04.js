@@ -146,6 +146,6 @@ const last=Champ.colosseum[281];assert(Battle.colosseumOpponent({species:last.id
 // Shared deterministic files must remain byte-identical.
 assert.equal(fs.readFileSync(path.join(ROOT,'battle.js'),'utf8'),fs.readFileSync(path.join(ROOT,'server','battle.js'),'utf8'));
 assert.equal(fs.readFileSync(path.join(ROOT,'profiles.js'),'utf8'),fs.readFileSync(path.join(ROOT,'server','profiles.js'),'utf8'));
-assert(fs.readFileSync(path.join(ROOT,'app.js'),'utf8').includes('Digital Beasts Championship · v0.4.3'));
+assert(fs.readFileSync(path.join(ROOT,'app.js'),'utf8').includes('Digital Beasts Championship · v0.4.4'));
 
 console.log('PASS v0.4 core:',DATA.species.length,'species,',DATA.obtainableCount,'obtainable,',added,'new route objects');

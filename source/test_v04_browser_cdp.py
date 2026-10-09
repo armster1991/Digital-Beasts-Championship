@@ -62,7 +62,7 @@ try:
     core=ev('({catalog:Champ.catalog.length,eggs:Champ.eggs.length,version:Champ.VERSION,album:Champ.catalog.filter(Boolean).length})')
     assert core=={'catalog':282,'eggs':15,'version':2,'album':282},core
     settings=ev('(show("settings"),document.querySelector("#panel-content").innerText)')
-    assert 'Digital Beasts Championship · v0.4.3' in settings,settings
+    assert 'Digital Beasts Championship · v0.4.4' in settings,settings
     egg=ev('''(()=>{let g1=new Champ.Game();g1.s.unlockedEggs.fill(true);g1.random=()=>0;let a=g1.adopt('ver1').hatchSpeciesId;let g2=new Champ.Game();g2.s.unlockedEggs.fill(true);g2.random=()=>.5;let b=g2.adopt('ver1').hatchSpeciesId;return {a,b,n1:Champ.catalog[a].name,n2:Champ.catalog[b].name};})()''')
     assert egg['a']!=egg['b'] and {egg['n1'],egg['n2']}=={'Botamon','Bubbmon'},egg
     image=ev('''new Promise(resolve=>{const i=new Image();i.onload=()=>resolve({ok:true,w:i.naturalWidth,h:i.naturalHeight});i.onerror=()=>resolve({ok:false});i.src='assets/penc-sprites.png?smoke=1';})''')
@@ -79,7 +79,7 @@ try:
         if any(url.split('?')[0].endswith(x) for x in ('.js','.css','.png','.html')):bad.append((url,p.get('errorText')))
     assert not bad,bad
     assert not exceptions,exceptions
-    print('PASS v0.4 Chromium smoke: 282 catalog, 15 eggs, Settings v0.4.3, dual hatch, legacy/PenC render, atlas 192x2896')
+    print('PASS v0.4 Chromium smoke: 282 catalog, 15 eggs, Settings v0.4.4, dual hatch, legacy/PenC render, atlas 192x2896')
 finally:
     try:
         if ws:ws.close()

@@ -42,7 +42,7 @@ assert(app.includes("btn('settings-help','tutorial')"),'Settings must link to TU
 assert(app.includes("else if(view==='tutorial')tutorial()"));
 assert(app.includes("tutorialReturn='settings';show('tutorial')"));
 assert(app.includes("$('tutorial').disabled=screen==='battle'||!!confirmState"),'Tutorial must not strand the user on battle/result screen');
-assert(app.includes('Digital Beasts Championship · v0.4.3'));
+assert(app.includes('Digital Beasts Championship · v0.4.4'));
 
 // Indexed navigation on desktop and a compact page selector on mobile.
 for(const needle of ['tutorial-index-list','data-tutorial-page','tutorial-page-select','tutorial-prev','tutorial-next'])assert(app.includes(needle),needle);
@@ -60,4 +60,4 @@ assert(css.includes('.header-actions button{min-width:84px}'));
 
 const enSections=T.en.reduce((n,p)=>n+p.sections.length,0),ptSections=T.pt.reduce((n,p)=>n+p.sections.length,0);
 assert(enSections>=45&&ptSections>=45,'tutorial should be information-rich');
-console.log('PASS v0.4.3 tutorial:',T.en.length,'pages EN /',T.pt.length,'pages PT,',enSections,'sections');
+console.log('PASS v0.4.4 tutorial:',T.en.length,'pages EN /',T.pt.length,'pages PT,',enSections,'sections');

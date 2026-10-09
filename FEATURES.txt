@@ -1,0 +1,439 @@
+DIGITAL BEASTS CHAMPIONSHIP — FEATURES E REFERÊNCIA
+Versão 0.4.4 • 9 de outubro de 2026
+
+Este documento descreve o que está implementado nesta versão. Ele serve como
+referência do projeto, não como promessa de funções futuras. O fork Championship
+é separado do Digital Beasts HTML / Ver.20th e do antigo HTML Beasts.
+
+1. PROPOSTA E FORMATO
+
+Fangame pessoal e não comercial de Armster, inspirado em virtual pets e Digimon
+World Championship. O foco é criar, cuidar, treinar, descobrir evoluções e disputar
+batalhas automáticas. Não é um simulador com tempo de vida limitado: os pets não
+morrem automaticamente. O jogador decide quando liberar um slot por deleção.
+
+É um aplicativo web estático: HTML, CSS e JavaScript, com imagens, fonte e áudio
+locais. Extraindo a pasta inteira, index.html abre o jogo sem instalador. A mesma
+pasta pode ser hospedada no GitHub Pages. O modo online precisa de conexão com o
+Worker Championship; os cuidados, a DIGIDEX e o Coliseu funcionam localmente.
+Na v0.4.4, cliente e Worker anunciam um roster de 282 espécies. O Worker precisa
+ser republicado ao atualizar do roster antigo; caso contrário, Digimon adicionados
+depois do catálogo original não podem ser validados no Online.
+
+A interface começa em inglês e pode mudar para português brasileiro pelo switch
+EN-US / PT-BR. Os nomes próprios das espécies permanecem os do catálogo. A fonte,
+os sprites pixelados, as animações curtas e o filtro LCD preservam o visual v-pet.
+
+2. PLATAFORMAS E NAVEGAÇÃO
+
+Desktop usa mouse; dispositivos de toque usam os mesmos gestos por Pointer Events.
+No celular, o layout principal é vertical (portrait) e não existe mais bloqueio de
+orientação. O viveiro ocupa a maior parte da tela; ferramentas, cartões dos parceiros
+e navegação ficam abaixo dele. A troca entre áreas do viveiro continua horizontal.
+Alguns menus longos, como a lista de ovos e os status, possuem rolagem interna.
+
+Desde a v0.4.4, o layout vertical do celular evita rolagem da página principal durante o viveiro:
+header, viveiro, ferramentas, dois cards de pet, navegação e rodapé permanecem dentro
+da altura útil. A troca de cages continua horizontal por arraste/abas. Submenus podem
+rolar verticalmente dentro do painel. O Coliseu foi reorganizado para portrait e, durante
+as batalhas, uma câmera com zoom leve acompanha sempre o Digimon do jogador local.
+
+Os menus compartilham a tela principal. Confirmações aparecem dentro do jogo,
+sem alert/confirm do navegador. BACK continua disponível, e clicar novamente em
+um menu normalmente retorna ao viveiro ou ao título, conforme a origem.
+
+MENU PRINCIPAL / MAIN MENU fica ao lado de SALVAR E SAIR / SAVE & EXIT, com tamanho
+correspondente. MENU PRINCIPAL guarda o progresso no navegador e volta ao título,
+sem baixar arquivo. SALVAR E SAIR também baixa o backup portátil e encerra a sessão
+ativa. Durante uma batalha em andamento, esses dois botões ficam desabilitados.
+Entrar no menu principal encerra a conexão com uma sala online.
+
+O título oferece NEW GAME, CONTINUE, LOAD SAVE, DIGIDEX e ABOUT. O TUTORIAL fica no canto superior direito, ao lado de MAIN MENU, e também pode ser aberto por OPÇÕES. NEW GAME exige
+duas confirmações antes de substituir o progresso deste fork. O menu de opções
+permite controlar música, efeitos e endereço do servidor, além de acessar o Tutorial.
+
+TUTORIAL / TUTORIAL substitui o antigo HELP / AJUDA. Ele fica permanentemente no
+canto superior direito ao lado de MAIN MENU e abre um manual de jogador dividido
+em 12 páginas com índice, navegação anterior/próxima e versão completa em EN-US e
+PT-BR. O conteúdo cobre primeiros passos, viveiro, cuidados, fadiga, treino,
+evolução, DICAS, DIGIDEX, ovos/desbloqueios, batalhas, Coliseu, Online e saves sem
+expor jargões internos de desenvolvimento. Em PT-BR, MENU PRINCIPAL usa fonte
+menor para permanecer em uma única linha.
+
+3. DOIS COMPANHEIROS INDEPENDENTES
+
+Há dois slots, no máximo. Os dois podem conter a mesma espécie. Cada pet tem um
+identificador próprio: idade, fase, evolução, treinamento, fome, fadiga, condição
+médica, erros de cuidado e histórico de batalhas não são compartilhados.
+
+Ao ocupar um slot, o jogador escolhe um dos 15 ovos desbloqueados já existentes.
+As mesmas 15 imagens da versão anterior foram preservadas, mas cada ovo agora possui
+duas possibilidades de Baby I. A espécie é sorteada em 50/50 no momento em que o
+ovo é criado e fica registrada imediatamente no save: recarregar não refaz o sorteio.
+Os 14 Baby I disponíveis estão distribuídos entre os 15 ovos, misturando linhas
+antigas e Pendulum Color. O nome da linha continua oculto na seleção; a imagem do
+ovo funciona como identificação e acompanha o pet até a eclosão.
+
+O tempo é contado durante a sessão ativa. O pet que participa de uma batalha fica
+travado temporariamente; o outro continua sendo cuidado e evoluindo. A aplicação
+compensa intervalos entre quadros enquanto está aberta, inclusive quando o
+navegador reduz a frequência de desenho. Não calcula progresso retroativo pelo
+tempo em que a página esteve fechada. Voltar ao título por MAIN MENU não equivale
+a SAVE & EXIT: a sessão ativa continua existindo.
+
+DELETAR exige duas confirmações, remove apenas o pet escolhido e exibe uma animação
+de desaparecimento. DIGIDEX, desbloqueios e progresso geral permanecem. Deleção não
+fica disponível com uma sala online aberta ou com o pet travado em batalha.
+
+4. VIVEIRO E CAGES
+
+O mundo possui sete áreas lado a lado: Descanso, HP, TP, Ataque, Defesa, Sabedoria e
+Velocidade. Cada uma tem decoração própria: vegetação/banco, equipamentos, dojo,
+pesos, pedras, laboratório/livro e pista de corrida.
+
+Arrastar um pet muda sua cage. Arrastar o chão vazio move a câmera; os botões de
+área também levam a câmera diretamente ao local. Segurar um pet ou ferramenta
+perto da borda permite deslocar a câmera durante o arraste. A roda do mouse também
+navega horizontalmente.
+
+Os pets andam dentro da própria cage, usando ambos os eixos do chão. Não atravessam
+outras cages sozinhos, nem para buscar carne. Um save antigo que tenha posição
+fora da cage registrada é corrigido ao carregar.
+
+As ferramentas Carne, Remédio e Limpar podem ser arrastadas. Também é possível
+selecionar uma ferramenta com um toque e tocar no chão ou no pet para aplicá-la.
+A animação das ações acontece no viveiro, sem minijogo obrigatório.
+
+5. COMIDA, SUJEIRA E CONDIÇÕES MÉDICAS
+
+A alimentação varia de 0 a 100 e cai cerca de 3,33 pontos por minuto. Carne não
+custa moeda. Há no máximo 12 pedaços simultâneos; cada um desaparece após 90
+segundos se não for consumido. Pets com alimentação abaixo de 85 reservam um
+pedaço da própria cage, caminham até ele e o comem. Uma reserva pertence a um único
+pet e impede que ambos consumam a mesma carne.
+
+Cada refeição acrescenta 35 pontos, limitada a 100. A animação mostra três mordidas
+em aproximadamente 1,8 segundo. Ao começar a comer, a carne deixa de ser desenhada
+no chão e aparece uma única vez junto à boca, em tamanho visível, diminuindo a
+cada mordida, começando pela carne e preservando o osso até a última etapa. Não há duplicação visual do pedaço.
+
+Cada pet pode produzir sujeira a cada oito minutos, com limite de 12 objetos no
+viveiro. Limpar remove sujeira próxima ao ponto aplicado e também carnes deixadas
+no chão. Os resíduos são objetos do cenário, não seguem o sprite do pet.
+
+A doença é sorteada a cada 15 minutos: chance base de 10%, com 10 pontos percentuais
+extras por sujeira, até três sujeiras consideradas (40% de chance máxima). Essa
+contagem de sujeira é global no viveiro. O ovo não participa desse sistema.
+Uma derrota também pode causar ferimento, com chance de 12%.
+
+Uma cruz médica com exclamação acima do pet indica doença ou ferimento; STATUS
+informa a condição por texto. Remédio cura ambas as condições e limpa o contador
+de negligência. Pet saudável recusa remédio, balança o sprite e mostra uma mensagem.
+O ícone usa med.png e a aplicação tem uma animação própria.
+
+Alimentação zerada, doença, ferimento ou fadiga extrema ignorados geram um erro de
+cuidado a cada dois minutos de condição grave contínua. Isso não mata o pet.
+
+6. FADIGA, DESCANSO E TREINAMENTO
+
+Fadiga vai de 0 a 100. Cada treino bem-sucedido custa 2,5 de fadiga e 1,5 de
+alimentação. Fora da área de Descanso, há ainda ganho passivo de 9 de fadiga por
+minuto. A partir de 95, o pet não consegue treinar. Também não treina doente,
+ferido ou com alimentação abaixo de 10.
+
+O ciclo de referência, começando descansado e com treinos válidos, é de cinco
+minutos de treino até fadiga 95 e um minuto de descanso para retornar a zero.
+
+Na área de Descanso, recupera 95 de fadiga por minuto. Com fadiga acima de 10,
+aparece dormindo, com letras Z subindo. A fome continua caindo durante o descanso.
+Uma batalha acrescenta 12 de fadiga e consome 5 de alimentação ao terminar.
+
+Cada cage de atributo produz uma tentativa de treino a cada 15 segundos. Uma
+tentativa válida ganha até três pontos no atributo escolhido e mostra uma
+animação contextual: pesos, livro, escudo, concentração, corrida ou exercício.
+O efeito de cada treino mostra uma única sequência de três quadros em 1,5 segundo,
+sem usar a aceleração do combate. Carregar um save descarta animações transitórias
+antigas, mantendo os pontos e a cadência de treino. Não é necessário clicar repetidamente nem completar minijogos.
+
+Os seis atributos são:
+- HP: vida máxima de combate; cada ponto de treino acrescenta cinco de HP.
+- TP: recurso dos especiais e cura; cada ponto de treino acrescenta dois de TP.
+- Ataque: força do ataque físico e parte do dano especial.
+- Defesa: reduz dano recebido.
+- Sabedoria: fortalece especiais e influencia decisões de combate.
+- Velocidade: influencia movimento, frequência dos ataques e esquiva.
+
+Cada espécie tem atributos-base próprios e tendências próprias de combate. O
+orçamento de pontos adicionais por estágio é: Baby I 12, Baby II 24, Rookie 80,
+Champion 120, Ultimate 160, Mega 200 e Ultra 240. O ovo não treina.
+Cada atributo aceita no máximo 60% do orçamento da fase. STATUS mostra o valor
+atual e seu teto, além do total de pontos distribuídos.
+
+Ao atingir o teto do atributo escolhido, insistir nele não gera pontos nem
+transfere ganhos automaticamente para outro atributo. Não é possível maximizar
+todos os atributos simultaneamente, pois eles disputam um orçamento compartilhado.
+
+Se ainda houver espaço no atributo, mas o orçamento total estiver cheio, treinar
+redistribui pontos já investidos nos outros atributos para o escolhido. Essa
+redistribuição ocorre à metade da eficiência: normalmente 1,5 ponto por treino,
+em vez de três. Os maiores investimentos alternativos são reduzidos primeiro.
+Assim, uma escolha anterior não condena o pet a ficar permanentemente empacado.
+Os pontos de treino acompanham a evolução e o orçamento cresce com a nova fase.
+
+7. EVOLUÇÃO E DICAS
+
+As fases são Egg, Baby I, Baby II, Rookie, Champion, Ultimate, Mega e, nas linhas
+que possuem essa etapa, Ultra. O requisito de tempo é idade na fase atual:
+- Egg: um minuto até chocar.
+- Baby I: cinco minutos para a próxima fase.
+- Baby II: 12 minutos.
+- Rookie: 25 minutos.
+- Champion: 40 minutos.
+- Ultimate: 60 minutos.
+- Etapas sem tempo mínimo configurado ainda dependem da existência de rota.
+
+Evoluir é automático quando os requisitos de uma rota são atendidos. A checagem
+continua após a idade mínima: perder o momento inicial não elimina a oportunidade.
+As rotas usam combinações de treino, linhagem do ovo e, em alguns casos, vitórias,
+participações em batalhas ou erros de cuidado. As rotas antigas da v0.3.2 foram
+preservadas. As novas rotas Pendulum Color registram os requisitos pesquisados de
+Care Mistakes/Effort e os adaptam aos sistemas já existentes; requisitos de conexão
+ou Jogress não reintroduzem essas mecânicas. Evoluções de batalha do aparelho que
+pedem 15+ batalhas e 80%+ de vitórias usam cinco batalhas da fase e mantêm 80% no
+ritmo comprimido deste jogo. Rotas Jogress novas recebem uma alternativa solo
+baseada em batalhas, enquanto os cinco Jogress-only legados continuam bloqueados.
+
+Quando mais de uma rota é elegível, o jogo compara os pontos dos atributos
+relevantes, depois a prioridade da rota e, por fim, o identificador da espécie.
+Não é uma escolha aleatória. A evolução zera a idade da fase, seus contadores de
+batalha e erros de cuidado, e deixa a alimentação em zero. É necessário alimentar
+o pet recém-evoluído. O álbum registra a espécie automaticamente.
+
+Há animação de evolução com um anel luminoso e efeito sonoro. O pet mantém sua
+posição e identidade individual ao trocar de espécie.
+
+DICAS? / TIPS? fica centralizado no rodapé, com um olho ovalado. Começa apagado e
+só fica disponível quando pelo menos um pet permanece sem cumprir uma evolução
+por dois minutos além da idade mínima da fase. A dica avalia a rota mais próxima,
+sugerindo sutilmente os atributos ou a experiência de combate que faltam, sem
+mostrar a espécie de destino nem os números exatos dos requisitos.
+
+Cada pet empacado recebe sua própria dica. Se só um está nessa situação, só ele
+aparece. Quando ninguém está empacado, o botão volta a ficar desabilitado. Pets
+sem próxima evolução não ativam o sistema. O Tutorial do jogo documenta esse recurso.
+
+As rotas e limites foram verificados por testes automatizados, inclusive partindo
+de distribuições ruins de pontos. Isso não significa que toda espécie nasce de
+qualquer ovo: os vínculos entre ovos e linhas continuam fazendo parte do sistema.
+
+8. DIGIDEX E DESBLOQUEIOS PERMANENTES
+
+O catálogo contém 282 entradas animadas; 277 são obtíveis nesta versão. A expansão
+Pendulum Color adiciona 148 espécies novas e atualiza o sprite de 33 espécies antigas
+quando elas aparecem nas novas folhas. As 101 espécies antigas restantes continuam
+usando seus sprites legados. Cinco espécies exclusivas de fusão permanecem como
+adversários e referências na DIGIDEX, mas Jogress não está implementado.
+
+A DIGIDEX mostra sprites transparentes, cores nas espécies obtidas e aparência
+acinzentada nas ainda não obtidas. Há filtro de adquiridos, páginas, primeira e
+última página. Registrar uma espécie não exige sacrificá-la nem transformá-la em
+carta neste fork. Somente registros já obtidos podem ser abertos: clicar ou tocar
+neles exibe todas as rotas atualmente válidas para obter aquela espécie novamente.
+A tela usa as regras reais do engine, incluindo tempo mínimo da fase anterior,
+pontos de treino/atributo resultante, erros de cuidado, Esforço, batalhas, vitórias,
+taxa de vitória e origem de Digi-Egg quando ela for realmente exigida. Para Baby I,
+a DIGIDEX mostra quais dos 15 Digi-Eggs podem chocá-lo, a chance correspondente e
+o tempo de incubação. Regras legadas de evolução normal também exibem o limite de
+erros de cuidado quando uma rota de falha concorrente existe.
+Os requisitos não são uma cópia decorativa das fontes: refletem exatamente a lógica
+adaptada executada pelo jogo. Quando várias evoluções ficam elegíveis ao mesmo tempo,
+continua valendo o desempate por treino relevante, prioridade da rota e ID.
+
+Cinco ovos estão disponíveis desde o início. Os demais são desbloqueados por:
+50 e 100 vitórias totais; cinco e 25 espécies registradas; etapas 25, 50, 75 e 80
+do Coliseu; cinco vitórias online OU a etapa 90; e uma conclusão completa do
+Coliseu. O requisito de conclusão considera as 282 etapas atuais.
+
+Desbloqueios conquistados recebem uma estrela, diferenciando-os dos iniciais.
+São flags permanentes: cumprir novamente a condição não cria uma recompensa
+duplicada. Deletar pets ou reiniciar o progresso das batalhas do Coliseu não
+remove a DIGIDEX nem os ovos desbloqueados. NEW GAME, por outro lado, reinicia tudo
+mediante suas duas confirmações.
+
+9. BATALHAS AUTOMÁTICAS
+
+Só pets Rookie ou superiores, saudáveis e com fadiga abaixo de 95 podem entrar.
+O jogador escolhe o participante; não controla golpes, não aperta mash e não
+resolve minijogos. Os dois lutadores se movem pelo cenário em dois eixos, aproximam,
+recuam, atacam, usam especiais, defendem e esquivam segundo perfis individuais.
+
+Ataques físicos usam alcance curto. Especiais podem ser de contato ou projéteis,
+com nomes associados à espécie. Projéteis viajam até o alvo. Especiais consomem
+TP; quando ele acaba, o pet precisa se aproximar para lutar fisicamente. Nanomon
+possui uma ação de reparo próprio adaptada ao perfil dele; cura não é uma habilidade
+genérica de todas as criaturas.
+
+As afinidades de combate são Vaccine, Virus e Data: Vaccine tem vantagem contra
+Virus, Virus contra Data, e Data contra Vaccine. Uma vantagem aplica multiplicador
+de 1,22 ao dano. Esta versão não usa a antiga trindade fogo/água/grama do HTML Beasts.
+
+Uma hesitação breve pode ocorrer conforme o perfil da espécie, com intervalo
+mínimo entre ocorrências para evitar travamento constante. Velocidade não garante
+vitória automática: recuo usa velocidade reduzida, limitada em relação à do
+perseguidor, e especiais exigem TP.
+
+Kiters procuram trajetórias laterais ao chegar às bordas, considerando também a
+altura da arena. Um componente de continuidade evita tremedeira entre duas
+direções opostas. A movimentação respeita as bordas internas de segurança.
+
+Defesa e esquiva têm pesos reduzidos e compartilham um intervalo de proteção de
+quatro segundos entre decisões defensivas. A defesa reduz o dano em 30% enquanto
+ativa, por cerca de 1,1 segundo. A chance normal de esquiva depende das velocidades
+e fica limitada a 12%; durante uma ação explícita de esquiva, fica em 28% por
+aproximadamente 0,8 segundo. Não existe invulnerabilidade permanente.
+
+As barras representam HP atual / HP máximo. Chegam a zero em um nocaute real.
+Ações e dano são descritos no log abaixo da arena, sem palavras flutuando sobre
+os sprites. A arena tem fundo próprio com VS discreto. No online, HOST e
+CHALLENGER identificam os lados, inclusive quando as espécies são iguais.
+
+10. MORTE SÚBITA E DURAÇÃO
+
+Se a luta continua após 90 segundos, começa SUDDEN DEATH / MORTE SÚBITA. A arena
+fica vermelha e a interface identifica o estado. As regras são simétricas:
+- Movimento, projéteis e recuperação de ações passam a duas vezes a velocidade.
+- Janelas e intervalos temporais das ações acompanham essa aceleração.
+- A defesa efetiva no cálculo de dano cai pela metade.
+- As chances de esquiva, inclusive a esquiva ativa, caem pela metade.
+
+HP e TP não são restaurados ou substituídos na transição. Os atributos permanentes
+do save não são alterados: a redução vale somente dentro daquela batalha.
+
+Há um limite de segurança de 135 segundos (2min15s). Se nem a morte súbita resolver,
+vence a maior porcentagem de HP restante. Um empate exato usa o sorteio
+determinístico da partida. Isso é vitória por tempo, não nocaute; a barra do
+perdedor não é artificialmente zerada.
+
+11. COLISEU
+
+Há 282 etapas, com uma espécie adversária por etapa, ordenadas por estágio e
+atributos-base. O menu informa etapa atual, adversário, melhor etapa e conclusões.
+O botão NEXT permite seguir após o resultado sem voltar obrigatoriamente ao
+viveiro. Somente uma vitória avança a rodada.
+
+Na versão 0.3, os adversários iniciais recebem uma curva fixa de atributos de
+competição. Bebês não entram mais com valores mínimos incapazes de oferecer
+resistência a um Rookie. As primeiras etapas continuam acessíveis, mas exigem
+combate de verdade; a dificuldade aumenta com a sequência. Adversários posteriores
+recebem um reforço moderado. Essas alterações só valem para os oponentes do
+Coliseu: não aumentam os atributos dos pets do jogador e não são aplicadas no
+netplay. A curva não escala secretamente com o pet escolhido.
+
+Vencer a última etapa aumenta o contador de conclusões e volta à primeira. O
+botão REINICIAR COLISEU exige duas confirmações e muda somente a rodada atual para
+1. Melhor etapa, conclusões, vitórias, DIGIDEX e desbloqueios permanecem. Os prêmios
+são desbloqueios permanentes, não itens duplicáveis ao reiniciar a sequência.
+
+12. NETPLAY
+
+Partidas 1v1 em salas para dois jogadores via WebSocket e Cloudflare Worker com
+Durable Object. O jogador informa apelido; o host define nome da sala e pode
+protegê-la com senha. A lista mostra salas disponíveis, ocupação e proteção.
+Ambos escolhem um pet elegível e marcam READY; somente o host inicia a batalha.
+
+O mesmo código de combate é executado no navegador e no Worker. Uma semente de
+RNG compartilhada determina a partida; o servidor calcula o vencedor e só registra
+o resultado após a confirmação de término de ambos os clientes. Também rejeita
+confirmações antecipadas e dados de lutador fora dos limites gerais.
+
+Revanche exige que os dois aceitem. O primeiro vê a espera; o outro recebe o
+convite. O host pode expulsar o adversário fora de uma batalha, com confirmação.
+Quando o host sai, a sala fecha e o outro jogador é avisado. Quando o desafiante
+sai, o host é informado e a sala volta a aguardar participante.
+
+Não há teto diário de batalhas, mas saúde e fadiga continuam valendo. O Worker
+mantém limites de salas, conexões e frequência de mensagens contra uso excessivo.
+Não é um sistema completo de antitrapaça: o save e o jogo são locais.
+
+Endereço configurado:
+wss://digital-beasts-championship.armster1991.workers.dev/ws
+Esse endereço é público e pode aparecer em OPÇÕES. Ele não é uma credencial. O
+cliente precisa conhecê-lo para conectar. A senha opcional de sala é outro dado.
+
+A versão 0.3 usa protocolo 4. É necessário publicar também o Worker desta versão
+para que cliente e servidor concordem sobre o combate. O nome e o endereço do
+Worker continuam os mesmos. O projeto não altera o Worker do fangame anterior.
+
+13. ÁUDIO E APRESENTAÇÃO
+
+Música do menu: Pixels!; música do viveiro: The Pixels! Forest; música de combate:
+Pixels! Battle. victory.mp3 e lose.mp3 tocam uma vez ao terminar a luta, conforme
+o resultado local. Ao terminar o tema de resultado, volta a música do jogo.
+Sair do resultado ou iniciar outra batalha interrompe imediatamente o tema antigo
+para tocar a música correspondente à nova tela.
+
+Qualquer primeiro clique/toque libera o áudio, respeitando as restrições dos
+navegadores. Voltar ao menu reinicia seu tema com fade-in. Submenus originados do
+menu mantêm o contexto musical do menu. O volume padrão de música e efeitos é 10%,
+com sliders independentes. Valores de volume e fade ficam limitados entre 0 e 1,
+inclusive quando o timestamp de animação chega anterior ao início do fade, evitando
+o erro IndexSizeError que interrompia as animações ao voltar ao título. Há beep discreto para botões e som de evolução.
+
+Sprites mantêm a proporção original em retratos e combate. As 181 espécies presentes
+nas seis folhas Pendulum Color usam 12 quadros sem fundo: Idle 1/2, Eat 1/2, Sleep
+1/2, Refuse, Happy, Angry, Hurt, Sad e Attack. Espécies sem arte Pendulum Color
+continuam com o formato legado de quatro quadros. O ovo chacoalha, pets andam e
+dormem, comida é consumida em três fases, ferramentas e treinos possuem animações,
+deleção tem fade e evolução possui efeito visual. Avisos temporários
+ficam dentro da interface. O olho de DICAS é desenhado por CSS, sem interrogação
+extra no ícone.
+
+14. SAVE, PORTABILIDADE E LIMITES
+
+Autosave usa o armazenamento local do navegador a cada 30 segundos e em eventos
+de saída da página. Algumas ações também salvam imediatamente. SAVE & EXIT baixa
+um arquivo .dbcsave; LOAD SAVE permite reimportar o backup. CONTINUE retoma o estado
+local disponível. Saves anteriores deste fork são migrados automaticamente da
+estrutura v1 para a estrutura v2 da v0.4. IDs das 134 espécies antigas permanecem estáveis; a DIGIDEX é
+expandida e ovos ainda não chocados preservam a espécie que teriam na versão antiga.
+O save continua separado dos projetos anteriores.
+
+O arquivo exportado e o autosave usam ofuscação com XOR, sal aleatório e checksum.
+Isso evita edição direta casual e detecta corrupção, mas não é criptografia forte
+nem impede um usuário técnico de modificar o próprio jogo. O carregador ainda
+aceita o formato JSON legado para compatibilidade e valida a estrutura do estado.
+
+O save conserva pets, pontos, relógios, objetos do viveiro, catálogo obtido,
+desbloqueios, estatísticas e progresso do Coliseu. Configurações de idioma, volume
+e servidor são guardadas separadamente no navegador. O arquivo de backup contém
+uma cópia das configurações, mas a importação atual restaura o estado do jogo e
+mantém as preferências locais da sessão. Partidas online em andamento não são
+retomadas por um backup.
+
+Não há Hunting, captura em mapa externo, calendário, envelhecimento letal,
+Egg Revert, Jogress, Copymon, terceiro pet ou combate manual nesta versão.
+O título principal não funciona como conta em nuvem. Backups devem ser guardados
+pelo jogador; apagar os dados do navegador pode apagar o autosave local.
+
+15. MAPA DOS ARQUIVOS PARA REFERÊNCIA
+
+index.html / style.css: estrutura e layout.
+app.js: interface, controles, desenhos dinâmicos e áudio.
+engine.js: pets, cuidados, treino, evolução, dicas e progresso.
+data.js: espécies, ovos e relações evolutivas básicas.
+profiles.js: atributos e tendências individuais das espécies.
+battle.js: simulação determinística e curva do Coliseu.
+art.js: desenhos das cages, arena e efeitos.
+sprites.js / assets: sprites, imagens, fonte e sons.
+i18n.js / champ-i18n.js: textos EN-US / PT-BR.
+storage.js: autosave, importação/exportação e ofuscação.
+netplay.js: conexão e mensagens de sala.
+server/: Worker, sala e cópia da simulação compartilhada.
+source/: pesquisas, dados técnicos, testes e imagens de validação.
+START_HERE_PT.txt: instruções de execução e publicação para o responsável.
+README.md: apresentação pública do projeto.
+FEATURES.txt: este inventário de funcionalidades.
+
+Alterações nas regras de battle.js devem ser espelhadas em server/battle.js e
+publicadas juntas. Nunca misturar versões do cliente e do Worker que calculam
+resultados diferentes para a mesma semente.
