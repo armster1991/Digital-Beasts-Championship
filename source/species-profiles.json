@@ -5764,5 +5764,6389 @@
     "color": "#dbe0a2",
     "source": "https://digimon.net/reference_en/detail.php?directory_name=omegamon",
     "designRationale": "Versatile knight combines sword, shield and freezing cannon."
+  },
+  {
+    "speciesId": 134,
+    "name": "Bubbmon",
+    "slug": "bubbmon",
+    "stage": 1,
+    "attribute": "Free",
+    "stats": {
+      "hp": 47,
+      "tp": 7,
+      "attack": 2,
+      "defense": 3,
+      "wisdom": 2,
+      "speed": 5
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0141,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Adhesive Bubbles",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power N/A; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 135,
+    "name": "Motimon",
+    "slug": "motimon",
+    "stage": 2,
+    "attribute": "Free",
+    "stats": {
+      "hp": 102,
+      "tp": 12,
+      "attack": 9,
+      "defense": 8,
+      "wisdom": 7,
+      "speed": 13
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.016,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Elastic Bubbles",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power N/A; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 136,
+    "name": "Tentomon",
+    "slug": "tentomon",
+    "stage": 3,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 230,
+      "tp": 73,
+      "attack": 24,
+      "defense": 23,
+      "wisdom": 29,
+      "speed": 35
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0128,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Super Shocker",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 20; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 137,
+    "name": "Gotsumon",
+    "slug": "gotsumon",
+    "stage": 3,
+    "attribute": "Data",
+    "stats": {
+      "hp": 252,
+      "tp": 43,
+      "attack": 32,
+      "defense": 26,
+      "wisdom": 20,
+      "speed": 27
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0134,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Angry Rock",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 15; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 138,
+    "name": "Otamamon",
+    "slug": "otamamon",
+    "stage": 3,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 198,
+      "tp": 61,
+      "attack": 21,
+      "defense": 21,
+      "wisdom": 25,
+      "speed": 32
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0107,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Lullaby Bubble",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 10; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 139,
+    "name": "Tortomon",
+    "slug": "tortomon",
+    "stage": 4,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 624,
+      "tp": 94,
+      "attack": 62,
+      "defense": 73,
+      "wisdom": 43,
+      "speed": 40
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0082,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Shell Phalanx",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 40; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 140,
+    "name": "Starmon",
+    "slug": "starmon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 488,
+      "tp": 125,
+      "attack": 59,
+      "defense": 48,
+      "wisdom": 49,
+      "speed": 59
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0115,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Meteor Squall",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 32; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 141,
+    "name": "Gekomon",
+    "slug": "gekomon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 475,
+      "tp": 143,
+      "attack": 49,
+      "defense": 51,
+      "wisdom": 60,
+      "speed": 54
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0094,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Symphony Crusher",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 36; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 142,
+    "name": "Gatomon",
+    "slug": "gatomon",
+    "stage": 4,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 538,
+      "tp": 90,
+      "attack": 80,
+      "defense": 58,
+      "wisdom": 37,
+      "speed": 53
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0136,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Lightning Paw",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 55; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 143,
+    "name": "MegaKabuterimon (Blue)",
+    "slug": "megakabuterimon-blue",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1338,
+      "tp": 238,
+      "attack": 135,
+      "defense": 170,
+      "wisdom": 103,
+      "speed": 76
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0068,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Horn Buster",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 96; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 144,
+    "name": "Jagamon",
+    "slug": "jagamon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1026,
+      "tp": 203,
+      "attack": 183,
+      "defense": 123,
+      "wisdom": 93,
+      "speed": 99
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0148,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Smash Potato",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 80; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 145,
+    "name": "Triceramon",
+    "slug": "triceramon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1233,
+      "tp": 230,
+      "attack": 151,
+      "defense": 166,
+      "wisdom": 106,
+      "speed": 72
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0082,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Tri-Horn Attack",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 100; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 146,
+    "name": "ShogunGekomon",
+    "slug": "shogungekomon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 964,
+      "tp": 343,
+      "attack": 110,
+      "defense": 113,
+      "wisdom": 143,
+      "speed": 100
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0108,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Musical Fist",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 84; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 147,
+    "name": "Okuwamon",
+    "slug": "okuwamon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1101,
+      "tp": 219,
+      "attack": 186,
+      "defense": 131,
+      "wisdom": 89,
+      "speed": 103
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0144,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Double Scissor Claw",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 92; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 148,
+    "name": "Angewomon",
+    "slug": "angewomon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1089,
+      "tp": 362,
+      "attack": 111,
+      "defense": 134,
+      "wisdom": 150,
+      "speed": 101
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 15,
+      "specialWeight": 39,
+      "healWeight": 24,
+      "defendWeight": 17,
+      "evadeWeight": 5,
+      "preferredRange": 165,
+      "disobedienceChance": 0.0079,
+      "aggression": 0.42
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Celestial Arrow",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": {
+      "name": "Saint Air",
+      "kind": "heal",
+      "tpCost": 12
+    },
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 105; repair profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 149,
+    "name": "HerculesKabuterimon",
+    "slug": "herculeskabuterimon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 2592,
+      "tp": 453,
+      "attack": 262,
+      "defense": 311,
+      "wisdom": 228,
+      "speed": 144
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0074,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Giga Blaster",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 165; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 150,
+    "name": "SaberLeomon",
+    "slug": "saberleomon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 2229,
+      "tp": 415,
+      "attack": 381,
+      "defense": 268,
+      "wisdom": 190,
+      "speed": 201
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.014,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Howling Crusher",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 170; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 151,
+    "name": "MetalEtemon",
+    "slug": "metaletemon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1939,
+      "tp": 552,
+      "attack": 293,
+      "defense": 214,
+      "wisdom": 237,
+      "speed": 133
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0127,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Mega Punch",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 140; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 152,
+    "name": "Magnadramon",
+    "slug": "magnadramon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1890,
+      "tp": 668,
+      "attack": 214,
+      "defense": 232,
+      "wisdom": 310,
+      "speed": 179
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 15,
+      "specialWeight": 39,
+      "healWeight": 24,
+      "defendWeight": 17,
+      "evadeWeight": 5,
+      "preferredRange": 165,
+      "disobedienceChance": 0.008,
+      "aggression": 0.42
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Dragon Fire",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": {
+      "name": "Shining Heal",
+      "kind": "heal",
+      "tpCost": 12
+    },
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 155; repair profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 153,
+    "name": "Blastmon",
+    "slug": "blastmon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1922,
+      "tp": 354,
+      "attack": 307,
+      "defense": 230,
+      "wisdom": 187,
+      "speed": 191
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.014,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Diamond Machine Gun",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 145; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 154,
+    "name": "ElDoradimon",
+    "slug": "eldoradimon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 2343,
+      "tp": 443,
+      "attack": 247,
+      "defense": 306,
+      "wisdom": 192,
+      "speed": 139
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0078,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Golden Road",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 150; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 155,
+    "name": "GranKuwagamon",
+    "slug": "grankuwagamon",
+    "stage": 6,
+    "attribute": "Free",
+    "stats": {
+      "hp": 2268,
+      "tp": 404,
+      "attack": 358,
+      "defense": 246,
+      "wisdom": 198,
+      "speed": 208
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0148,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Dimension Scissor",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 160; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 156,
+    "name": "Tlalocmon",
+    "slug": "tlalocmon",
+    "stage": 7,
+    "attribute": "Data",
+    "stats": {
+      "hp": 3386,
+      "tp": 1088,
+      "attack": 371,
+      "defense": 392,
+      "wisdom": 552,
+      "speed": 352
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0091,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Nahui Quiahuitl",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 205; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 157,
+    "name": "Mastemon",
+    "slug": "mastemon",
+    "stage": 7,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 2943,
+      "tp": 990,
+      "attack": 303,
+      "defense": 334,
+      "wisdom": 438,
+      "speed": 315
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0092,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Chaos Degrade",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 195; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 158,
+    "name": "Angoramon",
+    "slug": "angoramon",
+    "stage": 3,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 227,
+      "tp": 63,
+      "attack": 31,
+      "defense": 22,
+      "wisdom": 27,
+      "speed": 44
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0171,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Petit Tornado",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 25; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 159,
+    "name": "SymbareAngoramon",
+    "slug": "symbareangoramon",
+    "stage": 4,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 478,
+      "tp": 118,
+      "attack": 71,
+      "defense": 51,
+      "wisdom": 49,
+      "speed": 83
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0152,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Breakin' Stream",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 60; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 160,
+    "name": "Lamortmon",
+    "slug": "lamortmon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1127,
+      "tp": 215,
+      "attack": 193,
+      "defense": 142,
+      "wisdom": 103,
+      "speed": 107
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0144,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Calamity Claws",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 110; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 161,
+    "name": "Diarbbitmon",
+    "slug": "diarbbitmon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 2035,
+      "tp": 529,
+      "attack": 327,
+      "defense": 232,
+      "wisdom": 262,
+      "speed": 292
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0144,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Trusgain",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d7c878",
+    "source": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "designRationale": "Pendulum Color Nature Spirits Power 180; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 162,
+    "name": "Gomamon",
+    "slug": "gomamon",
+    "stage": 3,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 202,
+      "tp": 64,
+      "attack": 23,
+      "defense": 22,
+      "wisdom": 26,
+      "speed": 32
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0128,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Marching Fishes",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 10; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 163,
+    "name": "Crabmon",
+    "slug": "crabmon",
+    "stage": 3,
+    "attribute": "Data",
+    "stats": {
+      "hp": 239,
+      "tp": 67,
+      "attack": 27,
+      "defense": 23,
+      "wisdom": 30,
+      "speed": 37
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0125,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Scissor Magic",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 20; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 164,
+    "name": "Syakomon",
+    "slug": "syakomon",
+    "stage": 3,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 230,
+      "tp": 64,
+      "attack": 24,
+      "defense": 23,
+      "wisdom": 27,
+      "speed": 33
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0102,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Black Pearl Blast",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 15; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 165,
+    "name": "Dolphmon",
+    "slug": "dolphmon",
+    "stage": 4,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 474,
+      "tp": 114,
+      "attack": 73,
+      "defense": 49,
+      "wisdom": 47,
+      "speed": 78
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0174,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Shaking Pulse",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 48; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 166,
+    "name": "Ikkakumon",
+    "slug": "ikkakumon",
+    "stage": 4,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 445,
+      "tp": 121,
+      "attack": 63,
+      "defense": 50,
+      "wisdom": 55,
+      "speed": 62
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0136,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Harpoon Torpedo",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 36; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 167,
+    "name": "Octmon",
+    "slug": "octmon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 488,
+      "tp": 136,
+      "attack": 60,
+      "defense": 50,
+      "wisdom": 56,
+      "speed": 61
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0106,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Roaring Sea Ink Gun",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 44; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 168,
+    "name": "Gesomon",
+    "slug": "gesomon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 437,
+      "tp": 119,
+      "attack": 57,
+      "defense": 48,
+      "wisdom": 54,
+      "speed": 61
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0109,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Deadly Shade",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 32; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 169,
+    "name": "Ebidramon",
+    "slug": "ebidramon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 525,
+      "tp": 134,
+      "attack": 65,
+      "defense": 53,
+      "wisdom": 59,
+      "speed": 66
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0138,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Twin Neptune",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 55; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 170,
+    "name": "Zudomon",
+    "slug": "zudomon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1159,
+      "tp": 237,
+      "attack": 133,
+      "defense": 154,
+      "wisdom": 100,
+      "speed": 75
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0087,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Vulcan's Hammer",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 88; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 171,
+    "name": "MegaSeadramon",
+    "slug": "megaseadramon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1016,
+      "tp": 320,
+      "attack": 143,
+      "defense": 114,
+      "wisdom": 137,
+      "speed": 119
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.013,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Lightning Javelin",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 92; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 172,
+    "name": "Scorpiomon",
+    "slug": "scorpiomon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1014,
+      "tp": 296,
+      "attack": 153,
+      "defense": 114,
+      "wisdom": 145,
+      "speed": 123
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0128,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Stinger Surprise",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 105; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 173,
+    "name": "Dagomon",
+    "slug": "dagomon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1038,
+      "tp": 308,
+      "attack": 140,
+      "defense": 123,
+      "wisdom": 138,
+      "speed": 114
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0116,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Forbidden Trident",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 96; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 174,
+    "name": "MarineDevimon",
+    "slug": "marinedevimon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 966,
+      "tp": 288,
+      "attack": 131,
+      "defense": 111,
+      "wisdom": 127,
+      "speed": 117
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.012,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Guilty Black",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 84; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 175,
+    "name": "Divermon",
+    "slug": "divermon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 986,
+      "tp": 279,
+      "attack": 130,
+      "defense": 110,
+      "wisdom": 130,
+      "speed": 107
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0136,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Strike Fishing",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 80; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 176,
+    "name": "MarineAngemon",
+    "slug": "marineangemon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 2029,
+      "tp": 687,
+      "attack": 203,
+      "defense": 249,
+      "wisdom": 312,
+      "speed": 197
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 15,
+      "specialWeight": 39,
+      "healWeight": 24,
+      "defendWeight": 17,
+      "evadeWeight": 5,
+      "preferredRange": 165,
+      "disobedienceChance": 0.0074,
+      "aggression": 0.42
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Ocean Love",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": {
+      "name": "Ocean Love",
+      "kind": "heal",
+      "tpCost": 12
+    },
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 160; repair profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 177,
+    "name": "MetalSeadramon",
+    "slug": "metalseadramon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 2165,
+      "tp": 587,
+      "attack": 325,
+      "defense": 258,
+      "wisdom": 257,
+      "speed": 159
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0132,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "River of Power",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 165; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 178,
+    "name": "Pukumon",
+    "slug": "pukumon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1992,
+      "tp": 573,
+      "attack": 302,
+      "defense": 230,
+      "wisdom": 244,
+      "speed": 146
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0116,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Needle Squall",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 145; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 179,
+    "name": "Plesiomon",
+    "slug": "plesiomon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1883,
+      "tp": 552,
+      "attack": 273,
+      "defense": 205,
+      "wisdom": 278,
+      "speed": 228
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0127,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Sorrow Blue",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 155; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 180,
+    "name": "Vikemon",
+    "slug": "vikemon",
+    "stage": 6,
+    "attribute": "Free",
+    "stats": {
+      "hp": 2204,
+      "tp": 441,
+      "attack": 254,
+      "defense": 280,
+      "wisdom": 203,
+      "speed": 139
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0082,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Arctic Blizzard",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 150; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 181,
+    "name": "JumboGamemon",
+    "slug": "jumbogamemon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1907,
+      "tp": 522,
+      "attack": 275,
+      "defense": 237,
+      "wisdom": 241,
+      "speed": 139
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0137,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Megaton Hydro Laser",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 140; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 182,
+    "name": "Cthyllamon",
+    "slug": "cthyllamon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 2250,
+      "tp": 674,
+      "attack": 329,
+      "defense": 259,
+      "wisdom": 275,
+      "speed": 157
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0114,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Ocean Hell",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 170; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 183,
+    "name": "Mitamamon",
+    "slug": "mitamamon",
+    "stage": 7,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 3714,
+      "tp": 1131,
+      "attack": 380,
+      "defense": 435,
+      "wisdom": 516,
+      "speed": 328
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 15,
+      "specialWeight": 39,
+      "healWeight": 24,
+      "defendWeight": 17,
+      "evadeWeight": 5,
+      "preferredRange": 165,
+      "disobedienceChance": 0.007,
+      "aggression": 0.42
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Gouenrin",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": {
+      "name": "Kyouka Suigetsu",
+      "kind": "heal",
+      "tpCost": 12
+    },
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 205; repair profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 184,
+    "name": "Jellymon",
+    "slug": "jellymon",
+    "stage": 3,
+    "attribute": "Data",
+    "stats": {
+      "hp": 243,
+      "tp": 83,
+      "attack": 22,
+      "defense": 25,
+      "wisdom": 35,
+      "speed": 34
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0099,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Bibi Thunder",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 25; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 185,
+    "name": "TeslaJellymon",
+    "slug": "teslajellymon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 512,
+      "tp": 154,
+      "attack": 50,
+      "defense": 54,
+      "wisdom": 62,
+      "speed": 60
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0112,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Physalist",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 60; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 186,
+    "name": "Thetismon",
+    "slug": "thetismon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1136,
+      "tp": 361,
+      "attack": 113,
+      "defense": 132,
+      "wisdom": 161,
+      "speed": 93
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 15,
+      "specialWeight": 39,
+      "healWeight": 24,
+      "defendWeight": 17,
+      "evadeWeight": 5,
+      "preferredRange": 165,
+      "disobedienceChance": 0.0062,
+      "aggression": 0.42
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Shock Smasher",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": {
+      "name": "Dokutease",
+      "kind": "heal",
+      "tpCost": 12
+    },
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 110; repair profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 187,
+    "name": "Amphimon",
+    "slug": "amphimon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 2156,
+      "tp": 752,
+      "attack": 240,
+      "defense": 249,
+      "wisdom": 323,
+      "speed": 213
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0088,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Aqua Zanba",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#83cde0",
+    "source": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "designRationale": "Pendulum Color Deep Savers Power 180; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 188,
+    "name": "Mokumon",
+    "slug": "mokumon",
+    "stage": 1,
+    "attribute": "Free",
+    "stats": {
+      "hp": 46,
+      "tp": 7,
+      "attack": 3,
+      "defense": 3,
+      "wisdom": 2,
+      "speed": 5
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0144,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Smoke",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power N/A; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 189,
+    "name": "DemiMeramon",
+    "slug": "demimeramon",
+    "stage": 2,
+    "attribute": "Free",
+    "stats": {
+      "hp": 106,
+      "tp": 12,
+      "attack": 10,
+      "defense": 8,
+      "wisdom": 6,
+      "speed": 13
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0141,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Small Flame Shot",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power N/A; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 190,
+    "name": "Tapirmon",
+    "slug": "tapirmon",
+    "stage": 3,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 221,
+      "tp": 41,
+      "attack": 28,
+      "defense": 22,
+      "wisdom": 18,
+      "speed": 27
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0147,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Nightmare Syndrome",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 10; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 191,
+    "name": "Candlemon",
+    "slug": "candlemon",
+    "stage": 3,
+    "attribute": "Data",
+    "stats": {
+      "hp": 237,
+      "tp": 43,
+      "attack": 32,
+      "defense": 27,
+      "wisdom": 20,
+      "speed": 29
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0148,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Bonfire",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 15; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 192,
+    "name": "DemiDevimon",
+    "slug": "demidevimon",
+    "stage": 3,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 227,
+      "tp": 79,
+      "attack": 19,
+      "defense": 24,
+      "wisdom": 35,
+      "speed": 31
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0085,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Demi Dart",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 20; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 193,
+    "name": "Apemon",
+    "slug": "apemon",
+    "stage": 4,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 564,
+      "tp": 86,
+      "attack": 81,
+      "defense": 54,
+      "wisdom": 35,
+      "speed": 52
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.012,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Angry Spike",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 44; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 194,
+    "name": "Wizardmon",
+    "slug": "wizardmon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 509,
+      "tp": 150,
+      "attack": 48,
+      "defense": 53,
+      "wisdom": 62,
+      "speed": 56
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0098,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Thunder Cloud",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 48; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 195,
+    "name": "Dokugumon",
+    "slug": "dokugumon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 532,
+      "tp": 90,
+      "attack": 85,
+      "defense": 57,
+      "wisdom": 37,
+      "speed": 54
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0122,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Poison Cobweb",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 55; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 196,
+    "name": "Mammothmon",
+    "slug": "mammothmon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1217,
+      "tp": 233,
+      "attack": 131,
+      "defense": 153,
+      "wisdom": 100,
+      "speed": 75
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0073,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Tusk Crusher",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 84; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 197,
+    "name": "WereGarurumon",
+    "slug": "weregarurumon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 996,
+      "tp": 268,
+      "attack": 154,
+      "defense": 110,
+      "wisdom": 105,
+      "speed": 133
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0182,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Wolf Claw",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 96; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 198,
+    "name": "SkullMeramon",
+    "slug": "skullmeramon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1045,
+      "tp": 200,
+      "attack": 179,
+      "defense": 126,
+      "wisdom": 91,
+      "speed": 100
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0139,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Heavy Metal Fire",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 88; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 199,
+    "name": "Pumpkinmon",
+    "slug": "pumpkinmon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1118,
+      "tp": 220,
+      "attack": 182,
+      "defense": 130,
+      "wisdom": 98,
+      "speed": 106
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0136,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Trick or Treat",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 100; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 200,
+    "name": "Myotismon",
+    "slug": "myotismon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 945,
+      "tp": 333,
+      "attack": 109,
+      "defense": 117,
+      "wisdom": 151,
+      "speed": 95
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0099,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Grisly Wing",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 92; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 201,
+    "name": "Phantomon",
+    "slug": "phantomon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 958,
+      "tp": 324,
+      "attack": 109,
+      "defense": 116,
+      "wisdom": 140,
+      "speed": 102
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0102,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Soul Chopper",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 80; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 202,
+    "name": "LadyDevimon",
+    "slug": "ladydevimon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1054,
+      "tp": 360,
+      "attack": 116,
+      "defense": 120,
+      "wisdom": 160,
+      "speed": 110
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0091,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Darkness Wave",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 105; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 203,
+    "name": "Boltmon",
+    "slug": "boltmon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1905,
+      "tp": 363,
+      "attack": 329,
+      "defense": 222,
+      "wisdom": 182,
+      "speed": 172
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0123,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Tomahawk Steiner",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 145; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 204,
+    "name": "Daemon",
+    "slug": "daemon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 2004,
+      "tp": 670,
+      "attack": 222,
+      "defense": 219,
+      "wisdom": 299,
+      "speed": 206
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0088,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Flame Inferno",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 160; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 205,
+    "name": "Piedmon",
+    "slug": "piedmon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1850,
+      "tp": 634,
+      "attack": 218,
+      "defense": 208,
+      "wisdom": 315,
+      "speed": 192
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0099,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Trump Sword",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 155; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 206,
+    "name": "Anubimon",
+    "slug": "anubimon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1786,
+      "tp": 463,
+      "attack": 281,
+      "defense": 180,
+      "wisdom": 191,
+      "speed": 262
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.016,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Pyramid Power",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 140; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 207,
+    "name": "NoblePumpkinmon",
+    "slug": "noblepumpkinmon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 2222,
+      "tp": 419,
+      "attack": 346,
+      "defense": 270,
+      "wisdom": 206,
+      "speed": 193
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0122,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Trick or Treat Wallace",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 165; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 208,
+    "name": "Callismon",
+    "slug": "callismon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 2147,
+      "tp": 425,
+      "attack": 352,
+      "defense": 266,
+      "wisdom": 195,
+      "speed": 214
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0126,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Rodeo Bullet",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 170; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 209,
+    "name": "Voltobautamon",
+    "slug": "voltobautamon",
+    "stage": 7,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 3361,
+      "tp": 1149,
+      "attack": 389,
+      "defense": 417,
+      "wisdom": 520,
+      "speed": 362
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.009,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Palazzi Valzer",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 205; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 210,
+    "name": "Loogamon",
+    "slug": "loogamon",
+    "stage": 3,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 243,
+      "tp": 66,
+      "attack": 32,
+      "defense": 23,
+      "wisdom": 27,
+      "speed": 46
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0155,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Howling Fire",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 25; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 211,
+    "name": "Loogarmon",
+    "slug": "loogarmon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 499,
+      "tp": 116,
+      "attack": 78,
+      "defense": 49,
+      "wisdom": 48,
+      "speed": 76
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0141,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Howling Burner",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 60; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 212,
+    "name": "Soloogarmon",
+    "slug": "soloogarmon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1056,
+      "tp": 278,
+      "attack": 161,
+      "defense": 107,
+      "wisdom": 115,
+      "speed": 152
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0174,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Prominence Laser",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 110; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 213,
+    "name": "Fenriloogamon",
+    "slug": "fenriloogamon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 2002,
+      "tp": 559,
+      "attack": 340,
+      "defense": 233,
+      "wisdom": 244,
+      "speed": 313
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0139,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Ragnarok Howling",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#bb8ed6",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "designRationale": "Pendulum Color Nightmare Soldiers Power 180; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 214,
+    "name": "Nyokimon",
+    "slug": "nyokimon",
+    "stage": 1,
+    "attribute": "Free",
+    "stats": {
+      "hp": 41,
+      "tp": 10,
+      "attack": 2,
+      "defense": 3,
+      "wisdom": 4,
+      "speed": 6
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0121,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Seed Cracker",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power N/A; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 215,
+    "name": "Yokomon",
+    "slug": "yokomon",
+    "stage": 2,
+    "attribute": "Free",
+    "stats": {
+      "hp": 91,
+      "tp": 19,
+      "attack": 7,
+      "defense": 7,
+      "wisdom": 9,
+      "speed": 14
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0116,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Soap Flower",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power N/A; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 216,
+    "name": "Floramon",
+    "slug": "floramon",
+    "stage": 3,
+    "attribute": "Data",
+    "stats": {
+      "hp": 196,
+      "tp": 61,
+      "attack": 23,
+      "defense": 21,
+      "wisdom": 27,
+      "speed": 29
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0109,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Rain of Pollen",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 10; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 217,
+    "name": "Mushroomon",
+    "slug": "mushroomon",
+    "stage": 3,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 223,
+      "tp": 62,
+      "attack": 25,
+      "defense": 22,
+      "wisdom": 26,
+      "speed": 33
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0121,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Poison S-Mush",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 14; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 218,
+    "name": "Veedramon",
+    "slug": "veedramon",
+    "stage": 4,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 521,
+      "tp": 138,
+      "attack": 62,
+      "defense": 48,
+      "wisdom": 52,
+      "speed": 66
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0137,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "V-Nova Blast",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 48; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 219,
+    "name": "Togemon",
+    "slug": "togemon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 519,
+      "tp": 132,
+      "attack": 64,
+      "defense": 53,
+      "wisdom": 55,
+      "speed": 63
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0109,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Needle Spray",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 55; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 220,
+    "name": "Kiwimon",
+    "slug": "kiwimon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 485,
+      "tp": 126,
+      "attack": 58,
+      "defense": 51,
+      "wisdom": 51,
+      "speed": 61
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0112,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Little Pecker",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 40; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 221,
+    "name": "Woodmon",
+    "slug": "woodmon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 512,
+      "tp": 134,
+      "attack": 65,
+      "defense": 48,
+      "wisdom": 53,
+      "speed": 61
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0133,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Branch Drain",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 44; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 222,
+    "name": "RedVegiemon",
+    "slug": "redvegiemon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 464,
+      "tp": 129,
+      "attack": 57,
+      "defense": 49,
+      "wisdom": 52,
+      "speed": 63
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0137,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Red Thorn",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 32; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 223,
+    "name": "AeroVeedramon",
+    "slug": "aeroveedramon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1033,
+      "tp": 280,
+      "attack": 160,
+      "defense": 108,
+      "wisdom": 113,
+      "speed": 151
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0182,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "V-Wing Blade",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 105; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 224,
+    "name": "Garudamon",
+    "slug": "garudamon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 978,
+      "tp": 294,
+      "attack": 132,
+      "defense": 110,
+      "wisdom": 129,
+      "speed": 112
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0116,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Wing Blade",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 88; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 225,
+    "name": "Blossomon",
+    "slug": "blossomon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 997,
+      "tp": 306,
+      "attack": 143,
+      "defense": 111,
+      "wisdom": 130,
+      "speed": 112
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0126,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Spiral Flower",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 92; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 226,
+    "name": "Deramon",
+    "slug": "deramon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 986,
+      "tp": 307,
+      "attack": 138,
+      "defense": 112,
+      "wisdom": 126,
+      "speed": 118
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0133,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Royal Nuts",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 84; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 227,
+    "name": "Cherrymon",
+    "slug": "cherrymon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 980,
+      "tp": 321,
+      "attack": 144,
+      "defense": 118,
+      "wisdom": 139,
+      "speed": 115
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0108,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Fog of Deception",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 96; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 228,
+    "name": "Garbagemon",
+    "slug": "garbagemon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 929,
+      "tp": 294,
+      "attack": 133,
+      "defense": 106,
+      "wisdom": 129,
+      "speed": 112
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0137,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Poop Bazooka",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 80; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 229,
+    "name": "Lillymon",
+    "slug": "lillymon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 985,
+      "tp": 326,
+      "attack": 134,
+      "defense": 116,
+      "wisdom": 132,
+      "speed": 115
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0103,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Flower Cannon",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 100; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 230,
+    "name": "Phoenixmon",
+    "slug": "phoenixmon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1885,
+      "tp": 528,
+      "attack": 247,
+      "defense": 212,
+      "wisdom": 274,
+      "speed": 236
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0125,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Starlight Explosion",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 150; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 231,
+    "name": "Gryphonmon",
+    "slug": "gryphonmon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1794,
+      "tp": 550,
+      "attack": 256,
+      "defense": 194,
+      "wisdom": 256,
+      "speed": 224
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0136,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Supersonic Voice",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 140; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 232,
+    "name": "Rosemon",
+    "slug": "rosemon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1962,
+      "tp": 581,
+      "attack": 267,
+      "defense": 217,
+      "wisdom": 263,
+      "speed": 240
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0108,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Thorn Whip",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 155; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 233,
+    "name": "UlforceVeedramon",
+    "slug": "ulforceveedramon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 2004,
+      "tp": 538,
+      "attack": 307,
+      "defense": 205,
+      "wisdom": 246,
+      "speed": 297
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0163,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Shining V Force",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 170; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 234,
+    "name": "Rafflesimon",
+    "slug": "rafflesimon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 2009,
+      "tp": 614,
+      "attack": 265,
+      "defense": 214,
+      "wisdom": 282,
+      "speed": 229
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0138,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Billion Smiles",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 165; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 235,
+    "name": "Hydramon",
+    "slug": "hydramon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1910,
+      "tp": 592,
+      "attack": 282,
+      "defense": 227,
+      "wisdom": 262,
+      "speed": 245
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0102,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Bio Field",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 160; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 236,
+    "name": "Cernumon",
+    "slug": "cernumon",
+    "stage": 7,
+    "attribute": "Data",
+    "stats": {
+      "hp": 4708,
+      "tp": 787,
+      "attack": 461,
+      "defense": 554,
+      "wisdom": 355,
+      "speed": 277
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0074,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Celtic Bind",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 205; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 237,
+    "name": "Pteromon",
+    "slug": "pteromon",
+    "stage": 3,
+    "attribute": "Data",
+    "stats": {
+      "hp": 244,
+      "tp": 67,
+      "attack": 31,
+      "defense": 25,
+      "wisdom": 26,
+      "speed": 45
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0173,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Wind Slicer",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 25; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 238,
+    "name": "Galemon",
+    "slug": "galemon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 472,
+      "tp": 122,
+      "attack": 75,
+      "defense": 47,
+      "wisdom": 45,
+      "speed": 83
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0176,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Hurricane Slicer",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 60; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 239,
+    "name": "GrandGalemon",
+    "slug": "grandgalemon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1029,
+      "tp": 270,
+      "attack": 171,
+      "defense": 112,
+      "wisdom": 108,
+      "speed": 155
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0182,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Dragonic Storm",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 110; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 240,
+    "name": "Zephagamon",
+    "slug": "zephagamon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 2095,
+      "tp": 530,
+      "attack": 321,
+      "defense": 229,
+      "wisdom": 250,
+      "speed": 299
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0142,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Divine Tempest",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#9edb96",
+    "source": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "designRationale": "Pendulum Color Wind Guardians Power 180; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 241,
+    "name": "Choromon",
+    "slug": "choromon",
+    "stage": 1,
+    "attribute": "Free",
+    "stats": {
+      "hp": 49,
+      "tp": 10,
+      "attack": 2,
+      "defense": 3,
+      "wisdom": 3,
+      "speed": 4
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0112,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Jamming Powder",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power N/A; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 242,
+    "name": "Kapurimon",
+    "slug": "kapurimon",
+    "stage": 2,
+    "attribute": "Free",
+    "stats": {
+      "hp": 104,
+      "tp": 18,
+      "attack": 9,
+      "defense": 8,
+      "wisdom": 8,
+      "speed": 10
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0113,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Howling Hertz",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power N/A; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 243,
+    "name": "ToyAgumon",
+    "slug": "toyagumon",
+    "stage": 3,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 212,
+      "tp": 65,
+      "attack": 25,
+      "defense": 24,
+      "wisdom": 25,
+      "speed": 21
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0121,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Toy Flame",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 10; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 244,
+    "name": "Kokuwamon",
+    "slug": "kokuwamon",
+    "stage": 3,
+    "attribute": "Data",
+    "stats": {
+      "hp": 232,
+      "tp": 65,
+      "attack": 27,
+      "defense": 24,
+      "wisdom": 26,
+      "speed": 20
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0109,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Mini Scissor Arms",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 14; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 245,
+    "name": "Hagurumon",
+    "slug": "hagurumon",
+    "stage": 3,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 266,
+      "tp": 72,
+      "attack": 30,
+      "defense": 26,
+      "wisdom": 27,
+      "speed": 22
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0115,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Darkness Gear",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 18; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 246,
+    "name": "Deputymon",
+    "slug": "deputymon",
+    "stage": 4,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 463,
+      "tp": 118,
+      "attack": 56,
+      "defense": 47,
+      "wisdom": 49,
+      "speed": 64
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.011,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Justice Bullet",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 32; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 247,
+    "name": "Tankmon",
+    "slug": "tankmon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 644,
+      "tp": 103,
+      "attack": 65,
+      "defense": 71,
+      "wisdom": 41,
+      "speed": 43
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0086,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Hyper Cannon",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 44; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 248,
+    "name": "Clockmon",
+    "slug": "clockmon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 460,
+      "tp": 118,
+      "attack": 63,
+      "defense": 49,
+      "wisdom": 53,
+      "speed": 61
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0102,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Chrono Breaker",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 36; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 249,
+    "name": "Guardromon",
+    "slug": "guardromon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 592,
+      "tp": 104,
+      "attack": 63,
+      "defense": 75,
+      "wisdom": 45,
+      "speed": 42
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0076,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Destruction Grenade",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 50; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 250,
+    "name": "Mechanorimon",
+    "slug": "mechanorimon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 602,
+      "tp": 99,
+      "attack": 64,
+      "defense": 66,
+      "wisdom": 44,
+      "speed": 40
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0074,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Twinkle Beam",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 40; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 251,
+    "name": "Thunderballmon",
+    "slug": "thunderballmon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 564,
+      "tp": 145,
+      "attack": 72,
+      "defense": 59,
+      "wisdom": 52,
+      "speed": 42
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.012,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Thunderball",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 55; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 252,
+    "name": "MetalGreymon (Vaccine)",
+    "slug": "metalgreymon-vaccine",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 965,
+      "tp": 325,
+      "attack": 147,
+      "defense": 122,
+      "wisdom": 138,
+      "speed": 116
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0107,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Giga Blaster",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 100; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 253,
+    "name": "Knightmon",
+    "slug": "knightmon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1335,
+      "tp": 232,
+      "attack": 145,
+      "defense": 161,
+      "wisdom": 101,
+      "speed": 72
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0086,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Berserk Sword",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 96; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 254,
+    "name": "BigMamemon",
+    "slug": "bigmamemon",
+    "stage": 5,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1089,
+      "tp": 316,
+      "attack": 153,
+      "defense": 137,
+      "wisdom": 118,
+      "speed": 77
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.011,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Big Smiley Bomber",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 84; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 255,
+    "name": "WaruMonzaemon",
+    "slug": "warumonzaemon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1263,
+      "tp": 227,
+      "attack": 131,
+      "defense": 172,
+      "wisdom": 103,
+      "speed": 73
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0075,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Heartbreak Attack",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 88; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 256,
+    "name": "Cyberdramon",
+    "slug": "cyberdramon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 930,
+      "tp": 254,
+      "attack": 164,
+      "defense": 103,
+      "wisdom": 107,
+      "speed": 133
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0179,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Desolation Claw",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 92; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 257,
+    "name": "WarGreymon",
+    "slug": "wargreymon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1842,
+      "tp": 554,
+      "attack": 268,
+      "defense": 198,
+      "wisdom": 270,
+      "speed": 223
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0118,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Terra Force",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 155; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 258,
+    "name": "MetalGarurumon",
+    "slug": "metalgarurumon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 1783,
+      "tp": 560,
+      "attack": 247,
+      "defense": 189,
+      "wisdom": 260,
+      "speed": 225
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0116,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Cocytus Breath",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 145; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 259,
+    "name": "VenomMyotismon",
+    "slug": "venommyotismon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1813,
+      "tp": 659,
+      "attack": 213,
+      "defense": 197,
+      "wisdom": 279,
+      "speed": 193
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0106,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Venom Infuse",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 150; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 260,
+    "name": "Ragnamon",
+    "slug": "ragnamon",
+    "stage": 6,
+    "attribute": "Free",
+    "stats": {
+      "hp": 2317,
+      "tp": 589,
+      "attack": 304,
+      "defense": 262,
+      "wisdom": 251,
+      "speed": 156
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.013,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Ragnarok Cannon",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 165; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 261,
+    "name": "ZekeGreymon",
+    "slug": "zekegreymon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 2202,
+      "tp": 586,
+      "attack": 327,
+      "defense": 237,
+      "wisdom": 243,
+      "speed": 150
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0134,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Plasma Railgun",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 160; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 262,
+    "name": "Chaosdramon",
+    "slug": "chaosdramon",
+    "stage": 7,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 3985,
+      "tp": 1018,
+      "attack": 519,
+      "defense": 482,
+      "wisdom": 425,
+      "speed": 277
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0125,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Hyper Mugen Cannon",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 205; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 263,
+    "name": "Commandramon",
+    "slug": "commandramon",
+    "stage": 3,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 297,
+      "tp": 55,
+      "attack": 26,
+      "defense": 37,
+      "wisdom": 27,
+      "speed": 22
+    },
+    "specialization": [
+      "defense",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 38,
+      "specialWeight": 27,
+      "healWeight": 0,
+      "defendWeight": 27,
+      "evadeWeight": 8,
+      "preferredRange": 62,
+      "disobedienceChance": 0.0081,
+      "aggression": 0.5
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "M16 Assassin",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 25; guardian profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 264,
+    "name": "HiCommandramon",
+    "slug": "hicommandramon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 553,
+      "tp": 141,
+      "attack": 77,
+      "defense": 59,
+      "wisdom": 54,
+      "speed": 45
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0102,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "DCD Grenade",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 60; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 265,
+    "name": "Cargodramon",
+    "slug": "cargodramon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1134,
+      "tp": 315,
+      "attack": 164,
+      "defense": 138,
+      "wisdom": 130,
+      "speed": 77
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0126,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Suppression Strike",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 110; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 266,
+    "name": "Brigadramon",
+    "slug": "brigadramon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 2391,
+      "tp": 675,
+      "attack": 358,
+      "defense": 262,
+      "wisdom": 280,
+      "speed": 168
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0132,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Genocide Rain",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#aab3bd",
+    "source": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "designRationale": "Pendulum Color Metal Empire Power 180; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 267,
+    "name": "Ninjamon",
+    "slug": "ninjamon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 474,
+      "tp": 109,
+      "attack": 66,
+      "defense": 42,
+      "wisdom": 42,
+      "speed": 70
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0178,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Ninja Knife Throw",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 32; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 268,
+    "name": "Asuramon",
+    "slug": "asuramon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1046,
+      "tp": 191,
+      "attack": 182,
+      "defense": 128,
+      "wisdom": 90,
+      "speed": 99
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0144,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Asura Shinken",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 80; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 269,
+    "name": "MagnaAngemon",
+    "slug": "magnaangemon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1069,
+      "tp": 352,
+      "attack": 118,
+      "defense": 124,
+      "wisdom": 157,
+      "speed": 102
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0106,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Gate of Destiny",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 110; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 270,
+    "name": "Dominimon",
+    "slug": "dominimon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1819,
+      "tp": 627,
+      "attack": 218,
+      "defense": 221,
+      "wisdom": 316,
+      "speed": 202
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0099,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Final Excalibur",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 160; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 271,
+    "name": "Quantumon",
+    "slug": "quantumon",
+    "stage": 6,
+    "attribute": "Data",
+    "stats": {
+      "hp": 2029,
+      "tp": 668,
+      "attack": 215,
+      "defense": 217,
+      "wisdom": 331,
+      "speed": 219
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0113,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Soul Digitalization",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 165; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 272,
+    "name": "Gammamon",
+    "slug": "gammamon",
+    "stage": 3,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 279,
+      "tp": 53,
+      "attack": 35,
+      "defense": 30,
+      "wisdom": 23,
+      "speed": 31
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0127,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Baby Flame",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 25; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 273,
+    "name": "BetelGammamon",
+    "slug": "betelgammamon",
+    "stage": 4,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 606,
+      "tp": 94,
+      "attack": 86,
+      "defense": 60,
+      "wisdom": 40,
+      "speed": 60
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.0144,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Sorshot",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 60; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 274,
+    "name": "KausGammamon",
+    "slug": "kausgammamon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 503,
+      "tp": 112,
+      "attack": 71,
+      "defense": 46,
+      "wisdom": 46,
+      "speed": 76
+    },
+    "specialization": [
+      "speed",
+      "attack"
+    ],
+    "behavior": {
+      "meleeWeight": 39,
+      "specialWeight": 32,
+      "healWeight": 0,
+      "defendWeight": 8,
+      "evadeWeight": 21,
+      "preferredRange": 82,
+      "disobedienceChance": 0.0174,
+      "aggression": 0.63
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Urda Impulse",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 57; skirmisher profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 275,
+    "name": "WezenGammamon",
+    "slug": "wezengammamon",
+    "stage": 4,
+    "attribute": "Data",
+    "stats": {
+      "hp": 594,
+      "tp": 147,
+      "attack": 76,
+      "defense": 61,
+      "wisdom": 50,
+      "speed": 45
+    },
+    "specialization": [
+      "attack",
+      "wisdom"
+    ],
+    "behavior": {
+      "meleeWeight": 18,
+      "specialWeight": 62,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 6,
+      "preferredRange": 210,
+      "disobedienceChance": 0.0125,
+      "aggression": 0.56
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Sedna",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 65; artillery profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 276,
+    "name": "GulusGammamon",
+    "slug": "gulusgammamon",
+    "stage": 4,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 666,
+      "tp": 101,
+      "attack": 99,
+      "defense": 71,
+      "wisdom": 42,
+      "speed": 66
+    },
+    "specialization": [
+      "attack",
+      "hp"
+    ],
+    "behavior": {
+      "meleeWeight": 58,
+      "specialWeight": 23,
+      "healWeight": 0,
+      "defendWeight": 10,
+      "evadeWeight": 9,
+      "preferredRange": 38,
+      "disobedienceChance": 0.014,
+      "aggression": 0.72
+    },
+    "specialRange": 45,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Dead End Skewer",
+      "kind": "melee",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 92; brawler profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 277,
+    "name": "Canoweissmon",
+    "slug": "canoweissmon",
+    "stage": 5,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 1075,
+      "tp": 325,
+      "attack": 143,
+      "defense": 120,
+      "wisdom": 137,
+      "speed": 133
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0133,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Gran Nova",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 120; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 278,
+    "name": "Regulusmon",
+    "slug": "regulusmon",
+    "stage": 5,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 1117,
+      "tp": 411,
+      "attack": 128,
+      "defense": 134,
+      "wisdom": 175,
+      "speed": 117
+    },
+    "specialization": [
+      "wisdom",
+      "tp"
+    ],
+    "behavior": {
+      "meleeWeight": 16,
+      "specialWeight": 57,
+      "healWeight": 0,
+      "defendWeight": 14,
+      "evadeWeight": 13,
+      "preferredRange": 175,
+      "disobedienceChance": 0.0092,
+      "aggression": 0.45
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Gran TrES",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 150; caster profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 279,
+    "name": "Siriusmon",
+    "slug": "siriusmon",
+    "stage": 6,
+    "attribute": "Vaccine",
+    "stats": {
+      "hp": 2106,
+      "tp": 672,
+      "attack": 283,
+      "defense": 242,
+      "wisdom": 306,
+      "speed": 270
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0124,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Photon Blaster",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 180; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 280,
+    "name": "Arcturusmon",
+    "slug": "arcturusmon",
+    "stage": 6,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 2144,
+      "tp": 664,
+      "attack": 284,
+      "defense": 243,
+      "wisdom": 282,
+      "speed": 247
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0108,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Black Death",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 175; ranger profile, scaled to the existing Championship stage curve."
+  },
+  {
+    "speciesId": 281,
+    "name": "Proximamon",
+    "slug": "proximamon",
+    "stage": 7,
+    "attribute": "Virus",
+    "stats": {
+      "hp": 3674,
+      "tp": 988,
+      "attack": 470,
+      "defense": 374,
+      "wisdom": 454,
+      "speed": 447
+    },
+    "specialization": [
+      "wisdom",
+      "speed"
+    ],
+    "behavior": {
+      "meleeWeight": 21,
+      "specialWeight": 48,
+      "healWeight": 0,
+      "defendWeight": 11,
+      "evadeWeight": 20,
+      "preferredRange": 190,
+      "disobedienceChance": 0.0118,
+      "aggression": 0.51
+    },
+    "specialRange": 280,
+    "normalMove": {
+      "name": "Physical strike",
+      "kind": "melee"
+    },
+    "specialMove": {
+      "name": "Extinction Cloud",
+      "kind": "projectile",
+      "tpCost": 8
+    },
+    "supportMove": null,
+    "color": "#d8d9ed",
+    "source": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters",
+    "designRationale": "Pendulum Color Virus Busters Power 205; ranger profile, scaled to the existing Championship stage curve."
   }
 ]

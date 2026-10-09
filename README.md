@@ -19,15 +19,23 @@ Battles are automatic 1v1 encounters with movement, close-range attacks, project
 
 At 90 seconds, **Sudden Death** turns the arena red, accelerates actions and lowers defense and evasion for both fighters.
 
-The **Colosseum contains 134 opponents**, one for every catalog entry. Online rooms support a host and challenger, optional passwords, ready checks, and mutually accepted rematches.
+The **Colosseum contains 282 opponents**, one for every catalog entry, dynamically ordered by stage and combat strength. Online rooms support a host and challenger, optional passwords, ready checks, and mutually accepted rematches.
 
 ![Mobile battle](source/previews/battle-landscape.png)
 
-## Discover the collection
+## Discover with the DIGIDEX
 
-The album contains **134 animated entries**, of which **129 are obtainable** in this version. Five fusion-only species appear as Colosseum opponents; Jogress is outside this fork's scope. Obtaining a species registers it automatically. Collection milestones and battle achievements unlock additional selectable Digi-Eggs.
+The **DIGIDEX** contains **282 animated entries**, of which **277 are obtainable** in this version. The v0.4 expansion integrates the six Pendulum Color families while preserving all 134 original Championship IDs. Five legacy fusion-only species remain visible as Colosseum opponents; Jogress itself is still outside this fork's scope.
 
-![The album](source/previews/album-desktop.png)
+Once a Digimon has been registered, its DIGIDEX card can be clicked or tapped to reveal every current in-game route for obtaining it again. These details are generated from the same evolution resolver used by the pet engine, including minimum stage time, training/stat thresholds, care mistakes, Effort, battle/win requirements, win ratio, and Digi-Egg origin where applicable. Baby I entries show the existing Digi-Eggs that can hatch them and the real hatch chance.
+
+The same **15 Digi-Eggs** remain in use, but each now has **two possible Baby I outcomes**. The result is chosen once when the egg is created and stored in the save, so reloading never rerolls the hatch. Collection milestones and battle achievements continue to unlock the existing egg artwork.
+
+![The DIGIDEX](source/previews/album-desktop.png)
+
+## Pendulum Color expansion
+
+Version 0.4 adds **148 new species** from six user-provided Pendulum Color sprite sheets. In total, 181 unique Pendulum Color species have 12-frame animation rows covering idle, eating, sleep, refusal, emotion, hurt, and attack states. Existing species use the new Pendulum Color art when available; species not present in those sheets keep their legacy sprites. Evolution data for the expansion is source-traceable in `source/PENC_EXPANSION_RESEARCH.md`.
 
 ## Play and save
 
@@ -35,7 +43,7 @@ Open **`index.html`** to play locally, or play the hosted version in a modern br
 
 Progress autosaves in the browser every 30 seconds. **Save & exit** downloads a portable `.dbcsave` backup; **Load save** imports it. This fork uses separate saves from Digital Beasts HTML / Ver.20th. Browser storage can be cleared by the browser, so keep an exported backup of progress you want to preserve.
 
-The interface supports **English and Brazilian Portuguese**, desktop, and mobile landscape play. Music and sound effects have independent volume controls and start at 10%.
+The interface supports **English and Brazilian Portuguese**, desktop, and mobile landscape play. Since v0.4.2 the main mobile landscape screen is constrained to the viewport so the nursery controls, pet cards, navigation, and footer do not require vertical page scrolling; long submenus retain internal vertical scrolling. The Colosseum menu has its own compact landscape arrangement. **Settings** shows the current game version (`v0.4.3`) for easy build identification. Music and sound effects have independent volume controls and start at 10%. **TUTORIAL** replaces the old Help entry and is available beside **MAIN MENU** in the top-right, with a 12-page indexed player guide in both supported languages.
 
 ## About this fan project
 

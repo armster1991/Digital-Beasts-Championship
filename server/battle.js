@@ -5,7 +5,7 @@ function seeded(seed){let x=seed|0||1;return()=>{x^=x<<13;x^=x>>>17;x^=x<<5;retu
 function canonical(f){const p=P[f?.species];if(!p||!f.stats||!keys.every(k=>Number.isFinite(f.stats[k])&&f.stats[k]>=p.stats[k]&&f.stats[k]<=p.stats[k]+240*(k==='hp'?5:k==='tp'?2:1)))throw Error('badFighter');const gains=keys.reduce((n,k)=>n+(f.stats[k]-p.stats[k])/(k==='hp'?5:k==='tp'?2:1),0),budget=[0,12,24,80,120,160,200,240][p.stage];if(gains>budget+3)throw Error('badFighter');return{species:f.species,stats:Object.fromEntries(keys.map(k=>[k,Math.round(f.stats[k])]))};}
 // Fixed, player-independent Coliseum curve. Species tendencies remain visible.
 function colosseumOpponent(f,round){
- const r=Math.max(1,Math.min(134,Math.floor(round))),st=P[f.species].stage;
+ const r=Math.max(1,Math.min(P.length,Math.floor(round))),st=P[f.species].stage;
  const stats={...f.stats};
  if(st<=2){const progress=Math.min(1,(r-1)/19),floor={hp:145+progress*45,tp:28+progress*20,attack:16+progress*5,defense:12+progress*6,wisdom:16+progress*5,speed:20+progress*8};
  for(const k of keys)stats[k]=Math.round(floor[k]+stats[k]*(k==='hp'?.25:.45));

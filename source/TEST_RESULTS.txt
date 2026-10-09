@@ -37,3 +37,34 @@ No physical iOS/Android device or public Cloudflare deployment tested in this up
 Update 0.3.1: PASS 105 seconds continuous training to fatigue 100; 60 seconds rest to fatigue 10, 67 to full recovery. PASS single 3-frame/1.5-second training sequence after loading, old transient animation cleared without changing training points. PASS three food crops retain the bone on the right and consume the meat first. Engine/evolution regression passed. Battle and server files unchanged.
 
 0.3.2: PASS 20 valid training sessions over 300 seconds = 95 fatigue, 60 seconds rest = zero. Training gain/interval, save compatibility, combat and Worker unchanged.
+
+
+Update 0.4
+PASS: catalog rebuilt to 282 unique IDs / 277 obtainable while preserving all 134 legacy species IDs, identity fields, profiles and legacy route objects.
+PASS: 193 Pendulum Color sheet entries normalized to 181 unique species; 148 genuinely new species appended; 33 legacy species upgraded to Pendulum Color art and 101 retain legacy art.
+PASS: independent atlas audit verifies all 181 preferred sprite rows × 12 frames pixel-for-pixel against the six user-provided source sheets.
+PASS: 15 existing Digi-Egg visuals, exactly two Baby I outcomes each, all 14 Baby I covered; legacy start kept as candidate 1; 50/50 boundary and no-reroll save/load behavior verified.
+PASS: v0.3.x save migration expands album to 282 and preserves the old hatch outcome for pending eggs.
+PASS: 259 additive Pendulum Color route objects with source-family/requirement metadata; 91 source battle routes retain 80% wins with 15→5 battle compression; 25 Jogress-source routes are explicit solo adaptations; four new Baby I time routes.
+PASS: route reachability leaves only the five pre-existing Jogress-only species unobtainable; 6,115 surfaced route/egg eligibility witnesses pass care, effort, stat, battle and win-ratio gates.
+PASS: 2,820 deterministic roster combat samples plus 282 durable mirror fights; no battle exceeds the 135-second safety limit. Browser and Worker battle/profile files are byte-identical.
+PASS: dynamic 282-round Coliseum, version label v0.4 in Settings, JS syntax, legacy care/update/netplay regressions and sprite fallback checks.
+PASS: all 148 newly added species have explicit signature/special move names; no generated '<species> Technique' placeholder remains in the new profiles.
+Browser UI automation scripts remain present, but this build environment blocks Chromium/Playwright navigation to the local project before application scripts load (chrome-error://chromewebdata/ / ERR_BLOCKED_BY_ADMINISTRATOR), so the v0.4 browser smoke suite could not be executed here. This is an environment limitation, not a passed browser assertion. Public Cloudflare deployment and physical iOS/Android testing were not performed.
+
+HOTFIX v0.4: PASS embedded Pendulum Color atlas byte-for-byte against assets/penc-sprites.png; direct index.html/file:// sprite preprocessing no longer reads pixels from an external local image origin.
+
+
+Update 0.4.2
+PASS: DIGIDEX reads requirements from the live evolution resolver; all obtainable Baby I have hatch entries and every obtainable stage above Baby I has at least one surfaced route.
+PASS: Greymon regression exposes the full live Agumon route (25:00 stage time, Attack 12 training points, HP 6 training points, at most 2 care mistakes); Baby I hatch chances and 1:00 incubation come directly from the 15 current egg pools.
+PASS: every surfaced route mirrors the live training/care/Effort/battle/win gates for applicable egg contexts; registered-only click/tap contract, bilingual DIGIDEX strings, v0.4.2 Settings label, keyboard activation hooks and compact Colosseum/mobile-landscape CSS checks, including landscape safe-area insets.
+PASS: full v0.4 catalog/route/sprite tests, 6,115 route witnesses, 2,820 combat samples, 282 Worker mirror fights, atlas audit, local file:// sprite embedding and netplay regression remain green.
+Browser rendering could not be executed in this container: the Playwright module is unavailable in the project runtime, and the direct headless Chromium attempt did not complete under the container restrictions. Physical mobile device validation remains recommended.
+
+Update 0.4.3
+PASS: HELP/AJUDA replaced by a persistent bilingual TUTORIAL control immediately beside MAIN MENU in the top-right header; the former title-menu Help entry is removed and Settings now links to the same Tutorial.
+PASS: player-facing Tutorial contains 12 indexed pages / 49 sections in both English and Brazilian Portuguese, covering first steps, nursery controls, care/health, fatigue/rest, training/stats, evolution/TIPS, DIGIDEX, Digi-Egg unlocks, battles, Coliseum, Online, saves and interface behavior without exposing implementation jargon.
+PASS: Tutorial returns to its originating menu, uses a numbered desktop index plus compact mobile page selector and Previous/Next navigation; it is disabled on the battle/result screen to avoid stranding the player in an intermediate battle view.
+PASS: Portuguese MENU PRINCIPAL is forced to one line and uses smaller responsive font sizes; the three top-right actions have compact mobile-landscape widths while the v0.4.2 no-page-scroll main layout and compact Coliseum rules remain intact.
+PASS: v0.4.3 tutorial contract, v0.4.2 DIGIDEX/mobile regression, full v0.4 catalog/routes/sprites, engine, care, combat, update and netplay tests all pass. Browser-dependent Playwright tests are unavailable in this runtime. The dependency-light Chromium smoke test is also blocked by this container before app scripts load (chrome-error://chromewebdata/), matching the existing environment limitation.

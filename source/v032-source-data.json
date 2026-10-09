@@ -1,0 +1,3986 @@
+{
+  "species": [
+    {
+      "id": 0,
+      "name": "Botamon",
+      "slug": "botamon",
+      "stage": 1,
+      "attribute": "Free",
+      "power": null,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 44,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 1,
+      "name": "Koromon",
+      "slug": "koromon",
+      "stage": 2,
+      "attribute": "Free",
+      "power": null,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 64,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Agumon",
+      "slug": "agumon",
+      "stage": 3,
+      "attribute": "Vaccine",
+      "power": 18,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 84,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Betamon",
+      "slug": "betamon",
+      "stage": 3,
+      "attribute": "Virus",
+      "power": 10,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 104,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Greymon",
+      "slug": "greymon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 75,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 124,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Tyrannomon",
+      "slug": "tyranomon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 70,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 144,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Devimon",
+      "slug": "devimon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 65,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 164,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Meramon",
+      "slug": "meramon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 60,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 184,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Airdramon",
+      "slug": "airdramon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 55,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 224,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Seadramon",
+      "slug": "seadramon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 50,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 204,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Numemon",
+      "slug": "numemon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 40,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 244,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 11,
+      "name": "MetalGreymon",
+      "slug": "metal-greymon",
+      "stage": 5,
+      "attribute": "Virus",
+      "power": 126,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 264,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Mamemon",
+      "slug": "mamemon",
+      "stage": 5,
+      "attribute": "Data",
+      "power": 118,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 284,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Monzaemon",
+      "slug": "monzaemon",
+      "stage": 5,
+      "attribute": "Vaccine",
+      "power": 107,
+      "family": "Version 1",
+      "sprite": {
+        "x": 94,
+        "y": 304,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 14,
+      "name": "BlitzGreymon",
+      "slug": "blitz-greymon",
+      "stage": 6,
+      "attribute": "Virus",
+      "power": 188,
+      "family": "Version 1",
+      "sprite": {
+        "x": 504,
+        "y": 424,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 15,
+      "name": "BanchoMamemon",
+      "slug": "bancho-mamemon",
+      "stage": 6,
+      "attribute": "Data",
+      "power": 176,
+      "family": "Version 1",
+      "sprite": {
+        "x": 504,
+        "y": 444,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Punimon",
+      "slug": "punimon",
+      "stage": 1,
+      "attribute": "Free",
+      "power": null,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 324,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Tsunomon",
+      "slug": "tsunomon",
+      "stage": 2,
+      "attribute": "Free",
+      "power": null,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 344,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Gabumon",
+      "slug": "gabumon",
+      "stage": 3,
+      "attribute": "Data",
+      "power": 18,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 364,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Elecmon",
+      "slug": "elecmon",
+      "stage": 3,
+      "attribute": "Data",
+      "power": 10,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 384,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Kabuterimon",
+      "slug": "kabuterimon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 75,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 404,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Garurumon",
+      "slug": "garurumon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 70,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 424,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Angemon",
+      "slug": "angemon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 65,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 444,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Frigimon",
+      "slug": "yukidarumon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 60,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 464,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Birdramon",
+      "slug": "birdramon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 55,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 484,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Whamon",
+      "slug": "whamon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 50,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 504,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Vegiemon",
+      "slug": "vegimon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 40,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 524,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 27,
+      "name": "SkullGreymon",
+      "slug": "skull-greymon",
+      "stage": 5,
+      "attribute": "Virus",
+      "power": 126,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 544,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 28,
+      "name": "MetalMamemon",
+      "slug": "metal-mamemon",
+      "stage": 5,
+      "attribute": "Data",
+      "power": 118,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 564,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 29,
+      "name": "Vademon",
+      "slug": "vademon",
+      "stage": 5,
+      "attribute": "Virus",
+      "power": 107,
+      "family": "Version 2",
+      "sprite": {
+        "x": 94,
+        "y": 584,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 30,
+      "name": "SkullMammothmon",
+      "slug": "skull-mammon",
+      "stage": 6,
+      "attribute": "Vaccine",
+      "power": 169,
+      "family": "Version 2",
+      "sprite": {
+        "x": 504,
+        "y": 103,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 31,
+      "name": "CresGarurumon",
+      "slug": "cres-garurumon",
+      "stage": 6,
+      "attribute": "Data",
+      "power": 188,
+      "family": "Version 2",
+      "sprite": {
+        "x": 504,
+        "y": 464,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 32,
+      "name": "Poyomon",
+      "slug": "poyomon",
+      "stage": 1,
+      "attribute": "Free",
+      "power": null,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 604,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 33,
+      "name": "Tokomon",
+      "slug": "tokomon",
+      "stage": 2,
+      "attribute": "Free",
+      "power": null,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 624,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 34,
+      "name": "Patamon",
+      "slug": "patamon",
+      "stage": 3,
+      "attribute": "Data",
+      "power": 18,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 644,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 35,
+      "name": "Kunemon",
+      "slug": "kunemon",
+      "stage": 3,
+      "attribute": "Virus",
+      "power": 10,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 664,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 36,
+      "name": "Unimon",
+      "slug": "unimon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 75,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 684,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 37,
+      "name": "Centarumon",
+      "slug": "centalmon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 70,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 704,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 38,
+      "name": "Ogremon",
+      "slug": "ogremon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 65,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 724,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 39,
+      "name": "Bakemon",
+      "slug": "bakemon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 60,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 744,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 40,
+      "name": "Shellmon",
+      "slug": "shellmon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 55,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 764,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 41,
+      "name": "Drimogemon",
+      "slug": "drimogemon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 50,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 784,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 42,
+      "name": "Sukamon",
+      "slug": "scumon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 40,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 804,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 43,
+      "name": "Andromon",
+      "slug": "andromon",
+      "stage": 5,
+      "attribute": "Vaccine",
+      "power": 126,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 824,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 44,
+      "name": "Giromon",
+      "slug": "giromon",
+      "stage": 5,
+      "attribute": "Vaccine",
+      "power": 118,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 844,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 45,
+      "name": "Etemon",
+      "slug": "etemon",
+      "stage": 5,
+      "attribute": "Virus",
+      "power": 107,
+      "family": "Version 3",
+      "sprite": {
+        "x": 94,
+        "y": 864,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 46,
+      "name": "HiAndromon",
+      "slug": "hi-andromon",
+      "stage": 6,
+      "attribute": "Vaccine",
+      "power": 176,
+      "family": "Version 3",
+      "sprite": {
+        "x": 504,
+        "y": 484,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 47,
+      "name": "KingEtemon",
+      "slug": "king-etemon",
+      "stage": 6,
+      "attribute": "Virus",
+      "power": 169,
+      "family": "Version 3",
+      "sprite": {
+        "x": 504,
+        "y": 504,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 48,
+      "name": "Yuramon",
+      "slug": "yuramon",
+      "stage": 1,
+      "attribute": "Free",
+      "power": null,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 884,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 49,
+      "name": "Tanemon",
+      "slug": "tanemon",
+      "stage": 2,
+      "attribute": "Free",
+      "power": null,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 904,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 50,
+      "name": "Biyomon",
+      "slug": "piyomon",
+      "stage": 3,
+      "attribute": "Vaccine",
+      "power": 18,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 924,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 51,
+      "name": "Palmon",
+      "slug": "palmon",
+      "stage": 3,
+      "attribute": "Data",
+      "power": 10,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 944,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 52,
+      "name": "Monochromon",
+      "slug": "monochromon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 75,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 964,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 53,
+      "name": "Kokatorimon",
+      "slug": "cockatrimon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 70,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 984,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 54,
+      "name": "Leomon",
+      "slug": "leomon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 65,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 1004,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 55,
+      "name": "Kuwagamon",
+      "slug": "kuwagamon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 60,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 1024,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 56,
+      "name": "Coelamon",
+      "slug": "coelamon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 55,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 1044,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 57,
+      "name": "Mojyamon",
+      "slug": "mojyamon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 50,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 1064,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 58,
+      "name": "Nanimon",
+      "slug": "nanimon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 40,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 1084,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 59,
+      "name": "Megadramon",
+      "slug": "megadramon",
+      "stage": 5,
+      "attribute": "Virus",
+      "power": 126,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 1104,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 60,
+      "name": "Piximon",
+      "slug": "piccolomon",
+      "stage": 5,
+      "attribute": "Data",
+      "power": 118,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 1124,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 61,
+      "name": "Digitamamon",
+      "slug": "digitamamon",
+      "stage": 5,
+      "attribute": "Data",
+      "power": 107,
+      "family": "Version 4",
+      "sprite": {
+        "x": 94,
+        "y": 1144,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 62,
+      "name": "Aegisdramon",
+      "slug": "aegisdramon",
+      "stage": 6,
+      "attribute": "Vaccine",
+      "power": 188,
+      "family": "Version 4",
+      "sprite": {
+        "x": 504,
+        "y": 524,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 63,
+      "name": "Titamon",
+      "slug": "titamon",
+      "stage": 6,
+      "attribute": "Virus",
+      "power": 176,
+      "family": "Version 4",
+      "sprite": {
+        "x": 504,
+        "y": 544,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 64,
+      "name": "Zurumon",
+      "slug": "zurumon",
+      "stage": 1,
+      "attribute": "Free",
+      "power": null,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1164,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 65,
+      "name": "Pagumon",
+      "slug": "pagumon",
+      "stage": 2,
+      "attribute": "Free",
+      "power": null,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1184,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 66,
+      "name": "Gazimon",
+      "slug": "gazimon",
+      "stage": 3,
+      "attribute": "Virus",
+      "power": 18,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1204,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 67,
+      "name": "Gizamon",
+      "slug": "gizamon",
+      "stage": 3,
+      "attribute": "Virus",
+      "power": 10,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1224,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 68,
+      "name": "DarkTyrannomon",
+      "slug": "dark-tyranomon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 75,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1244,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 69,
+      "name": "Cyclomon",
+      "slug": "cyclomon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 70,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1264,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 70,
+      "name": "Devidramon",
+      "slug": "devidramon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 65,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1284,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 71,
+      "name": "Tuskmon",
+      "slug": "tuskmon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 60,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1304,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 72,
+      "name": "Flymon",
+      "slug": "flymon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 55,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1324,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 73,
+      "name": "Deltamon",
+      "slug": "deltamon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 50,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1344,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 74,
+      "name": "Raremon",
+      "slug": "raremon",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 40,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1364,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 75,
+      "name": "MetalTyrannomon",
+      "slug": "metal-tyranomon",
+      "stage": 5,
+      "attribute": "Virus",
+      "power": 126,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1384,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 76,
+      "name": "Nanomon",
+      "slug": "nanomon",
+      "stage": 5,
+      "attribute": "Virus",
+      "power": 118,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1404,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 77,
+      "name": "Ex-Tyranomon",
+      "slug": "ex-tyranomon",
+      "stage": 5,
+      "attribute": "Vaccine",
+      "power": 107,
+      "family": "Version 5",
+      "sprite": {
+        "x": 94,
+        "y": 1424,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 78,
+      "name": "Machinedramon",
+      "slug": "mugendramon",
+      "stage": 6,
+      "attribute": "Virus",
+      "power": 188,
+      "family": "Version 5",
+      "sprite": {
+        "x": 504,
+        "y": 123,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 79,
+      "name": "Puppetmon",
+      "slug": "pinochimon",
+      "stage": 6,
+      "attribute": "Virus",
+      "power": 176,
+      "family": "Version 5",
+      "sprite": {
+        "x": 504,
+        "y": 143,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 80,
+      "name": "Sakumon",
+      "slug": "sakumon",
+      "stage": 1,
+      "attribute": "Free",
+      "power": null,
+      "family": "Zuba/Hack",
+      "sprite": {
+        "x": 504,
+        "y": 564,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 81,
+      "name": "Sakuttomon",
+      "slug": "sakuttomon",
+      "stage": 2,
+      "attribute": "Free",
+      "power": null,
+      "family": "Zuba/Hack",
+      "sprite": {
+        "x": 504,
+        "y": 584,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 82,
+      "name": "Zubamon",
+      "slug": "zubamon",
+      "stage": 3,
+      "attribute": "Vaccine",
+      "power": 34,
+      "family": "Zuba",
+      "sprite": {
+        "x": 504,
+        "y": 604,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 83,
+      "name": "Zubaeagermon",
+      "slug": "zubaeagermon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 90,
+      "family": "Zuba",
+      "sprite": {
+        "x": 504,
+        "y": 624,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 84,
+      "name": "Duramon",
+      "slug": "duramon",
+      "stage": 5,
+      "attribute": "Vaccine",
+      "power": 155,
+      "family": "Zuba",
+      "sprite": {
+        "x": 504,
+        "y": 644,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 85,
+      "name": "Durandamon",
+      "slug": "durandamon",
+      "stage": 6,
+      "attribute": "Vaccine",
+      "power": 210,
+      "family": "Zuba",
+      "sprite": {
+        "x": 504,
+        "y": 664,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 86,
+      "name": "Huckmon",
+      "slug": "hackmon",
+      "stage": 3,
+      "attribute": "Data",
+      "power": 34,
+      "family": "Hack",
+      "sprite": {
+        "x": 504,
+        "y": 684,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 87,
+      "name": "BaoHuckmon",
+      "slug": "bao-hackmon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 90,
+      "family": "Hack",
+      "sprite": {
+        "x": 504,
+        "y": 704,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 88,
+      "name": "SaviorHuckmon",
+      "slug": "savior-hackmon",
+      "stage": 5,
+      "attribute": "Data",
+      "power": 155,
+      "family": "Hack",
+      "sprite": {
+        "x": 504,
+        "y": 724,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 89,
+      "name": "Jesmon",
+      "slug": "jesmon",
+      "stage": 6,
+      "attribute": "Data",
+      "power": 210,
+      "family": "Hack",
+      "sprite": {
+        "x": 504,
+        "y": 744,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 90,
+      "name": "Petitmon",
+      "slug": "petitmon",
+      "stage": 1,
+      "attribute": "Free",
+      "power": null,
+      "family": "Slayerdra/Breakdra",
+      "sprite": {
+        "x": 504,
+        "y": 764,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 91,
+      "name": "Bebydomon",
+      "slug": "babydmon",
+      "stage": 2,
+      "attribute": "Free",
+      "power": null,
+      "family": "Slayerdra/Breakdra",
+      "sprite": {
+        "x": 504,
+        "y": 784,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 92,
+      "name": "Dracomon",
+      "slug": "dracomon",
+      "stage": 3,
+      "attribute": "Data",
+      "power": 34,
+      "family": "Slayerdra/Breakdra",
+      "sprite": {
+        "x": 504,
+        "y": 804,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 93,
+      "name": "Coredramon (Blue)",
+      "slug": "coredramon-blue",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 80,
+      "family": "Slayerdra",
+      "sprite": {
+        "x": 504,
+        "y": 824,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 94,
+      "name": "Wingdramon",
+      "slug": "wingdramon",
+      "stage": 5,
+      "attribute": "Vaccine",
+      "power": 143,
+      "family": "Slayerdra",
+      "sprite": {
+        "x": 504,
+        "y": 844,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 95,
+      "name": "Slayerdramon",
+      "slug": "slayerdramon",
+      "stage": 6,
+      "attribute": "Vaccine",
+      "power": 199,
+      "family": "Slayerdra",
+      "sprite": {
+        "x": 504,
+        "y": 864,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 96,
+      "name": "Coredramon (Green)",
+      "slug": "coredramon-green",
+      "stage": 4,
+      "attribute": "Virus",
+      "power": 80,
+      "family": "Breakdra",
+      "sprite": {
+        "x": 504,
+        "y": 884,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 97,
+      "name": "Groundramon",
+      "slug": "groundramon",
+      "stage": 5,
+      "attribute": "Virus",
+      "power": 143,
+      "family": "Breakdra",
+      "sprite": {
+        "x": 504,
+        "y": 904,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 98,
+      "name": "Breakdramon",
+      "slug": "breakdramon",
+      "stage": 6,
+      "attribute": "Virus",
+      "power": 199,
+      "family": "Breakdra",
+      "sprite": {
+        "x": 504,
+        "y": 924,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 99,
+      "name": "Pichimon",
+      "slug": "pitchmon",
+      "stage": 1,
+      "attribute": "Free",
+      "power": null,
+      "family": "Corona/Luna",
+      "sprite": {
+        "x": 504,
+        "y": 163,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 100,
+      "name": "Bukamon",
+      "slug": "pukamon",
+      "stage": 2,
+      "attribute": "Free",
+      "power": null,
+      "family": "Corona/Luna",
+      "sprite": {
+        "x": 504,
+        "y": 183,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 101,
+      "name": "Coronamon",
+      "slug": "coronamon",
+      "stage": 3,
+      "attribute": "Vaccine",
+      "power": 27,
+      "family": "Corona",
+      "sprite": {
+        "x": 504,
+        "y": 944,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 102,
+      "name": "Firamon",
+      "slug": "firamon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 80,
+      "family": "Corona",
+      "sprite": {
+        "x": 504,
+        "y": 964,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 103,
+      "name": "Flaremon",
+      "slug": "flaremon",
+      "stage": 5,
+      "attribute": "Vaccine",
+      "power": 135,
+      "family": "Corona",
+      "sprite": {
+        "x": 504,
+        "y": 984,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 104,
+      "name": "Apollomon",
+      "slug": "apollomon",
+      "stage": 6,
+      "attribute": "Vaccine",
+      "power": 199,
+      "family": "Corona",
+      "sprite": {
+        "x": 504,
+        "y": 1004,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 105,
+      "name": "Lunamon",
+      "slug": "lunamon",
+      "stage": 3,
+      "attribute": "Data",
+      "power": 27,
+      "family": "Luna",
+      "sprite": {
+        "x": 504,
+        "y": 1024,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 106,
+      "name": "Lekismon",
+      "slug": "lekismon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 80,
+      "family": "Luna",
+      "sprite": {
+        "x": 504,
+        "y": 1044,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 107,
+      "name": "Crescemon",
+      "slug": "crescemon",
+      "stage": 5,
+      "attribute": "Data",
+      "power": 135,
+      "family": "Luna",
+      "sprite": {
+        "x": 504,
+        "y": 1064,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 108,
+      "name": "Dianamon",
+      "slug": "dianamon",
+      "stage": 6,
+      "attribute": "Data",
+      "power": 199,
+      "family": "Luna",
+      "sprite": {
+        "x": 504,
+        "y": 1084,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 109,
+      "name": "Tai's Agumon",
+      "slug": "taichis-agumon",
+      "stage": 3,
+      "attribute": "Vaccine",
+      "power": 25,
+      "family": "Taichi's Egg",
+      "sprite": {
+        "x": 504,
+        "y": 44,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 110,
+      "name": "Tai's Greymon",
+      "slug": "taichis-greymon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 83,
+      "family": "Taichi's Egg",
+      "sprite": {
+        "x": 504,
+        "y": 64,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 111,
+      "name": "Tai's MetalGreymon",
+      "slug": "taichis-metal-greymon",
+      "stage": 5,
+      "attribute": "Vaccine",
+      "power": 135,
+      "family": "Taichi's Egg",
+      "sprite": {
+        "x": 504,
+        "y": 203,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 112,
+      "name": "Tai's WarGreymon",
+      "slug": "taichis-war-greymon",
+      "stage": 6,
+      "attribute": "Vaccine",
+      "power": 199,
+      "family": "Taichi's Egg",
+      "sprite": {
+        "x": 504,
+        "y": 223,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 113,
+      "name": "Matt's Gabumon",
+      "slug": "yamatos-gabumon",
+      "stage": 3,
+      "attribute": "Data",
+      "power": 25,
+      "family": "Yamato's Egg",
+      "sprite": {
+        "x": 504,
+        "y": 83,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 114,
+      "name": "Matt's Garurumon",
+      "slug": "yamatos-garurumon",
+      "stage": 4,
+      "attribute": "Vaccine",
+      "power": 77,
+      "family": "Yamato's Egg",
+      "sprite": {
+        "x": 94,
+        "y": 424,
+        "frames": 4,
+        "source": "V-Pet Originals"
+      }
+    },
+    {
+      "id": 115,
+      "name": "Matt's WereGarurumon",
+      "slug": "yamatos-were-garurumon",
+      "stage": 5,
+      "attribute": "Vaccine",
+      "power": 135,
+      "family": "Yamato's Egg",
+      "sprite": {
+        "x": 504,
+        "y": 243,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 116,
+      "name": "Matt's MetalGarurumon",
+      "slug": "yamatos-metal-garurumon",
+      "stage": 6,
+      "attribute": "Data",
+      "power": 199,
+      "family": "Yamato's Egg",
+      "sprite": {
+        "x": 504,
+        "y": 263,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 117,
+      "name": "Dodomon",
+      "slug": "dodomon",
+      "stage": 1,
+      "attribute": "Free",
+      "power": null,
+      "family": "DORU",
+      "sprite": {
+        "x": 504,
+        "y": 1104,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 118,
+      "name": "Dorimon",
+      "slug": "dorimon",
+      "stage": 2,
+      "attribute": "Free",
+      "power": null,
+      "family": "DORU",
+      "sprite": {
+        "x": 504,
+        "y": 1124,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 119,
+      "name": "Dorumon",
+      "slug": "dorumon",
+      "stage": 3,
+      "attribute": "Data",
+      "power": 27,
+      "family": "DORU",
+      "sprite": {
+        "x": 504,
+        "y": 1144,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 120,
+      "name": "Dorugamon",
+      "slug": "dorugamon",
+      "stage": 4,
+      "attribute": "Data",
+      "power": 90,
+      "family": "DORU",
+      "sprite": {
+        "x": 504,
+        "y": 1164,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 121,
+      "name": "DoruGreymon",
+      "slug": "doruguremon",
+      "stage": 5,
+      "attribute": "Data",
+      "power": 143,
+      "family": "DORU",
+      "sprite": {
+        "x": 504,
+        "y": 1184,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 122,
+      "name": "Alphamon",
+      "slug": "alphamon",
+      "stage": 6,
+      "attribute": "Vaccine",
+      "power": 210,
+      "family": "DORU",
+      "sprite": {
+        "x": 504,
+        "y": 1204,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 123,
+      "name": "YukimiBotamon",
+      "slug": "yukimibotamon",
+      "stage": 1,
+      "attribute": "Free",
+      "power": null,
+      "family": "Meicoo",
+      "sprite": {
+        "x": 504,
+        "y": 283,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 124,
+      "name": "Nyaromon",
+      "slug": "nyaromon",
+      "stage": 2,
+      "attribute": "Free",
+      "power": null,
+      "family": "Meicoo",
+      "sprite": {
+        "x": 504,
+        "y": 303,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 125,
+      "name": "Salamon",
+      "slug": "plotmon",
+      "stage": 3,
+      "attribute": "Vaccine",
+      "power": 27,
+      "family": "Meicoo",
+      "sprite": {
+        "x": 504,
+        "y": 323,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    },
+    {
+      "id": 126,
+      "name": "Meicoomon",
+      "slug": "meicoomon",
+      "stage": 4,
+      "attribute": "Free",
+      "power": 80,
+      "family": "Meicoo",
+      "sprite": {
+        "x": 504,
+        "y": 1224,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 127,
+      "name": "Meicrackmon",
+      "slug": "meicrackmon",
+      "stage": 5,
+      "attribute": "Vaccine",
+      "power": 143,
+      "family": "Meicoo",
+      "sprite": {
+        "x": 504,
+        "y": 1244,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 128,
+      "name": "Rasielmon",
+      "slug": "rasielmon",
+      "stage": 6,
+      "attribute": "Vaccine",
+      "power": 210,
+      "family": "Meicoo",
+      "sprite": {
+        "x": 504,
+        "y": 1264,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 129,
+      "name": "Omnimon Alter-S",
+      "slug": "omegamon-alter-s",
+      "stage": 7,
+      "attribute": "Virus",
+      "power": 238,
+      "family": "Jogress",
+      "sprite": {
+        "x": 504,
+        "y": 1284,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 130,
+      "name": "RustTyrannomon",
+      "slug": "rust-tyranomon",
+      "stage": 7,
+      "attribute": "Virus",
+      "power": 238,
+      "family": "Jogress",
+      "sprite": {
+        "x": 504,
+        "y": 1304,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 131,
+      "name": "Examon",
+      "slug": "examon",
+      "stage": 7,
+      "attribute": "Data",
+      "power": 238,
+      "family": "Jogress",
+      "sprite": {
+        "x": 504,
+        "y": 1324,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 132,
+      "name": "GraceNovamon",
+      "slug": "grace-novamon",
+      "stage": 7,
+      "attribute": "Vaccine",
+      "power": 238,
+      "family": "Jogress",
+      "sprite": {
+        "x": 504,
+        "y": 1344,
+        "frames": 4,
+        "source": "New Digimon"
+      }
+    },
+    {
+      "id": 133,
+      "name": "Omnimon",
+      "slug": "omegamon",
+      "stage": 7,
+      "attribute": "Vaccine",
+      "power": 238,
+      "family": "Jogress",
+      "sprite": {
+        "x": 504,
+        "y": 343,
+        "frames": 4,
+        "source": "Pendulum Originals"
+      }
+    }
+  ],
+  "routes": {
+    "0": [
+      {
+        "to": 1
+      }
+    ],
+    "1": [
+      {
+        "to": 2,
+        "cmMax": 2
+      },
+      {
+        "to": 3,
+        "cmMin": 3
+      },
+      {
+        "to": 109,
+        "egg": "taichi",
+        "priority": 100
+      }
+    ],
+    "2": [
+      {
+        "to": 4,
+        "cmMax": 2,
+        "trainMin": 16
+      },
+      {
+        "to": 5,
+        "cmMin": 3,
+        "trainMin": 5,
+        "trainMax": 15,
+        "overfeedMin": 3
+      },
+      {
+        "to": 6,
+        "cmMax": 2,
+        "trainMax": 15
+      },
+      {
+        "to": 7,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMin": 3
+      },
+      {
+        "to": 10,
+        "cmMin": 3,
+        "trainMax": 4,
+        "fallback": true
+      },
+      {
+        "to": 10,
+        "cmMin": 3,
+        "trainMin": 5,
+        "overfeedMax": 2,
+        "fallback": true
+      }
+    ],
+    "3": [
+      {
+        "to": 6,
+        "cmMax": 2,
+        "trainMin": 16
+      },
+      {
+        "to": 7,
+        "cmMin": 3,
+        "trainMin": 8,
+        "trainMax": 15,
+        "overfeedMax": 2
+      },
+      {
+        "to": 8,
+        "cmMax": 2,
+        "trainMax": 15
+      },
+      {
+        "to": 9,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMin": 3
+      },
+      {
+        "to": 10,
+        "cmMin": 3,
+        "trainMax": 7,
+        "fallback": true
+      },
+      {
+        "to": 10,
+        "cmMin": 3,
+        "trainMin": 8,
+        "trainMax": 15,
+        "overfeedMin": 3,
+        "fallback": true
+      },
+      {
+        "to": 10,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMax": 2,
+        "fallback": true
+      }
+    ],
+    "4": [
+      {
+        "to": 11,
+        "battleGate": true
+      }
+    ],
+    "6": [
+      {
+        "to": 11,
+        "battleGate": true
+      }
+    ],
+    "8": [
+      {
+        "to": 11,
+        "battleGate": true
+      }
+    ],
+    "5": [
+      {
+        "to": 12,
+        "battleGate": true
+      }
+    ],
+    "7": [
+      {
+        "to": 12,
+        "battleGate": true
+      }
+    ],
+    "9": [
+      {
+        "to": 12,
+        "battleGate": true
+      }
+    ],
+    "10": [
+      {
+        "to": 13,
+        "battleGate": true
+      }
+    ],
+    "11": [
+      {
+        "to": 14,
+        "cmMax": 2
+      }
+    ],
+    "12": [
+      {
+        "to": 15,
+        "cmMax": 2
+      }
+    ],
+    "16": [
+      {
+        "to": 17
+      }
+    ],
+    "17": [
+      {
+        "to": 18,
+        "cmMax": 2
+      },
+      {
+        "to": 19,
+        "cmMin": 3
+      },
+      {
+        "to": 113,
+        "egg": "yamato",
+        "priority": 100
+      }
+    ],
+    "18": [
+      {
+        "to": 20,
+        "cmMax": 2,
+        "trainMin": 16
+      },
+      {
+        "to": 21,
+        "cmMin": 3,
+        "trainMin": 5,
+        "trainMax": 15,
+        "overfeedMin": 3
+      },
+      {
+        "to": 22,
+        "cmMax": 2,
+        "trainMax": 15
+      },
+      {
+        "to": 23,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMin": 3
+      },
+      {
+        "to": 26,
+        "cmMin": 3,
+        "trainMax": 4,
+        "fallback": true
+      },
+      {
+        "to": 26,
+        "cmMin": 3,
+        "trainMin": 5,
+        "overfeedMax": 2,
+        "fallback": true
+      }
+    ],
+    "19": [
+      {
+        "to": 22,
+        "cmMax": 2,
+        "trainMin": 16
+      },
+      {
+        "to": 23,
+        "cmMin": 3,
+        "trainMin": 8,
+        "trainMax": 15,
+        "overfeedMax": 2
+      },
+      {
+        "to": 24,
+        "cmMax": 2,
+        "trainMax": 15
+      },
+      {
+        "to": 25,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMin": 3
+      },
+      {
+        "to": 26,
+        "cmMin": 3,
+        "trainMax": 7,
+        "fallback": true
+      },
+      {
+        "to": 26,
+        "cmMin": 3,
+        "trainMin": 8,
+        "trainMax": 15,
+        "overfeedMin": 3,
+        "fallback": true
+      },
+      {
+        "to": 26,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMax": 2,
+        "fallback": true
+      }
+    ],
+    "20": [
+      {
+        "to": 27,
+        "battleGate": true
+      }
+    ],
+    "22": [
+      {
+        "to": 27,
+        "battleGate": true
+      }
+    ],
+    "24": [
+      {
+        "to": 27,
+        "battleGate": true
+      }
+    ],
+    "21": [
+      {
+        "to": 28,
+        "battleGate": true
+      }
+    ],
+    "23": [
+      {
+        "to": 28,
+        "battleGate": true
+      }
+    ],
+    "25": [
+      {
+        "to": 28,
+        "battleGate": true
+      }
+    ],
+    "26": [
+      {
+        "to": 29,
+        "battleGate": true
+      }
+    ],
+    "27": [
+      {
+        "to": 30,
+        "cmMax": 2
+      }
+    ],
+    "28": [
+      {
+        "to": 31,
+        "cmMax": 2
+      }
+    ],
+    "32": [
+      {
+        "to": 33
+      }
+    ],
+    "33": [
+      {
+        "to": 34,
+        "cmMax": 2
+      },
+      {
+        "to": 35,
+        "cmMin": 3
+      }
+    ],
+    "34": [
+      {
+        "to": 36,
+        "cmMax": 2,
+        "trainMin": 16
+      },
+      {
+        "to": 37,
+        "cmMin": 3,
+        "trainMin": 5,
+        "trainMax": 15,
+        "overfeedMin": 3
+      },
+      {
+        "to": 38,
+        "cmMax": 2,
+        "trainMax": 15
+      },
+      {
+        "to": 39,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMin": 3
+      },
+      {
+        "to": 42,
+        "cmMin": 3,
+        "trainMax": 4,
+        "fallback": true
+      },
+      {
+        "to": 42,
+        "cmMin": 3,
+        "trainMin": 5,
+        "overfeedMax": 2,
+        "fallback": true
+      }
+    ],
+    "35": [
+      {
+        "to": 38,
+        "cmMax": 2,
+        "trainMin": 16
+      },
+      {
+        "to": 39,
+        "cmMin": 3,
+        "trainMin": 8,
+        "trainMax": 15,
+        "overfeedMax": 2
+      },
+      {
+        "to": 40,
+        "cmMax": 2,
+        "trainMax": 15
+      },
+      {
+        "to": 41,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMin": 3
+      },
+      {
+        "to": 42,
+        "cmMin": 3,
+        "trainMax": 7,
+        "fallback": true
+      },
+      {
+        "to": 42,
+        "cmMin": 3,
+        "trainMin": 8,
+        "trainMax": 15,
+        "overfeedMin": 3,
+        "fallback": true
+      },
+      {
+        "to": 42,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMax": 2,
+        "fallback": true
+      }
+    ],
+    "36": [
+      {
+        "to": 43,
+        "battleGate": true
+      }
+    ],
+    "38": [
+      {
+        "to": 43,
+        "battleGate": true
+      }
+    ],
+    "40": [
+      {
+        "to": 43,
+        "battleGate": true
+      }
+    ],
+    "37": [
+      {
+        "to": 44,
+        "battleGate": true
+      }
+    ],
+    "39": [
+      {
+        "to": 44,
+        "battleGate": true
+      }
+    ],
+    "41": [
+      {
+        "to": 44,
+        "battleGate": true
+      }
+    ],
+    "42": [
+      {
+        "to": 45,
+        "battleGate": true
+      }
+    ],
+    "43": [
+      {
+        "to": 46,
+        "cmMax": 2
+      }
+    ],
+    "44": [
+      {
+        "to": 47,
+        "cmMax": 2
+      }
+    ],
+    "48": [
+      {
+        "to": 49
+      }
+    ],
+    "49": [
+      {
+        "to": 50,
+        "cmMax": 2
+      },
+      {
+        "to": 51,
+        "cmMin": 3
+      }
+    ],
+    "50": [
+      {
+        "to": 52,
+        "cmMax": 2,
+        "trainMin": 16
+      },
+      {
+        "to": 53,
+        "cmMin": 3,
+        "trainMin": 5,
+        "trainMax": 15,
+        "overfeedMin": 3
+      },
+      {
+        "to": 54,
+        "cmMax": 2,
+        "trainMax": 15
+      },
+      {
+        "to": 55,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMin": 3
+      },
+      {
+        "to": 58,
+        "cmMin": 3,
+        "trainMax": 4,
+        "fallback": true
+      },
+      {
+        "to": 58,
+        "cmMin": 3,
+        "trainMin": 5,
+        "overfeedMax": 2,
+        "fallback": true
+      }
+    ],
+    "51": [
+      {
+        "to": 54,
+        "cmMax": 2,
+        "trainMin": 16
+      },
+      {
+        "to": 55,
+        "cmMin": 3,
+        "trainMin": 8,
+        "trainMax": 15,
+        "overfeedMax": 2
+      },
+      {
+        "to": 56,
+        "cmMax": 2,
+        "trainMax": 15
+      },
+      {
+        "to": 57,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMin": 3
+      },
+      {
+        "to": 58,
+        "cmMin": 3,
+        "trainMax": 7,
+        "fallback": true
+      },
+      {
+        "to": 58,
+        "cmMin": 3,
+        "trainMin": 8,
+        "trainMax": 15,
+        "overfeedMin": 3,
+        "fallback": true
+      },
+      {
+        "to": 58,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMax": 2,
+        "fallback": true
+      }
+    ],
+    "52": [
+      {
+        "to": 59,
+        "battleGate": true
+      }
+    ],
+    "54": [
+      {
+        "to": 59,
+        "battleGate": true
+      }
+    ],
+    "56": [
+      {
+        "to": 59,
+        "battleGate": true
+      }
+    ],
+    "53": [
+      {
+        "to": 60,
+        "battleGate": true
+      }
+    ],
+    "55": [
+      {
+        "to": 60,
+        "battleGate": true
+      }
+    ],
+    "57": [
+      {
+        "to": 60,
+        "battleGate": true
+      }
+    ],
+    "58": [
+      {
+        "to": 61,
+        "battleGate": true
+      }
+    ],
+    "59": [
+      {
+        "to": 62,
+        "cmMax": 2
+      }
+    ],
+    "60": [
+      {
+        "to": 63,
+        "cmMax": 2
+      }
+    ],
+    "64": [
+      {
+        "to": 65
+      }
+    ],
+    "65": [
+      {
+        "to": 66,
+        "cmMax": 2
+      },
+      {
+        "to": 67,
+        "cmMin": 3
+      }
+    ],
+    "66": [
+      {
+        "to": 68,
+        "cmMax": 2,
+        "trainMin": 16
+      },
+      {
+        "to": 69,
+        "cmMin": 3,
+        "trainMin": 5,
+        "trainMax": 15,
+        "overfeedMin": 3
+      },
+      {
+        "to": 70,
+        "cmMax": 2,
+        "trainMax": 15
+      },
+      {
+        "to": 71,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMin": 3
+      },
+      {
+        "to": 74,
+        "cmMin": 3,
+        "trainMax": 4,
+        "fallback": true
+      },
+      {
+        "to": 74,
+        "cmMin": 3,
+        "trainMin": 5,
+        "overfeedMax": 2,
+        "fallback": true
+      }
+    ],
+    "67": [
+      {
+        "to": 70,
+        "cmMax": 2,
+        "trainMin": 16
+      },
+      {
+        "to": 71,
+        "cmMin": 3,
+        "trainMin": 8,
+        "trainMax": 15,
+        "overfeedMax": 2
+      },
+      {
+        "to": 72,
+        "cmMax": 2,
+        "trainMax": 15
+      },
+      {
+        "to": 73,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMin": 3
+      },
+      {
+        "to": 74,
+        "cmMin": 3,
+        "trainMax": 7,
+        "fallback": true
+      },
+      {
+        "to": 74,
+        "cmMin": 3,
+        "trainMin": 8,
+        "trainMax": 15,
+        "overfeedMin": 3,
+        "fallback": true
+      },
+      {
+        "to": 74,
+        "cmMin": 3,
+        "trainMin": 16,
+        "overfeedMax": 2,
+        "fallback": true
+      }
+    ],
+    "68": [
+      {
+        "to": 75,
+        "battleGate": true
+      }
+    ],
+    "70": [
+      {
+        "to": 75,
+        "battleGate": true
+      }
+    ],
+    "72": [
+      {
+        "to": 75,
+        "battleGate": true
+      }
+    ],
+    "69": [
+      {
+        "to": 76,
+        "battleGate": true
+      }
+    ],
+    "71": [
+      {
+        "to": 76,
+        "battleGate": true
+      }
+    ],
+    "73": [
+      {
+        "to": 76,
+        "battleGate": true
+      }
+    ],
+    "74": [
+      {
+        "to": 77,
+        "battleGate": true
+      }
+    ],
+    "75": [
+      {
+        "to": 78,
+        "cmMax": 2
+      }
+    ],
+    "76": [
+      {
+        "to": 79,
+        "cmMax": 2
+      }
+    ],
+    "80": [
+      {
+        "to": 81
+      }
+    ],
+    "81": [
+      {
+        "to": 82,
+        "egg": "zuba"
+      },
+      {
+        "to": 86,
+        "egg": "hack"
+      }
+    ],
+    "82": [
+      {
+        "to": 83
+      }
+    ],
+    "83": [
+      {
+        "to": 84,
+        "battleGate": true
+      }
+    ],
+    "84": [
+      {
+        "to": 85,
+        "cmMax": 2
+      }
+    ],
+    "86": [
+      {
+        "to": 87
+      }
+    ],
+    "87": [
+      {
+        "to": 88,
+        "battleGate": true
+      }
+    ],
+    "88": [
+      {
+        "to": 89,
+        "cmMax": 2
+      }
+    ],
+    "90": [
+      {
+        "to": 91
+      }
+    ],
+    "91": [
+      {
+        "to": 92
+      }
+    ],
+    "92": [
+      {
+        "to": 93,
+        "egg": "slayer"
+      },
+      {
+        "to": 96,
+        "egg": "break"
+      }
+    ],
+    "93": [
+      {
+        "to": 94,
+        "battleGate": true
+      }
+    ],
+    "94": [
+      {
+        "to": 95,
+        "cmMax": 2
+      },
+      {
+        "to": 112,
+        "cmMin": 3,
+        "cmMax": 4,
+        "stageBattlesMin": 100,
+        "priority": 50
+      }
+    ],
+    "96": [
+      {
+        "to": 97,
+        "battleGate": true
+      }
+    ],
+    "97": [
+      {
+        "to": 98,
+        "cmMax": 2
+      },
+      {
+        "to": 116,
+        "cmMin": 3,
+        "cmMax": 4,
+        "stageBattlesMin": 100,
+        "priority": 50
+      }
+    ],
+    "99": [
+      {
+        "to": 100
+      }
+    ],
+    "100": [
+      {
+        "to": 101,
+        "egg": "corona"
+      },
+      {
+        "to": 105,
+        "egg": "luna"
+      }
+    ],
+    "101": [
+      {
+        "to": 102
+      }
+    ],
+    "102": [
+      {
+        "to": 103,
+        "battleGate": true
+      }
+    ],
+    "103": [
+      {
+        "to": 104,
+        "cmMax": 2
+      }
+    ],
+    "105": [
+      {
+        "to": 106
+      }
+    ],
+    "106": [
+      {
+        "to": 107,
+        "battleGate": true
+      }
+    ],
+    "107": [
+      {
+        "to": 108,
+        "cmMax": 2
+      }
+    ],
+    "109": [
+      {
+        "to": 110,
+        "egg": "taichi",
+        "priority": 100
+      }
+    ],
+    "110": [
+      {
+        "to": 111,
+        "egg": "taichi",
+        "battleGate": true,
+        "priority": 100
+      }
+    ],
+    "111": [
+      {
+        "to": 112,
+        "egg": "taichi",
+        "cmMax": 2,
+        "priority": 100
+      }
+    ],
+    "113": [
+      {
+        "to": 114,
+        "egg": "yamato",
+        "priority": 100
+      }
+    ],
+    "114": [
+      {
+        "to": 115,
+        "egg": "yamato",
+        "battleGate": true,
+        "priority": 100
+      }
+    ],
+    "115": [
+      {
+        "to": 116,
+        "egg": "yamato",
+        "cmMax": 2,
+        "priority": 100
+      }
+    ],
+    "117": [
+      {
+        "to": 118
+      }
+    ],
+    "118": [
+      {
+        "to": 119
+      }
+    ],
+    "119": [
+      {
+        "to": 120
+      }
+    ],
+    "120": [
+      {
+        "to": 121,
+        "battleGate": true
+      }
+    ],
+    "121": [
+      {
+        "to": 122,
+        "cmMax": 2
+      }
+    ],
+    "123": [
+      {
+        "to": 124
+      }
+    ],
+    "124": [
+      {
+        "to": 125
+      }
+    ],
+    "125": [
+      {
+        "to": 126
+      }
+    ],
+    "126": [
+      {
+        "to": 127,
+        "battleGate": true
+      }
+    ],
+    "127": [
+      {
+        "to": 128,
+        "cmMax": 2
+      }
+    ]
+  },
+  "eggs": [
+    {
+      "id": "ver1",
+      "name": "Version 1 Digi-Egg",
+      "start": 0,
+      "unlocked": true,
+      "condition": "Available from the start."
+    },
+    {
+      "id": "ver2",
+      "name": "Version 2 Digi-Egg",
+      "start": 16,
+      "unlocked": true,
+      "condition": "Available from the start."
+    },
+    {
+      "id": "ver3",
+      "name": "Version 3 Digi-Egg",
+      "start": 32,
+      "unlocked": true,
+      "condition": "Available from the start."
+    },
+    {
+      "id": "ver4",
+      "name": "Version 4 Digi-Egg",
+      "start": 48,
+      "unlocked": true,
+      "condition": "Available from the start."
+    },
+    {
+      "id": "ver5",
+      "name": "Version 5 Digi-Egg",
+      "start": 64,
+      "unlocked": true,
+      "condition": "Available from the start."
+    },
+    {
+      "id": "zuba",
+      "name": "Zuba Digi-Egg",
+      "start": 80,
+      "metric": "totalWins",
+      "need": 50,
+      "condition": "Win 50 battles."
+    },
+    {
+      "id": "hack",
+      "name": "Hack Digi-Egg",
+      "start": 80,
+      "metric": "totalWins",
+      "need": 100,
+      "condition": "Win 100 battles."
+    },
+    {
+      "id": "slayer",
+      "name": "Slayerdra Digi-Egg",
+      "start": 90,
+      "metric": "album",
+      "need": 5,
+      "condition": "Register 5 different Digimon."
+    },
+    {
+      "id": "break",
+      "name": "Breakdra Digi-Egg",
+      "start": 90,
+      "metric": "album",
+      "need": 25,
+      "condition": "Register 25 different Digimon."
+    },
+    {
+      "id": "corona",
+      "name": "Corona Digi-Egg",
+      "start": 99,
+      "metric": "colosseum",
+      "need": 25,
+      "condition": "Reach Colosseum round 25."
+    },
+    {
+      "id": "luna",
+      "name": "Luna Digi-Egg",
+      "start": 99,
+      "metric": "colosseum",
+      "need": 50,
+      "condition": "Reach Colosseum round 50."
+    },
+    {
+      "id": "taichi",
+      "name": "Taichi Digi-Egg",
+      "start": 0,
+      "metric": "colosseum",
+      "need": 75,
+      "condition": "Reach Colosseum round 75."
+    },
+    {
+      "id": "yamato",
+      "name": "Yamato Digi-Egg",
+      "start": 16,
+      "metric": "colosseum",
+      "need": 80,
+      "condition": "Reach Colosseum round 80."
+    },
+    {
+      "id": "doru",
+      "name": "DORU Digi-Egg",
+      "start": 117,
+      "metric": "netWinsOrColosseum",
+      "need": 5,
+      "condition": "Win 5 Netplay battles or reach Colosseum round 90."
+    },
+    {
+      "id": "meicoo",
+      "name": "Meicoo Digi-Egg",
+      "start": 123,
+      "metric": "colosseumClear",
+      "need": 1,
+      "condition": "Clear all 100 Colosseum rounds."
+    }
+  ],
+  "jogressOnly": [
+    129,
+    130,
+    131,
+    132,
+    133
+  ],
+  "colosseum": [
+    {
+      "round": 1,
+      "name": "Kunemon",
+      "species": 35,
+      "attribute": "Virus",
+      "power": 10,
+      "estimated": false
+    },
+    {
+      "round": 2,
+      "name": "Palmon",
+      "species": 51,
+      "attribute": "Data",
+      "power": 10,
+      "estimated": false
+    },
+    {
+      "round": 3,
+      "name": "Betamon",
+      "species": 3,
+      "attribute": "Virus",
+      "power": 10,
+      "estimated": false
+    },
+    {
+      "round": 4,
+      "name": "Patamon",
+      "species": 34,
+      "attribute": "Data",
+      "power": 18,
+      "estimated": false
+    },
+    {
+      "round": 5,
+      "name": "Salamon",
+      "species": 125,
+      "attribute": "Vaccine",
+      "power": 27,
+      "estimated": false
+    },
+    {
+      "round": 6,
+      "name": "Elecmon",
+      "species": 19,
+      "attribute": "Data",
+      "power": 10,
+      "estimated": false
+    },
+    {
+      "round": 7,
+      "name": "Biyomon",
+      "species": 50,
+      "attribute": "Vaccine",
+      "power": 18,
+      "estimated": false
+    },
+    {
+      "round": 8,
+      "name": "Gizamon",
+      "species": 67,
+      "attribute": "Virus",
+      "power": 10,
+      "estimated": false
+    },
+    {
+      "round": 9,
+      "name": "Gabumon",
+      "species": 18,
+      "attribute": "Data",
+      "power": 18,
+      "estimated": false
+    },
+    {
+      "round": 10,
+      "name": "Gazimon",
+      "species": 66,
+      "attribute": "Virus",
+      "power": 18,
+      "estimated": false
+    },
+    {
+      "round": 11,
+      "name": "Agumon",
+      "species": 2,
+      "attribute": "Vaccine",
+      "power": 18,
+      "estimated": false
+    },
+    {
+      "round": 12,
+      "name": "Numemon",
+      "species": 10,
+      "attribute": "Virus",
+      "power": 40,
+      "estimated": false
+    },
+    {
+      "round": 13,
+      "name": "Vegiemon",
+      "species": 26,
+      "attribute": "Virus",
+      "power": 40,
+      "estimated": false
+    },
+    {
+      "round": 14,
+      "name": "Sukamon",
+      "species": 42,
+      "attribute": "Virus",
+      "power": 40,
+      "estimated": false
+    },
+    {
+      "round": 15,
+      "name": "Nanimon",
+      "species": 58,
+      "attribute": "Virus",
+      "power": 40,
+      "estimated": false
+    },
+    {
+      "round": 16,
+      "name": "Raremon",
+      "species": 74,
+      "attribute": "Virus",
+      "power": 40,
+      "estimated": false
+    },
+    {
+      "round": 17,
+      "name": "Birdramon",
+      "species": 24,
+      "attribute": "Vaccine",
+      "power": 55,
+      "estimated": false
+    },
+    {
+      "round": 18,
+      "name": "Shellmon",
+      "species": 40,
+      "attribute": "Data",
+      "power": 55,
+      "estimated": false
+    },
+    {
+      "round": 19,
+      "name": "Flymon",
+      "species": 72,
+      "attribute": "Virus",
+      "power": 55,
+      "estimated": false
+    },
+    {
+      "round": 20,
+      "name": "Airdramon",
+      "species": 8,
+      "attribute": "Vaccine",
+      "power": 55,
+      "estimated": false
+    },
+    {
+      "round": 21,
+      "name": "Coelamon",
+      "species": 56,
+      "attribute": "Data",
+      "power": 55,
+      "estimated": false
+    },
+    {
+      "round": 22,
+      "name": "Coronamon",
+      "species": 101,
+      "attribute": "Vaccine",
+      "power": 27,
+      "estimated": false
+    },
+    {
+      "round": 23,
+      "name": "Lunamon",
+      "species": 105,
+      "attribute": "Data",
+      "power": 27,
+      "estimated": false
+    },
+    {
+      "round": 24,
+      "name": "Seadramon",
+      "species": 9,
+      "attribute": "Data",
+      "power": 50,
+      "estimated": false
+    },
+    {
+      "round": 25,
+      "name": "Whamon",
+      "species": 25,
+      "attribute": "Vaccine",
+      "power": 50,
+      "estimated": false
+    },
+    {
+      "round": 26,
+      "name": "Drimogemon",
+      "species": 41,
+      "attribute": "Data",
+      "power": 50,
+      "estimated": false
+    },
+    {
+      "round": 27,
+      "name": "Mojyamon",
+      "species": 57,
+      "attribute": "Vaccine",
+      "power": 50,
+      "estimated": false
+    },
+    {
+      "round": 28,
+      "name": "Deltamon",
+      "species": 73,
+      "attribute": "Virus",
+      "power": 50,
+      "estimated": false
+    },
+    {
+      "round": 29,
+      "name": "Frigimon",
+      "species": 23,
+      "attribute": "Vaccine",
+      "power": 60,
+      "estimated": false
+    },
+    {
+      "round": 30,
+      "name": "Bakemon",
+      "species": 39,
+      "attribute": "Virus",
+      "power": 60,
+      "estimated": false
+    },
+    {
+      "round": 31,
+      "name": "Meramon",
+      "species": 7,
+      "attribute": "Data",
+      "power": 60,
+      "estimated": false
+    },
+    {
+      "round": 32,
+      "name": "Kuwagamon",
+      "species": 55,
+      "attribute": "Virus",
+      "power": 60,
+      "estimated": false
+    },
+    {
+      "round": 33,
+      "name": "Tuskmon",
+      "species": 71,
+      "attribute": "Virus",
+      "power": 60,
+      "estimated": false
+    },
+    {
+      "round": 34,
+      "name": "Unimon",
+      "species": 36,
+      "attribute": "Vaccine",
+      "power": 75,
+      "estimated": false
+    },
+    {
+      "round": 35,
+      "name": "Devidramon",
+      "species": 70,
+      "attribute": "Virus",
+      "power": 65,
+      "estimated": false
+    },
+    {
+      "round": 36,
+      "name": "Devimon",
+      "species": 6,
+      "attribute": "Virus",
+      "power": 65,
+      "estimated": false
+    },
+    {
+      "round": 37,
+      "name": "Monochromon",
+      "species": 52,
+      "attribute": "Data",
+      "power": 75,
+      "estimated": false
+    },
+    {
+      "round": 38,
+      "name": "DarkTyrannomon",
+      "species": 68,
+      "attribute": "Virus",
+      "power": 75,
+      "estimated": false
+    },
+    {
+      "round": 39,
+      "name": "Huckmon",
+      "species": 86,
+      "attribute": "Data",
+      "power": 34,
+      "estimated": false
+    },
+    {
+      "round": 40,
+      "name": "Dracomon",
+      "species": 92,
+      "attribute": "Data",
+      "power": 34,
+      "estimated": false
+    },
+    {
+      "round": 41,
+      "name": "Ogremon",
+      "species": 38,
+      "attribute": "Virus",
+      "power": 65,
+      "estimated": false
+    },
+    {
+      "round": 42,
+      "name": "Leomon",
+      "species": 54,
+      "attribute": "Vaccine",
+      "power": 65,
+      "estimated": false
+    },
+    {
+      "round": 43,
+      "name": "Dorumon",
+      "species": 119,
+      "attribute": "Data",
+      "power": 27,
+      "estimated": false
+    },
+    {
+      "round": 44,
+      "name": "Zubamon",
+      "species": 82,
+      "attribute": "Vaccine",
+      "power": 34,
+      "estimated": false
+    },
+    {
+      "round": 45,
+      "name": "Kabuterimon",
+      "species": 20,
+      "attribute": "Vaccine",
+      "power": 75,
+      "estimated": false
+    },
+    {
+      "round": 46,
+      "name": "Angemon",
+      "species": 22,
+      "attribute": "Vaccine",
+      "power": 65,
+      "estimated": false
+    },
+    {
+      "round": 47,
+      "name": "Giromon",
+      "species": 44,
+      "attribute": "Vaccine",
+      "power": 118,
+      "estimated": false
+    },
+    {
+      "round": 48,
+      "name": "Nanomon",
+      "species": 76,
+      "attribute": "Virus",
+      "power": 118,
+      "estimated": false
+    },
+    {
+      "round": 49,
+      "name": "Tyrannomon",
+      "species": 5,
+      "attribute": "Data",
+      "power": 70,
+      "estimated": false
+    },
+    {
+      "round": 50,
+      "name": "Garurumon",
+      "species": 21,
+      "attribute": "Vaccine",
+      "power": 70,
+      "estimated": false
+    },
+    {
+      "round": 51,
+      "name": "Centarumon",
+      "species": 37,
+      "attribute": "Data",
+      "power": 70,
+      "estimated": false
+    },
+    {
+      "round": 52,
+      "name": "Kokatorimon",
+      "species": 53,
+      "attribute": "Data",
+      "power": 70,
+      "estimated": false
+    },
+    {
+      "round": 53,
+      "name": "Cyclomon",
+      "species": 69,
+      "attribute": "Virus",
+      "power": 70,
+      "estimated": false
+    },
+    {
+      "round": 54,
+      "name": "Mamemon",
+      "species": 12,
+      "attribute": "Data",
+      "power": 118,
+      "estimated": false
+    },
+    {
+      "round": 55,
+      "name": "MetalMamemon",
+      "species": 28,
+      "attribute": "Data",
+      "power": 118,
+      "estimated": false
+    },
+    {
+      "round": 56,
+      "name": "Piximon",
+      "species": 60,
+      "attribute": "Data",
+      "power": 118,
+      "estimated": false
+    },
+    {
+      "round": 57,
+      "name": "Meicoomon",
+      "species": 126,
+      "attribute": "Free",
+      "power": 80,
+      "estimated": false
+    },
+    {
+      "round": 58,
+      "name": "Vademon",
+      "species": 29,
+      "attribute": "Virus",
+      "power": 107,
+      "estimated": false
+    },
+    {
+      "round": 59,
+      "name": "Etemon",
+      "species": 45,
+      "attribute": "Virus",
+      "power": 107,
+      "estimated": false
+    },
+    {
+      "round": 60,
+      "name": "BaoHuckmon",
+      "species": 87,
+      "attribute": "Data",
+      "power": 90,
+      "estimated": false
+    },
+    {
+      "round": 61,
+      "name": "Monzaemon",
+      "species": 13,
+      "attribute": "Vaccine",
+      "power": 107,
+      "estimated": false
+    },
+    {
+      "round": 62,
+      "name": "Digitamamon",
+      "species": 61,
+      "attribute": "Data",
+      "power": 107,
+      "estimated": false
+    },
+    {
+      "round": 63,
+      "name": "Ex-Tyranomon",
+      "species": 77,
+      "attribute": "Vaccine",
+      "power": 107,
+      "estimated": false
+    },
+    {
+      "round": 64,
+      "name": "Megadramon",
+      "species": 59,
+      "attribute": "Virus",
+      "power": 126,
+      "estimated": false
+    },
+    {
+      "round": 65,
+      "name": "MetalTyrannomon",
+      "species": 75,
+      "attribute": "Virus",
+      "power": 126,
+      "estimated": false
+    },
+    {
+      "round": 66,
+      "name": "Wingdramon",
+      "species": 94,
+      "attribute": "Vaccine",
+      "power": 143,
+      "estimated": false
+    },
+    {
+      "round": 67,
+      "name": "Groundramon",
+      "species": 97,
+      "attribute": "Virus",
+      "power": 143,
+      "estimated": false
+    },
+    {
+      "round": 68,
+      "name": "Puppetmon",
+      "species": 79,
+      "attribute": "Virus",
+      "power": 176,
+      "estimated": false
+    },
+    {
+      "round": 69,
+      "name": "DoruGreymon",
+      "species": 121,
+      "attribute": "Data",
+      "power": 143,
+      "estimated": false
+    },
+    {
+      "round": 70,
+      "name": "SkullMammothmon",
+      "species": 30,
+      "attribute": "Vaccine",
+      "power": 169,
+      "estimated": false
+    },
+    {
+      "round": 71,
+      "name": "KingEtemon",
+      "species": 47,
+      "attribute": "Virus",
+      "power": 169,
+      "estimated": false
+    },
+    {
+      "round": 72,
+      "name": "KingEtemon",
+      "species": 47,
+      "attribute": "Virus",
+      "power": 169,
+      "estimated": false
+    },
+    {
+      "round": 73,
+      "name": "SaviorHuckmon",
+      "species": 88,
+      "attribute": "Data",
+      "power": 155,
+      "estimated": false
+    },
+    {
+      "round": 74,
+      "name": "BanchoMamemon",
+      "species": 15,
+      "attribute": "Data",
+      "power": 176,
+      "estimated": false
+    },
+    {
+      "round": 75,
+      "name": "Meicrackmon",
+      "species": 127,
+      "attribute": "Vaccine",
+      "power": 143,
+      "estimated": false
+    },
+    {
+      "round": 76,
+      "name": "Tai's WarGreymon",
+      "species": 112,
+      "attribute": "Vaccine",
+      "power": 199,
+      "estimated": false
+    },
+    {
+      "round": 77,
+      "name": "Matt's MetalGarurumon",
+      "species": 116,
+      "attribute": "Data",
+      "power": 199,
+      "estimated": false
+    },
+    {
+      "round": 78,
+      "name": "Machinedramon",
+      "species": 78,
+      "attribute": "Virus",
+      "power": 188,
+      "estimated": false
+    },
+    {
+      "round": 79,
+      "name": "Aegisdramon",
+      "species": 62,
+      "attribute": "Vaccine",
+      "power": 188,
+      "estimated": false
+    },
+    {
+      "round": 80,
+      "name": "Slayerdramon",
+      "species": 95,
+      "attribute": "Vaccine",
+      "power": 199,
+      "estimated": false
+    },
+    {
+      "round": 81,
+      "name": "Breakdramon",
+      "species": 98,
+      "attribute": "Virus",
+      "power": 199,
+      "estimated": false
+    },
+    {
+      "round": 82,
+      "name": "Duramon",
+      "species": 84,
+      "attribute": "Vaccine",
+      "power": 155,
+      "estimated": false
+    },
+    {
+      "round": 83,
+      "name": "Duramon",
+      "species": 84,
+      "attribute": "Vaccine",
+      "power": 155,
+      "estimated": false
+    },
+    {
+      "round": 84,
+      "name": "Duramon",
+      "species": 84,
+      "attribute": "Vaccine",
+      "power": 155,
+      "estimated": false
+    },
+    {
+      "round": 85,
+      "name": "Duramon",
+      "species": 84,
+      "attribute": "Vaccine",
+      "power": 155,
+      "estimated": false
+    },
+    {
+      "round": 86,
+      "name": "BlitzGreymon",
+      "species": 14,
+      "attribute": "Virus",
+      "power": 188,
+      "estimated": false
+    },
+    {
+      "round": 87,
+      "name": "CresGarurumon",
+      "species": 31,
+      "attribute": "Data",
+      "power": 188,
+      "estimated": false
+    },
+    {
+      "round": 88,
+      "name": "CresGarurumon",
+      "species": 31,
+      "attribute": "Data",
+      "power": 188,
+      "estimated": false
+    },
+    {
+      "round": 89,
+      "name": "CresGarurumon",
+      "species": 31,
+      "attribute": "Data",
+      "power": 188,
+      "estimated": false
+    },
+    {
+      "round": 90,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    },
+    {
+      "round": 91,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    },
+    {
+      "round": 92,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    },
+    {
+      "round": 93,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    },
+    {
+      "round": 94,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    },
+    {
+      "round": 95,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    },
+    {
+      "round": 96,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    },
+    {
+      "round": 97,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    },
+    {
+      "round": 98,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    },
+    {
+      "round": 99,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    },
+    {
+      "round": 100,
+      "name": "Alphamon",
+      "species": 122,
+      "attribute": "Vaccine",
+      "power": 210,
+      "estimated": false
+    }
+  ],
+  "stageTimes": {
+    "1": 120,
+    "2": 480,
+    "3": 1200,
+    "4": 2100,
+    "5": 3000
+  },
+  "eggHatchSeconds": 30,
+  "obtainableCount": 129,
+  "albumCount": 134,
+  "spriteSheet": "assets/dm20-sprites.png",
+  "spriteCell": 16,
+  "spriteFrameStep": 20
+}

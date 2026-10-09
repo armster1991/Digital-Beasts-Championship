@@ -1,0 +1,243 @@
+{
+  "version": "0.4",
+  "rawPendulumEntries": 193,
+  "uniquePendulumSpecies": 181,
+  "existingSpeciesPreserved": 134,
+  "newSpecies": 148,
+  "catalogTotal": 282,
+  "obtainable": 277,
+  "aliases": {
+    "Mochimon": "Motimon",
+    "Gottsumon": "Gotsumon",
+    "Tailmon": "Gatomon",
+    "Atlur Kabuterimon": "MegaKabuterimon (Blue)",
+    "Tortamon": "Tortomon",
+    "Jyagamon": "Jagamon",
+    "Piccolomon": "Piximon",
+    "Tonosama Gekomon": "ShogunGekomon",
+    "Herakle Kabuterimon": "HerculesKabuterimon",
+    "Saber Leomon": "SaberLeomon",
+    "Metal Etemon": "MetalEtemon",
+    "Holydramon": "Magnadramon",
+    "El Doradimon": "ElDoradimon",
+    "Gran Kuwagamon": "GranKuwagamon",
+    "Pitchmon": "Pichimon",
+    "Pukamon": "Bukamon",
+    "Ganimon": "Crabmon",
+    "Shakomon": "Syakomon",
+    "Rukamon": "Dolphmon",
+    "Mega Seadramon": "MegaSeadramon",
+    "Anomalocarimon": "Scorpiomon",
+    "Marin Devimon": "MarineDevimon",
+    "Hangyomon": "Divermon",
+    "Marin Angemon": "MarineAngemon",
+    "Metal Seadramon": "MetalSeadramon",
+    "Jumbo Gamemon": "JumboGamemon",
+    "Peti Meramon": "DemiMeramon",
+    "Bakumon": "Tapirmon",
+    "Candmon": "Candlemon",
+    "Pico Devimon": "DemiDevimon",
+    "Hanumon": "Apemon",
+    "Wizarmon": "Wizardmon",
+    "Mammon": "Mammothmon",
+    "Were Garurumon": "WereGarurumon",
+    "Death Meramon": "SkullMeramon",
+    "Pumpmon": "Pumpkinmon",
+    "Vamdemon": "Myotismon",
+    "Fantomon": "Phantomon",
+    "Lady Devimon": "LadyDevimon",
+    "Skull Mammon": "SkullMammothmon",
+    "Demon": "Daemon",
+    "Piemon": "Piedmon",
+    "Noble Pumpmon": "NoblePumpkinmon",
+    "Pyocomon": "Yokomon",
+    "Piyomon": "Biyomon",
+    "Mushmon": "Mushroomon",
+    "V-dramon": "Veedramon",
+    "Red Vegimon": "RedVegiemon",
+    "Aero V-dramon": "AeroVeedramon",
+    "Delumon": "Deramon",
+    "Jyureimon": "Cherrymon",
+    "Gerbemon": "Garbagemon",
+    "Lilimon": "Lillymon",
+    "Hououmon": "Phoenixmon",
+    "Griffomon": "Gryphonmon",
+    "Pinochimon": "Puppetmon",
+    "Ulforce V-dramon": "UlforceVeedramon",
+    "Caprimon": "Kapurimon",
+    "Toy Agumon": "ToyAgumon",
+    "Revolmon": "Deputymon",
+    "Metal Greymon (Vaccine)": "MetalGreymon (Vaccine)",
+    "Big Mamemon": "BigMamemon",
+    "Waru Monzaemon": "WaruMonzaemon",
+    "War Greymon": "WarGreymon",
+    "Metal Garurumon": "MetalGarurumon",
+    "Mugendramon": "Machinedramon",
+    "Venom Vamdemon": "VenomMyotismon",
+    "Hi Andromon": "HiAndromon",
+    "Zeke Greymon": "ZekeGreymon",
+    "Omegamon": "Omnimon",
+    "Hi-Commandramon": "HiCommandramon",
+    "Igamon": "Ninjamon",
+    "Metal Mamemon": "MetalMamemon",
+    "Holy Angemon": "MagnaAngemon",
+    "Symbare Angoramon": "SymbareAngoramon",
+    "Tesla Jellymon": "TeslaJellymon",
+    "Grand Galemon": "GrandGalemon",
+    "Betel Gammamon": "BetelGammamon",
+    "Kaus Gammamon": "KausGammamon",
+    "Wezen Gammamon": "WezenGammamon",
+    "Gulus Gammamon": "GulusGammamon",
+    "Yukimibotamon": "YukimiBotamon",
+    "Plotmon": "Salamon"
+  },
+  "duplicateVisualSelection": {
+    "Mastemon": "Nightmare Soldiers",
+    "Mitamamon": "Deep Savers",
+    "Gatomon": "Nature Spirits",
+    "Angewomon": "Nature Spirits",
+    "Garurumon": "Nightmare Soldiers",
+    "WereGarurumon": "Nightmare Soldiers",
+    "Greymon": "Metal Empire",
+    "MetalGreymon (Vaccine)": "Metal Empire",
+    "WarGreymon": "Metal Empire",
+    "MetalGarurumon": "Metal Empire",
+    "Omnimon": "Metal Empire"
+  },
+  "eggPairs": [
+    {
+      "egg": "ver1",
+      "species": [
+        "Botamon",
+        "Bubbmon"
+      ]
+    },
+    {
+      "egg": "ver2",
+      "species": [
+        "Punimon",
+        "Mokumon"
+      ]
+    },
+    {
+      "egg": "ver3",
+      "species": [
+        "Poyomon",
+        "Nyokimon"
+      ]
+    },
+    {
+      "egg": "ver4",
+      "species": [
+        "Yuramon",
+        "Choromon"
+      ]
+    },
+    {
+      "egg": "ver5",
+      "species": [
+        "Zurumon",
+        "Bubbmon"
+      ]
+    },
+    {
+      "egg": "zuba",
+      "species": [
+        "Sakumon",
+        "Mokumon"
+      ]
+    },
+    {
+      "egg": "hack",
+      "species": [
+        "Sakumon",
+        "Nyokimon"
+      ]
+    },
+    {
+      "egg": "slayer",
+      "species": [
+        "Petitmon",
+        "Choromon"
+      ]
+    },
+    {
+      "egg": "break",
+      "species": [
+        "Petitmon",
+        "Bubbmon"
+      ]
+    },
+    {
+      "egg": "corona",
+      "species": [
+        "Pichimon",
+        "Mokumon"
+      ]
+    },
+    {
+      "egg": "luna",
+      "species": [
+        "Pichimon",
+        "Poyomon"
+      ]
+    },
+    {
+      "egg": "taichi",
+      "species": [
+        "Botamon",
+        "Yuramon"
+      ]
+    },
+    {
+      "egg": "yamato",
+      "species": [
+        "Punimon",
+        "Zurumon"
+      ]
+    },
+    {
+      "egg": "doru",
+      "species": [
+        "Dodomon",
+        "YukimiBotamon"
+      ]
+    },
+    {
+      "egg": "meicoo",
+      "species": [
+        "YukimiBotamon",
+        "Dodomon"
+      ]
+    }
+  ],
+  "sources": {
+    "Nature Spirits": "https://wikimon.net/Pendulum_COLOR_1_Nature_Spirits",
+    "Deep Savers": "https://wikimon.net/Pendulum_COLOR_2_Deep_Savers",
+    "Nightmare Soldiers": "https://wikimon.net/Digimon_Pendulum_COLOR_3_Nightmare_Soldiers",
+    "Wind Guardians": "https://wikimon.net/Pendulum_COLOR_4_Wind_Guardians",
+    "Metal Empire": "https://wikimon.net/Pendulum_COLOR_5_Metal_Empire",
+    "Virus Busters": "https://wikimon.net/Digimon_Pendulum_COLOR_ZERO_Virus_Busters"
+  },
+  "sheetGeometry": {
+    "x": 96,
+    "y": 44,
+    "cell": 16,
+    "step": 17,
+    "frames": 12,
+    "order": [
+      "Idle 1",
+      "Idle 2",
+      "Eat 1",
+      "Eat 2",
+      "Sleep 1",
+      "Sleep 2",
+      "Refuse",
+      "Happy",
+      "Angry",
+      "Hurt",
+      "Sad",
+      "Attack"
+    ]
+  }
+}

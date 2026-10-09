@@ -11,7 +11,7 @@ The new save namespace is `db-championship-save-v1`, edition `digital-beasts-cha
 ## Data and research
 
 - `source-data.json` / `data.js`: inherited roster and base relations, stable species IDs.
-- `source/research-index.json`: official reference URLs, attributes, levels and move names for all 134 entries. Partner variants share the corresponding species reference; their cooperation weighting is an explicit design adaptation.
+- `source/research-index.json`: official reference URLs, attributes, levels and move names for the 134 legacy v0.3.2 entries. Partner variants share the corresponding species reference; their cooperation weighting is an explicit design adaptation.
 - `source/profile-design.txt`: individually reviewed allocation, behavior class, hesitation probability, specialization and rationale.
 - `source/species-profiles.json` / `profiles.js`: compiled, centralized gameplay profiles.
 - `source/build_profiles.py`: rebuilds compiled profiles from the reviewed design and reference index. Copy the resulting `profiles.js` to `server/profiles.js` after rebuilding.
@@ -41,7 +41,7 @@ The deterministic selection order is:
 4. Highest inherited route priority.
 5. Lowest target species ID.
 
-Every distinct route has a tested stat/care witness. All 129 non-Jogress species remain reachable from the available egg groups. Five fusion-only entries remain visible and fightable, but not raisable.
+Every distinct route has a tested stat/care witness. All 277 obtainable species remain reachable from the available egg groups. Five legacy fusion-only entries remain visible and fightable, but not raisable.
 
 ## Nursery and specialization
 
@@ -74,3 +74,13 @@ After minimum stage time plus 120 seconds, TIPS identifies the nearest unmet rou
 Coliseum only: fixed early-opponent stat floors and modest later-stage scaling, independent of player strength. Network canonical validation is unchanged. At 90 real seconds, simulation actions advance at 2x, armor and dodge are halved. Terminal safety limit is 135 seconds, awarded by remaining HP percentage. Defensive decisions have a shared cooldown; retreat speed is capped relative to pursuer speed. Deterministic fan steering uses both field axes and avoids zero-motion wall clamping. Client and Worker share identical simulation code; protocol 4 rejects older peers.
 
 Audio fade and stored volume values are clamped to [0,1], including negative animation timestamps relative to the fade start. Mobile portrait uses a rotate notice with the main layout removed from flow to avoid initial viewport inflation on rotation.
+
+## Expansion revision 0.4
+
+The original 134 species IDs, profiles and legacy evolution route objects remain stable. Six user-provided Pendulum Color sheets contribute 193 raw rows / 181 unique species; 33 overlap legacy species and 148 are appended, producing 282 catalog entries and 277 obtainable forms. `source/PENC_EXPANSION_RESEARCH.md` and `source/penc-expansion.json` document aliases, visual-source selection and route provenance.
+
+The same 15 egg images now expose two Baby I candidates each. The hatch candidate is selected once at adoption, stored as `hatchSpeciesId`, and preserved by save/load. All 14 Baby I are represented; legacy egg starts remain the first candidate for backward compatibility. Legacy egg-specific routes keep their filtering behavior, while additive Pendulum Color routes remain available so mixed eggs do not strand a family.
+
+Pendulum Color art is cut at the verified 16×16 / 17-pixel-stride grid into a transparent 12-frame atlas. Existing species prefer the new atlas when present and otherwise keep the four-frame legacy path. The final atlas is independently compared pixel-for-pixel against all six source sheets.
+
+Source-device battle evolutions recorded as 15+ battles / 80%+ wins are compressed to five stage battles while retaining the 80% ratio. Source Jogress relationships for newly added forms are represented as documented solo battle-gated adaptations because Jogress remains out of scope. The five pre-existing Jogress-only Championship forms remain unobtainable.
