@@ -119,3 +119,30 @@ html[lang="pt-BR"] #main-menu{font-size:12px;letter-spacing:-.25px}
 @media(max-width:720px){.extra-training-budget{font-size:10px}.extra-training-help{font-size:9px;line-height:1.25}}
 
 /* v0.5.3 — persistent build/update indicator; update checks run every 60 seconds. */
+
+/* v0.5.4 — installable/offline UI and save/update actions */
+#update-alert{pointer-events:auto}
+#update-alert button{margin-top:7px;min-width:150px;min-height:32px;padding:5px 10px;border-radius:0;font-size:10px}
+#build-status{pointer-events:none}
+#build-status.has-update #update-alert{pointer-events:auto}
+.save-menu-card,.install-card{max-width:680px;margin:12px auto;padding:18px;border:1px solid #486b5a;background:#203f36}
+.save-menu-card>p:first-child,.install-card>p{line-height:1.6}
+.save-menu-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin:16px 0 10px}
+.save-menu-actions button{width:100%;min-height:48px;border-radius:0}
+.save-help{margin:0;line-height:1.5}
+.install-card .controls{margin-top:16px}
+.install-card .controls button{min-width:180px;border-radius:0}
+.install-steps{margin-top:14px;padding:12px;border-left:4px solid #d8c17a;background:#29483d;line-height:1.55}
+#device[data-screen="menu"] .menu-grid .install-button{display:none}
+@media(max-width:900px) and (pointer:coarse){
+ #device[data-screen="menu"] .menu-grid .install-button{display:block;grid-column:1/-1;background:#647c63;color:#fff6c9}
+}
+@media(max-width:720px){
+ #update-alert button{min-width:120px;min-height:27px;margin-top:4px;padding:3px 7px;font-size:8px}
+ .save-menu-card,.install-card{margin:4px auto;padding:12px}
+ .save-menu-actions{grid-template-columns:1fr;margin:10px 0 8px}
+ .save-menu-actions button{min-height:42px;font-size:10px}
+ .install-card .controls button{width:100%;min-width:0;min-height:42px;font-size:10px}
+ .install-card p,.save-menu-card p{font-size:10px;line-height:1.5}
+}
+#build-status.has-update{pointer-events:auto}
