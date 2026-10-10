@@ -40,11 +40,11 @@ Version 0.4 adds **148 new species** from six user-provided Pendulum Color sprit
 ## Play and save
 
 Open **`index.html`** to play locally, or play the hosted version in a modern browser. Local play needs no installer or account. Online matchmaking requires the Championship lobby service.
-Version 0.5.0 keeps the browser and Worker battle validators synchronized with the larger training budgets. The public Worker must be redeployed whenever `server/battle.js` changes so legitimate trained fighters are accepted online.
+Version 0.5.1 keeps the browser and Worker battle validators synchronized with the larger training budgets. The public Worker must be redeployed whenever `server/battle.js` changes so legitimate trained fighters are accepted online.
 
 Progress autosaves in the browser every 30 seconds. **Save & exit** downloads a portable `.dbcsave` backup; **Load save** imports it. This fork uses separate saves from Digital Beasts HTML / Ver.20th. Browser storage can be cleared by the browser, so keep an exported backup of progress you want to preserve.
 
-The interface supports **English and Brazilian Portuguese**, desktop, and mobile play with a portrait-first phone layout. On phones the nursery occupies most of the vertical screen, with tools, partner cards and navigation arranged below it; long submenus keep internal vertical scrolling. Battle rendering uses a mild mobile camera zoom that follows the local player’s Digimon in both Colosseum and Netplay. **Settings** shows the current game version (`v0.5.0`) for easy build identification. The nursery also checks the hosted `version.json`: when a newer build exists it explicitly recommends saving, then tells PC players to use **CTRL+F5** and mobile players to refresh/reload the page. Music and sound effects have independent volume controls and start at 10%. **TUTORIAL** is available beside **MAIN MENU** in the top-right, with an indexed player guide in both supported languages.
+The interface supports **English and Brazilian Portuguese**, desktop, and mobile play with a portrait-first phone layout. On phones the nursery occupies most of the vertical screen, with tools, partner cards and navigation arranged below it; long submenus keep internal vertical scrolling. Battle rendering uses a mild mobile camera zoom that follows the local player’s Digimon in both Colosseum and Netplay. **Settings** shows the current game version (`v0.5.1`) for easy build identification. The nursery also checks the hosted `version.json`: when a newer build exists it explicitly recommends saving, then tells PC players to use **CTRL+F5** and mobile players to refresh/reload the page. Music and sound effects have independent volume controls and start at 10%. **TUTORIAL** is available beside **MAIN MENU** in the top-right, with an indexed player guide in both supported languages.
 
 ## Balance revision 0.5
 
@@ -57,3 +57,7 @@ If a completed Coliseum or Online battle immediately unlocks an evolution, the g
 Armster created this project for personal enjoyment and for fellow virtual pet fans, and owns an original 20th anniversary V-Pet. This is an experimental, noncommercial fangame, unaffiliated with or endorsed by the owners of Digimon. Digimon characters and related artwork belong to their respective owners.
 
 Combat statistics and evolution requirements are original adaptations for this game, informed by species profiles rather than exact reproductions of another game's numbers.
+
+
+### v0.5.1 usability
+TIPS becomes available one minute after a stalled minimum evolution age and lights subtly while useful. A full current-stage training budget or capped individual stat is highlighted in orange in STATUS; subsequent 15-second attempts in a capped/full training situation show a brief orange STATUS FULL message instead of a training animation. TIPS always returns to the Nursery. The Settings server field remains functional for compatible custom WebSocket servers; leaving it empty falls back to the official server displayed as the gray placeholder.

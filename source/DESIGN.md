@@ -68,7 +68,7 @@ Host/challenger roles, room passwords, ready state, mutual rematch, disconnect n
 The public Cloudflare deployment is not part of these local tests. Balance values are an initial tuning pass, not a claim of exhaustive multi-hour player testing.
 
 ## Assistance and presentation
-After minimum stage time plus 120 seconds, TIPS identifies the nearest unmet route independently for each pet without revealing target species. Coliseum reset changes only the current round; permanent boolean unlocks, best round and clear records remain. Egg artwork is assigned in fixed roster order, left-to-right then top-to-bottom from the supplied sheet. Battle/result music is exclusive; leaving results stops the one-shot immediately.
+After minimum stage time plus 60 seconds, TIPS identifies the nearest unmet route independently for each pet without revealing target species. Coliseum reset changes only the current round; permanent boolean unlocks, best round and clear records remain. Egg artwork is assigned in fixed roster order, left-to-right then top-to-bottom from the supplied sheet. Battle/result music is exclusive; leaving results stops the one-shot immediately.
 
 ## Combat revision 0.3
 Coliseum only: fixed early-opponent stat floors and modest later-stage scaling, independent of player strength. Network canonical validation is unchanged. At 90 real seconds, simulation actions advance at 2x, armor and dodge are halved. Terminal safety limit is 135 seconds, awarded by remaining HP percentage. Defensive decisions have a shared cooldown; retreat speed is capped relative to pursuer speed. Deterministic fan steering uses both field axes and avoids zero-motion wall clamping. Client and Worker share identical simulation code; protocol 4 rejects older peers.
@@ -93,3 +93,7 @@ Minimum evolution times are 30 s, 3 min, 7 min, 15 min, 25 min, 35 min and 45 mi
 After a completed local or Online battle, `recordBattle()` returns the newly eligible evolution target. The result UI suppresses rematch/next while that evolution is pending; the normal engine tick performs the evolution, the client returns to the nursery and centers the partner. A Netplay client whose partner evolves closes its room connection so the peer receives the normal departure signal instead of waiting indefinitely for rematch.
 
 `version.json` is the public update marker. The client checks it shortly after startup and every five minutes with a cache-busting query. When the hosted semantic version is newer than `GAME_VERSION`, a nursery-only banner recommends saving and explicitly instructs CTRL+F5 on desktop or page refresh/reload on mobile.
+
+
+## v0.5.1 feedback rules
+When TIPS is actionable, its button receives a restrained highlighted/pulsing state and remains a Nursery-only tool; closing it returns directly to the Nursery. When permanent training reaches the current stage budget, STATUS highlights that budget line in orange; an individual stat at its current cap is highlighted the same way. A subsequent valid 15-second training tick against either the total budget or the selected stat cap produces a transient STATUS FULL/STATUS CHEIO nursery label and no training animation or stat change. The configurable Netplay server field accepts ws:// or wss:// endpoints; an empty value explicitly restores DMNet.DEFAULT_URL and exposes that URL as the input placeholder.

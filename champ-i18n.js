@@ -85,3 +85,8 @@ Object.assign(DMI18N.S,{
  dexEffortMin:['Effort: {n}+ dots','Esforço: {n}+ bolinhas'],
  dexEffortMax:['Effort: at most {n} dots','Esforço: no máximo {n} bolinhas']
 });
+Object.assign(DMI18N.S,{
+ trainingFull:['STATUS FULL','STATUS CHEIO'],
+ serverHint:['Custom ws:// or wss:// servers are supported. Leave this field blank to use the official server shown in gray.','Servidores ws:// ou wss:// personalizados são aceitos. Deixe este campo vazio para usar o servidor oficial mostrado em cinza.'],
+ specializationHelp:["Training never lowers another stat. When the current stage budget is full, further training gives no points until evolution. Permanent budget: Baby I 12 · Baby II 30 · Rookie 90 · Champion 160 · Ultimate 250 · Mega 360 · Ultra 480.","Treinar nunca reduz outro atributo. Quando o orçamento da fase atual está cheio, novos treinos não dão pontos até a evolução. Orçamento permanente: Baby I 12 · Baby II 30 · Rookie 90 · Champion 160 · Ultimate 250 · Mega 360 · Ultra 480."]
+});

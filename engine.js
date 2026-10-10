@@ -119,7 +119,7 @@ function evolutionRequirements(targetId){
 function trainingCap(p,k){return Math.max(p.training?.[k]||0,Math.min(240,budget(stage(p))*.5));}
 function pencStillPossible(p,r){const eh=effortHearts(p);return !(r.careMax!==undefined&&p.careMistakes>r.careMax)&&!(r.effortMax!==undefined&&eh>r.effortMax);}
 function hints(p){
-  if(p.dead||p.speciesId===null||p.stageAge<TIMES[stage(p)]+120)return null;
+  if(p.dead||p.speciesId===null||p.stageAge<TIMES[stage(p)]+60)return null;
   const routes=evolutionRoutes(p);if(!routes.length||routes.some(r=>eligible(p,r)))return null;
   const hasLegacyCare=routes.some(x=>!x.penc&&x.care),eh=effortHearts(p);
   const options=routes.filter(r=>r.penc?pencStillPossible(p,r):(p.careMistakes>=3&&hasLegacyCare?r.care:!r.care)).map(r=>{
@@ -173,11 +173,11 @@ class Game{
  }
  load(input){
   const s=normalizeSave(input);if(!s||!this.valid(s))throw Error('invalidSave');this.s=s;
-  this.s.pets.forEach(p=>{p.battleLock=false;p.dragging=false;const zi=zones.indexOf(p.zone);p.x=clamp(p.x,zi*zoneWidth+24,(zi+1)*zoneWidth-24);p.targetX=p.x;p.targetY=p.y;p.action='';delete p.actionStarted;delete p.actionUntil;delete p.evolution;delete p.refuseUntil;});
+  this.s.pets.forEach(p=>{p.battleLock=false;p.dragging=false;delete p.fullUntil;const zi=zones.indexOf(p.zone);p.x=clamp(p.x,zi*zoneWidth+24,(zi+1)*zoneWidth-24);p.targetX=p.x;p.targetY=p.y;p.action='';delete p.actionStarted;delete p.actionUntil;delete p.evolution;delete p.refuseUntil;});
   this.s.food.forEach(f=>{if(f.reserved&&this.get(f.reserved)?.dead)f.reserved=null;});
   this.refreshUnlocks();
  }
- export(){const s=clone(this.s);s.pets.forEach(p=>{p.battleLock=false;p.dragging=false;});return s;}
+ export(){const s=clone(this.s);s.pets.forEach(p=>{p.battleLock=false;p.dragging=false;delete p.fullUntil;});return s;}
  random(){let x=this.s.seed|0;x^=x<<13;x^=x>>>17;x^=x<<5;this.s.seed=x;return (x>>>0)/4294967296;}
  get(id){return this.s.pets.find(p=>p.instanceId===id);}
  emit(key,p){this.events.push({key,id:p?.instanceId,name:p?.speciesId!==null?catalog[p?.speciesId]?.name:''});}
@@ -195,13 +195,14 @@ class Game{
  clean(x,y){const prev=this.s.waste.length+this.s.food.length;this.s.food=this.s.food.filter(f=>Math.hypot(f.x-x,f.y-y)>45);this.s.waste=this.s.waste.filter(w=>Math.hypot(w.x-x,w.y-y)>70);return prev-this.s.waste.length-this.s.food.length;}
  train(p){
   const k=p.zone;if(p.dead||!STATS.includes(k)||p.fatigue>=95||p.hunger<10||p.sick||p.injured)return;
-  const free=Math.max(0,budget(stage(p))-trainingTotal(p)),gain=Math.min(3,trainingCap(p,k)-p.training[k],free);
-  if(gain<=.0001)return;
+  const free=Math.max(0,budget(stage(p))-trainingTotal(p)),statFree=Math.max(0,trainingCap(p,k)-p.training[k]);
+  if(free<=.0001||statFree<=.0001){p.fullUntil=this.s.clock+1.5;return;}
+  const gain=Math.min(3,statFree,free);
   p.training[k]+=gain;p.stageTraining[k]=(p.stageTraining[k]||0)+gain;
   p.fatigue=clamp(p.fatigue+2.5,0,100);p.hunger=clamp(p.hunger-1.5,0,100);p.action='train';p.actionStarted=this.s.clock;p.actionUntil=this.s.clock+1.5;
  }
  evolve(p,to){
-  const from=p.speciesId;p.speciesId=to;p.stageAge=0;p.stageWins=p.stageBattles=p.careMistakes=0;p.hunger=0;p.neglectClock=0;p.trainingClock=0;p.stageTraining=blankTraining();p.stageTrainingLegacy=false;p.mortality=0;p.mortalityClock=0;p.dead=false;p.careState=blankCareState();this.s.album[to]=1;p.evolution={from,to,until:this.s.clock+2.6};this.emit(from===null?'hatched':'evolved',p);this.refreshUnlocks();
+  const from=p.speciesId;p.speciesId=to;p.stageAge=0;p.stageWins=p.stageBattles=p.careMistakes=0;p.hunger=0;p.neglectClock=0;p.trainingClock=0;p.stageTraining=blankTraining();p.stageTrainingLegacy=false;delete p.fullUntil;p.mortality=0;p.mortalityClock=0;p.dead=false;p.careState=blankCareState();this.s.album[to]=1;p.evolution={from,to,until:this.s.clock+2.6};this.emit(from===null?'hatched':'evolved',p);this.refreshUnlocks();
  }
  evolutionTarget(p){
   if(p.dead)return null;

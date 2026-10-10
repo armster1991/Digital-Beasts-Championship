@@ -1,5 +1,5 @@
 DIGITAL BEASTS CHAMPIONSHIP — FEATURES E REFERÊNCIA
-Versão 0.5.0 • 10 de outubro de 2026
+Versão 0.5.1 • 10 de outubro de 2026
 
 Este documento descreve o que está implementado nesta versão. Ele serve como
 referência do projeto, não como promessa de funções futuras. O fork Championship
@@ -227,7 +227,7 @@ posição e identidade individual ao trocar de espécie.
 
 DICAS? / TIPS? fica centralizado no rodapé, com um olho ovalado. Começa apagado e
 só fica disponível quando pelo menos um pet permanece sem cumprir uma evolução
-por dois minutos além da idade mínima da fase. A dica avalia a rota mais próxima,
+por um minuto além da idade mínima da fase. A dica avalia a rota mais próxima,
 sugerindo sutilmente os atributos ou a experiência de combate que faltam, sem
 mostrar a espécie de destino nem os números exatos dos requisitos.
 
@@ -461,3 +461,6 @@ Durante uma sessão ativa, o viveiro consulta version.json no site publicado ao 
 e depois a cada cinco minutos. Se a versão publicada for maior, um aviso aparece no
 viveiro recomendando salvar antes de atualizar. No PC ele instrui CTRL+F5; no mobile,
 atualizar/recarregar a página. O aviso não depende do Worker de Netplay.
+
+
+0.5.1 — DICAS?/TIPS? passa a liberar um minuto após o tempo mínimo quando há rota pendente, com destaque visual discreto. Quando o orçamento total de treino da fase OU o atributo treinado está no teto, STATUS destaca em laranja o item cheio e as tentativas periódicas mostram STATUS FULL/STATUS CHEIO no viveiro sem tocar a animação de treino. O painel TIPS sempre retorna ao Viveiro. O campo SERVER continua funcional para servidores personalizados; vazio, usa o Worker oficial mostrado como placeholder.

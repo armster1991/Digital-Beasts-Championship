@@ -101,3 +101,10 @@ html[lang="pt-BR"] #main-menu{font-size:12px;letter-spacing:-.25px}
 #update-alert{position:absolute;z-index:12;top:8px;left:50%;transform:translateX(-50%);width:min(660px,calc(100% - 28px));padding:8px 10px;border:2px solid #e5cf83;background:#243d33eF;color:#fff3bf;text-align:center;pointer-events:none;text-shadow:1px 1px #14271f;box-shadow:0 3px 0 #0b1d18}
 #update-alert[hidden]{display:none!important}#update-alert strong,#update-alert span{display:block}#update-alert strong{font-size:14px;letter-spacing:.5px}#update-alert span{margin-top:3px;font-size:11px;line-height:1.35;color:#e8eadb}
 @media(max-width:720px){.mortality-dots{gap:2px;min-width:64px}.mortality-dot{width:8px;height:8px;border-width:1px}#update-alert{top:5px;left:48px;right:5px;transform:none;width:auto;padding:5px 6px}#update-alert strong{font-size:9px;line-height:11px}#update-alert span{font-size:7px;line-height:9px;margin-top:2px}}
+
+/* v0.5.1 — earlier/visible TIPS cue and full-training feedback. */
+#tips.tips-ready{opacity:1;background:#d8c17a;color:#173d36;border-color:#fff0a6;box-shadow:0 0 0 1px #d8c17a,0 0 10px #ead79780;animation:tips-ready-pulse 1.8s ease-in-out infinite}
+#tips.tips-ready:before{border-color:#173d36;background:radial-gradient(circle,#173d36 0 3px,transparent 3.5px)}
+.training-budget-full,.stat-row.stat-full{color:#f0a45f;font-weight:bold;text-shadow:1px 1px #4a2919}.stat-row.stat-full .muted{color:#d99259}
+@keyframes tips-ready-pulse{0%,100%{filter:brightness(1)}50%{filter:brightness(1.12)}}
+@media(prefers-reduced-motion:reduce){#tips.tips-ready{animation:none}}
