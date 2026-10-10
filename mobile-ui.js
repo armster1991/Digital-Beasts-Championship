@@ -11,10 +11,11 @@
   if(!habitat||!world||!tools||!pets||!footer||!tips||!language)return;
   function apply(){
     if(media.matches){
-      if(tools.parentElement!==world)world.appendChild(tools);
+      /* Keep care controls in normal document flow, immediately below the habitat view. */
+      if(tools.parentElement!==habitat||tools.nextElementSibling!==pets)habitat.insertBefore(tools,pets);
       if(tips.parentElement!==world)world.appendChild(tips);
     }else{
-      if(tools.parentElement!==habitat)habitat.insertBefore(tools,pets);
+      if(tools.parentElement!==habitat||tools.nextElementSibling!==pets)habitat.insertBefore(tools,pets);
       if(tips.parentElement!==footer)footer.insertBefore(tips,language);
     }
   }

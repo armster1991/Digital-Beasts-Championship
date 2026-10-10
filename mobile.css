@@ -1,4 +1,4 @@
-/* v0.4.7 mobile UI layer. Desktop rules remain in style.css untouched. */
+/* v0.4.8 mobile UI layer. Desktop rules remain in style.css untouched. */
 .mobile-only{display:none!important}
 
 @media(max-width:720px) and (orientation:portrait){
@@ -24,20 +24,20 @@
   #scene{width:100%;height:100%;display:block;touch-action:none}
   #notice{bottom:48px;left:8px;right:8px;font-size:11px;z-index:6}
 
-  /* Care controls live over the habitat and remain fixed to the player's viewport while the camera pans. */
-  #world>#tools{position:absolute;z-index:7;left:50%;bottom:9px;transform:translateX(-50%);width:min(88%,350px);height:38px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;padding:0;background:transparent;pointer-events:auto}
-  #world>#tools button{min-width:0;width:100%;height:38px;min-height:38px;padding:3px 4px;border-radius:0;background:rgba(49,88,77,.80);backdrop-filter:blur(1px);font-size:9px;line-height:10px;justify-content:center;gap:4px}
-  #world>#tools button.active{background:rgba(109,132,94,.90)}
-  #world>#tools img{width:26px;height:26px}
+  /* The free area below the habitat is split evenly: care controls above, partner summaries below. */
+  #tools{position:relative;flex:1 1 0;min-height:0;width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;padding:1px;background:#0f2d27;overflow:hidden;pointer-events:auto}
+  #tools button{min-width:0;width:100%;height:100%;min-height:0;padding:6px 4px;border-radius:0;background:#31584d;font-size:10px;line-height:1.05;justify-content:center;align-items:center;flex-direction:column;gap:5px;overflow:hidden}
+  #tools button.active{background:#6d845e}
+  #tools img{width:30px;height:30px;flex:0 0 auto}
 
   /* Tips becomes a small translucent eye that follows the visible viewport, not the world camera. */
   #world>#tips{position:absolute;z-index:8;top:8px;left:8px;width:42px;height:27px;min-width:42px;min-height:27px;padding:0;border-radius:999px;background:rgba(35,67,58,.72);opacity:.88;font-size:0;line-height:0}
   #world>#tips:before{content:'';display:block;width:22px;height:13px;margin:auto;border:2px solid #ead797;border-radius:70% 70%;background:radial-gradient(circle,#ead797 0 3px,transparent 3.5px)}
   #world>#tips:disabled{opacity:.34}
 
-  /* Two symmetrical rectangular partner summaries occupy the remaining middle area. */
-  #pets{flex:1 1 auto;min-height:96px;height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;padding:1px;background:#0f2d27;overflow:hidden}
-  #pets button{min-width:0;width:100%;height:100%;min-height:0;padding:7px;border-radius:0;display:flex;flex-direction:column;justify-content:center;text-align:left;font-size:10px;overflow:hidden}
+  /* The two partner summaries take the other half of that same free area. */
+  #pets{flex:1 1 0;min-height:0;height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;padding:1px;background:#0f2d27;overflow:hidden}
+  #pets button{min-width:0;width:100%;height:100%;min-height:0;padding:8px;border-radius:0;display:flex;flex-direction:column;justify-content:center;text-align:left;font-size:10px;overflow:hidden}
   #pets button.selected{outline:2px solid #efca72;outline-offset:-2px}
   .pet-title{font-size:10px;line-height:1.15;align-items:flex-start}
   .pet-title strong,.pet-title span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -94,10 +94,9 @@
   #world{height:min(50dvh,calc((100vw - 12px)*1.067));min-height:245px}
   .header-actions button{font-size:7.5px}
   html[lang="pt-BR"] #main-menu{font-size:6.8px}
-  #pets{min-height:88px}
-  #pets button{padding:5px;font-size:9px}
+  #pets button{padding:6px;font-size:9px}
   .pet-title{font-size:9px}.mobile-pet-stats{font-size:8px}.meters{font-size:7px}
   #navigation{height:42px;flex-basis:42px}#navigation button{height:41px;min-height:41px;font-size:8px}
-  #world>#tools{width:92%;height:35px}#world>#tools button{height:35px;min-height:35px;font-size:8px}#world>#tools img{width:23px;height:23px}
+  #tools button{font-size:8px;padding:4px 2px;gap:3px}#tools img{width:26px;height:26px}
   #device[data-screen="menu"] .menu-grid button{min-height:41px;font-size:10px}
 }
