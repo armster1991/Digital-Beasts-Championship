@@ -1,71 +1,218 @@
-# Digital Beasts Championship
+<div align="center">
 
-A browser-based virtual pet fangame by **Armster**, inspired by **Digimon World Championship**. Raise two companions, shape their growth through training, and watch their personalities unfold in automatic battles.
+# DIGITAL BEASTS CHAMPIONSHIP
 
-![The nursery](source/previews/nursery-desktop.png)
+### Raise. Train. Evolve. Battle. Collect.
 
-## A small world to care for
+**A free, non-commercial Digimon virtual-pet fangame for desktop and mobile browsers.**
 
-- Raise **up to two independent Digimon**, including two of the same species.
-- Explore a scrolling nursery with a resting area and six distinct training cages.
-- Drag companions, place up to **six active pieces of Meat**, apply medicine, and sweep up waste with a mouse or touchscreen.
-- Develop **HP, TP/Technique, Attack, Defense, Wisdom, and Speed**. Training never lowers another stat; permanent stage budgets grow from 12 points at Baby I to 480 at Ultra, with a normal 50% per-stat cap and a 240-point absolute per-stat ceiling.
-- Discover automatic, branching evolutions. Each companion has its own age and development timer.
-- There is **no death from old age**: a well-cared companion can live indefinitely. Neglect fills the visible **MORTALITY** meter, however; filling every dot turns that partner into a grave until the player releases the slot.
+[**PLAY IN YOUR BROWSER**](https://armster1991.github.io/Digital-Beasts-Championship/)
 
-## Prepare, then let them fight
+English and Brazilian Portuguese are available in-game.
 
-Battles are automatic 1v1 encounters with movement, close-range attacks, projectiles, defense, evasion, and species-specific behavior. TP limits special attacks, while occasional hesitation adds personality without repeated stun-locks.
+</div>
 
-At 90 seconds, **Sudden Death** turns the arena red, accelerates actions and lowers defense and evasion for both fighters.
+---
 
-The **Colosseum contains 282 opponents**, one for every catalog entry, dynamically ordered by stage and combat strength. Online rooms support a host and challenger, optional passwords, ready checks, and mutually accepted rematches.
+## What is Digital Beasts Championship?
 
-![Mobile battle](source/previews/battle-portrait.png)
+**Digital Beasts Championship** is a fan-made virtual pet game inspired by the feeling of raising a physical Digimon V-Pet and by the training-and-battle philosophy of **Digimon World Championship**.
 
-## Discover with the DIGIDEX
+You can raise **up to two Digimon at the same time**, care for them inside a large scrolling nursery, train individual attributes, discover branching evolutions, fill the **DIGIDEX**, unlock new Digi-Eggs, fight through the Colosseum, and battle another player online.
 
-The **DIGIDEX** contains **282 animated entries**, of which **277 are obtainable** in this version. The v0.4 expansion integrates the six Pendulum Color families while preserving all 134 original Championship IDs. Five legacy fusion-only species remain visible as Colosseum opponents; Jogress itself is still outside this fork's scope.
+The project is intentionally designed to work as a game you can keep open while doing other things. Your Digimon need attention, but they are not meant to demand constant babysitting. Check on them regularly, keep them fed and healthy, give them time to rest, and decide how you want them to grow.
 
-Once a Digimon has been registered, its DIGIDEX card can be clicked or tapped to reveal every current in-game route for obtaining it again. These details are generated from the same evolution resolver used by the pet engine, including minimum stage time, training/stat thresholds, care mistakes, Effort, battle/win requirements, win ratio, and Digi-Egg origin where applicable. Baby I entries show the existing Digi-Eggs that can hatch them and the real hatch chance.
+This repository is public so people who never had the opportunity to own a physical V-Pet can still enjoy that style of play — including online battles with friends who may live far away.
 
-The same **15 Digi-Eggs** remain in use, but each now has **two possible Baby I outcomes**. The result is chosen once when the egg is created and stored in the save, so reloading never rerolls the hatch. Collection milestones and battle achievements continue to unlock the existing egg artwork.
+![Digital Beasts Championship nursery](docs/screenshots/nursery.png)
 
-![The DIGIDEX](source/previews/album-desktop.png)
+---
 
-## Pendulum Color expansion
+## The basic loop
 
-Version 0.4 adds **148 new species** from six user-provided Pendulum Color sprite sheets. In total, 181 unique Pendulum Color species have 12-frame animation rows covering idle, eating, sleep, refusal, emotion, hurt, and attack states. Existing species use the new Pendulum Color art when available; species not present in those sheets keep their legacy sprites. Evolution data for the expansion is source-traceable in `source/PENC_EXPANSION_RESEARCH.md`.
+Start a new game, choose a Digi-Egg for an empty slot, and raise the Digimon that hatches from it. Feed it when it becomes hungry, keep its environment clean, treat sickness or injuries, let it rest when fatigue becomes high, and drag it into training areas to shape its stats.
 
-## Play and save
+Evolution happens automatically when the Digimon has spent enough active time in its current stage and meets one of its available evolution paths. Different training choices, battle results, care history and Digi-Egg origins can lead to different forms.
 
-Open **`index.html`** to play locally, or play the hosted version in a modern browser. Local play needs no installer or account. Online matchmaking requires the Championship lobby service.
-Version 0.5.3 keeps the browser and Worker battle validators synchronized with the normal budgets plus the narrowly-scoped evolution rescue allowance. The public Worker must be redeployed whenever `server/battle.js` changes so legitimate trained fighters are accepted online.
+An Egg hatches very quickly — usually in **under a minute**. Early stages develop within a few minutes, while later stages generally take **tens of minutes** and require more deliberate training and care. The exact requirements are intentionally left for the game itself to teach you.
 
-Progress autosaves in the browser every 30 seconds. **Save & exit** downloads a portable `.dbcsave` backup; **Load save** imports it. This fork uses separate saves from Digital Beasts HTML / Ver.20th. Browser storage can be cleared by the browser, so keep an exported backup of progress you want to preserve.
+The built-in **TUTORIAL** contains the full player guide. This README is only the short version.
 
-The interface supports **English and Brazilian Portuguese**, desktop, and mobile play with a portrait-first phone layout. On phones the nursery occupies most of the vertical screen, with tools, partner cards and navigation arranged below it; long submenus keep internal vertical scrolling. Battle rendering uses a mild mobile camera zoom that follows the local player’s Digimon in both Colosseum and Netplay. **Settings** shows the current game version (`v0.5.3`) for easy build identification. A persistent version indicator sits in the lower-right corner on both the title screen and in-game. The client checks the hosted `version.json` on startup, whenever the tab becomes active again, and once per minute; when a newer build exists it explicitly recommends saving, then tells PC players to use **CTRL+F5** and mobile players to refresh/reload the page. Music and sound effects have independent volume controls and start at 10%. **TUTORIAL** is available beside **MAIN MENU** in the top-right, with an indexed player guide in both supported languages.
+---
 
-## Balance revision 0.5
+## Nursery & care
 
-Evolution pacing is now **30 s / 3 min / 7 min / 15 min / 25 min / 35 min / 45 min** from Egg through the Mega→Ultra step. Permanent trained stats survive evolution, but a separate stage-training counter resets each evolution and drives evolution requirements and the four Effort dots. Care mistakes are recorded once per unresolved incident after two minutes instead of repeating forever. Hunger at zero or ignored exhaustion adds about one MORTALITY point per seven minutes; sickness or injury is twice as fast, while a very dirty nursery adds slower pressure. MORTALITY resets on evolution.
+The nursery is the main screen of the game. It is wider than the visible screen and can be dragged horizontally on both desktop and mobile. Digimon can also be picked up and moved directly.
 
-If a completed Coliseum or Online battle immediately unlocks an evolution, the game returns to the nursery and centers that partner so the evolution animation is visible. In Online play that player leaves the room cleanly instead of leaving the opponent waiting on a rematch that cannot happen.
+Three basic tools are always part of daily care:
 
-## About this fan project
+- **MEAT** restores Hunger. A well-fed Digimon normally has plenty of time before hunger becomes critical, although training makes it hungry faster. Up to six pieces of meat may exist in the nursery at once.
+- **MEDICINE** treats sickness and injuries. Untreated medical problems are more dangerous than ordinary hunger or tiredness, so do not ignore them for too long.
+- **CLEAN** removes waste and can also clear abandoned meat from the nursery.
 
-Armster created this project for personal enjoyment and for fellow virtual pet fans, and owns an original 20th anniversary V-Pet. This is an experimental, noncommercial fangame, unaffiliated with or endorsed by the owners of Digimon. Digimon characters and related artwork belong to their respective owners.
+Waste appears periodically. A dirty environment increases health risks, so occasional cleaning matters even when both Digimon look fine. Repeated care failures can also create **Care Mistakes**, which may influence certain evolution paths.
 
-Combat statistics and evolution requirements are original adaptations for this game, informed by species profiles rather than exact reproductions of another game's numbers.
+Digimon also accumulate **Fatigue** while training and after battles. Training is meant to happen in multi-minute sessions followed by short periods of rest rather than running forever without interruption.
 
+---
 
-### v0.5.1 usability
-TIPS becomes available one minute after a stalled minimum evolution age and lights subtly while useful. A full current-stage training budget or capped individual stat is highlighted in orange in STATUS; subsequent 15-second attempts in a capped/full training situation show a brief orange STATUS FULL message instead of a training animation. TIPS always returns to the Nursery. The Settings server field remains functional for compatible custom WebSocket servers; leaving it empty falls back to the official server displayed as the gray placeholder.
+## Mortality & neglect
 
+Digimon do **not** die simply because they become old. There is no hidden old-age timer.
 
-### v0.5.2 evolution rescue
-STATUS now labels the TP-derived training stat as **Technique / Técnica**. If the normal stage training budget is exhausted while the nearest viable evolution still lacks training points, the engine exposes a temporary orange **EXTRA TRAINING BUDGET** only for the missing stat(s). The same nearest-route scoring used by TIPS decides what can receive those points, and TIPS becomes available immediately while rescue training is active. Extra rescue points never subtract another stat and the normal stage budget itself is not raised.
+Instead, each stage has a visible **MORTALITY** meter. Long periods of serious neglect can fill it. Leaving Hunger at zero, forcing an exhausted Digimon to remain active, keeping the nursery extremely dirty, or ignoring sickness and injuries can all increase Mortality. Medical neglect is especially dangerous.
 
-### v0.5.3 update visibility
+You normally have **several minutes to react**, not a few seconds. The system exists to make care meaningful without turning the game into constant maintenance.
 
-The current build number is always visible in the lower-right corner on desktop and mobile, including the main menu. A newer published `version.json` produces a persistent **NEW UPDATE AVAILABLE!** notice beside it. Checks run immediately after startup, whenever the page regains focus, and every 60 seconds.
+Mortality resets when a Digimon evolves. If the meter becomes completely full, that Digimon dies and leaves a grave in its slot. Your collection progress and other permanent unlocks are not erased.
+
+---
+
+## Training, stats & Effort
+
+There are six trainable battle attributes:
+
+**HP · Technique · Attack · Defense · Wisdom · Speed**
+
+Each training area improves a different attribute. Training never makes another stat weaker.
+
+Every stage has a **Training Budget**, so raising a Digimon is about deciding what kind of fighter you want rather than simply maximizing everything. **EFFORT** is displayed with four dots and represents how much training has been completed during the current stage.
+
+If the normal Training Budget is already full but the closest viable evolution still needs a specific stat, the game can temporarily unlock **Extra Training** for only the attributes required by that evolution. This prevents a bad early distribution from permanently trapping the Digimon.
+
+When you are unsure what is missing, watch the **TIPS?** button. It becomes available when the Digimon has been waiting for an evolution and gives a direction without simply revealing the answer.
+
+![Digimon status screen](docs/screenshots/status.png)
+
+---
+
+## Evolution
+
+Evolution is automatic and branching. There is no single fixed line for most Digimon.
+
+Possible paths may consider things such as stage training, specific attributes, Effort, battles, victories, win rate, care mistakes and the Digi-Egg the Digimon originally came from.
+
+The goal is to make **how you raise the Digimon** matter. A heavily offensive Digimon may reach a different form from one focused on Defense, Wisdom or Speed, even if both began from the same family.
+
+When a battle causes the final requirement for an evolution to be completed, the game returns to the nursery and shows the evolution there instead of letting it happen unseen behind a result screen.
+
+---
+
+## Digi-Eggs
+
+The game contains **15 Digi-Egg groups**. Several are available from the beginning, while others are unlocked permanently through collection and battle milestones.
+
+Each empty partner slot can hatch a new Egg, so you can raise one Digimon alone or manage two independent partners at once.
+
+Unlocking more Eggs expands the possible families you can raise without deleting your DIGIDEX progress.
+
+![Digi-Egg selection and unlocks](docs/screenshots/eggs.png)
+
+---
+
+## DIGIDEX
+
+The **DIGIDEX** currently contains **282 Digimon**, with **277 obtainable through normal raising paths**.
+
+A newly encountered species is permanently registered in the collection. Unregistered Digimon remain visible as dark silhouettes so you can see how much is still left to discover.
+
+Once a species has been registered, selecting it in the DIGIDEX reveals the known in-game ways to obtain it again. This makes the collection useful as a reference without requiring an external evolution guide for Digimon you have already discovered.
+
+![DIGIDEX collection](docs/screenshots/digidex.png)
+
+---
+
+## Battles & the Colosseum
+
+Battles are **automatic 1v1 fights**. Your job is preparation: raising the Digimon, choosing its training priorities and deciding which partner should fight.
+
+Digimon move around the arena, approach or avoid opponents, use normal and special attacks, defend, evade and occasionally make different decisions based on their own battle behavior. **Technique** is the trained attribute behind special-action resources; during battle, that resource is displayed as **TP**.
+
+Attributes also matter. Vaccine, Virus and Data follow the familiar advantage cycle, while Free Digimon sit outside it.
+
+The **Colosseum** provides a long sequence of opponents drawn from the game's roster. Winning advances your progress, while losing lets you prepare and challenge the same round again. Later battles demand much more developed Digimon than the early rounds.
+
+![Colosseum battle](docs/screenshots/colosseum.png)
+
+---
+
+## Online / Netplay
+
+Online mode is available from inside the **Colosseum** menu.
+
+Create or join a room, choose a nickname, optionally protect the room with a password, select a Digimon and ready up. Battles use the same automatic combat system as the Colosseum, and both players may agree to a rematch after a normal result.
+
+If an evolution is triggered by the online battle, that player returns to the nursery to see it instead of remaining in the rematch flow.
+
+The game normally uses the default Championship online service. The **Server** field in **Settings** can be changed to another compatible server address if the default service is unavailable. You do not need to change it for normal play.
+
+---
+
+## Saving your game
+
+Progress is saved automatically in the browser approximately every **30 seconds**.
+
+**MAIN MENU** saves the current state and unloads the active session, so the Digimon stop progressing until you choose **CONTINUE**, **LOAD SAVE** or **NEW GAME** again.
+
+**SAVE & EXIT** also creates a portable backup named **`DBCsave.dbcsave`**. Keep a copy if the save is important to you, especially before clearing browser data, changing browsers or moving between devices.
+
+The game checks periodically for new versions. When **NEW UPDATE AVAILABLE!** appears, save your game before updating. On PC, use **CTRL+F5** after the new version has been published. On mobile, reload or refresh the page.
+
+---
+
+## Desktop & mobile
+
+Digital Beasts Championship is playable with a mouse or touchscreen and has separate layouts designed for desktop and mobile screens.
+
+The nursery, tools, status panels, menus, DIGIDEX, Eggs, Colosseum and Netplay are all available on both versions. The game interface can be switched between **English** and **Brazilian Portuguese** from Settings.
+
+No installer or account is required for browser play.
+
+---
+
+## In-game tutorial
+
+This README deliberately avoids listing every exact timer, evolution number and hidden rule.
+
+Open **TUTORIAL** from the game for the complete player guide. It explains the nursery, care, training, evolution, Mortality, Eggs, DIGIDEX, battles, saves and online play in more detail and is available in both supported languages.
+
+---
+
+## Why this project exists
+
+Digital Beasts Championship is a **free, unofficial and non-commercial fangame created out of love for Digimon and virtual pets**.
+
+I wanted to make something that could capture part of the fun of raising a real V-Pet while being easy to open in a browser, playable on a phone or computer, and capable of letting friends battle even when they are nowhere near each other physically.
+
+This project is not affiliated with, sponsored by or endorsed by Bandai, Bandai Namco, WiZ, Toei Animation or any other Digimon rights holder. No ownership of Digimon characters, names, devices, artwork or trademarks is claimed.
+
+---
+
+## Credits & acknowledgements
+
+**Project, game design, programming and adaptation**  
+**Armster** — [armster1991 on GitHub](https://github.com/armster1991)
+
+**Digimon / Digital Monster**  
+Digimon and the Digital Monster virtual-pet franchise were created through the work of **Bandai** and **WiZ**, with the franchise traditionally credited to **Akiyoshi Hongo**. Important original Digital Monster development staff include **Makoto Kitagawara**, **Kenji Watanabe** and **Ayumu Horimura**. Kenji Watanabe has been one of the central character designers of Digimon since the original LCD toys.
+
+**Digimon Pendulum**  
+The original Pendulum project was developed at **WiZ** and **Bandai**. **Makoto Kitagawara** led its development and originated the project plan, **Kenji Watanabe** handled art direction and character design, and **Kensuke “Volcano Ota” Ota** was involved from Bandai's side in the planning of the series.
+
+**Sprites**  
+The Digimon LCD sprite material used as the visual foundation for this fangame comes from preserved **Digital Monster Ver.20th** and **Digimon Pendulum Color** sprite sheets available through **The Spriters Resource**, with the relevant sheets ripped/uploaded by **airshuffler**. Additional device and species reference material was cross-checked through **Wikimon**.
+
+**Research references**  
+The project has also benefited from the Digimon community's preservation work, especially **Humulos**, **Wikimon**, official Digimon profile material, device documentation and community research around V-Pet evolution and behavior.
+
+Thank you to everyone who has preserved, documented, researched and shared information about Digimon virtual pets over the years.
+
+---
+
+<div align="center">
+
+### Made by a fan, for other fans.
+
+**DIGITAL BEASTS CHAMPIONSHIP**
+
+</div>
