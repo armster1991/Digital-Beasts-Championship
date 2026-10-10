@@ -1,5 +1,5 @@
 DIGITAL BEASTS CHAMPIONSHIP — FEATURES E REFERÊNCIA
-Versão 0.5.2 • 10 de outubro de 2026
+Versão 0.5.3 • 10 de outubro de 2026
 
 Este documento descreve o que está implementado nesta versão. Ele serve como
 referência do projeto, não como promessa de funções futuras. O fork Championship
@@ -463,12 +463,18 @@ resultados diferentes para a mesma semente.
 
 ATUALIZAÇÕES DO CLIENTE
 
-Durante uma sessão ativa, o viveiro consulta version.json no site publicado ao entrar
-e depois a cada cinco minutos. Se a versão publicada for maior, um aviso aparece no
-viveiro recomendando salvar antes de atualizar. No PC ele instrui CTRL+F5; no mobile,
-atualizar/recarregar a página. O aviso não depende do Worker de Netplay.
+O cliente exibe sua versão permanentemente no canto inferior direito, tanto no MENU
+PRINCIPAL quanto dentro do jogo. Ele consulta version.json no site publicado logo ao
+abrir, quando a aba volta a ficar ativa e depois a cada 60 segundos. Se a versão
+publicada for maior, NEW UPDATE AVAILABLE! / NOVA ATUALIZAÇÃO DISPONÍVEL! aparece
+junto do número da versão, recomendando salvar antes de atualizar. No PC ele instrui
+CTRL+F5; no mobile, atualizar/recarregar a página. O aviso não depende do Worker de
+Netplay.
 
 
 0.5.1 — DICAS?/TIPS? passa a liberar um minuto após o tempo mínimo quando há rota pendente, com destaque visual discreto. Quando o orçamento total de treino da fase OU o atributo treinado está no teto, STATUS destaca em laranja o item cheio e as tentativas periódicas mostram STATUS FULL/STATUS CHEIO no viveiro sem tocar a animação de treino. O painel TIPS sempre retorna ao Viveiro. O campo SERVER continua funcional para servidores personalizados; vazio, usa o Worker oficial mostrado como placeholder.
 
 0.5.2 — STATUS passa a exibir TECHNIQUE/TÉCNICA no lugar de TP para o atributo de treino. Ao esgotar o budget normal com requisitos de treino ainda faltando para a evolução viável mais próxima, surge um ORÇAMENTO DE TREINO EXTRA laranja, restrito aos atributos indicados por DICAS?/TIPS?. O mesmo cálculo de proximidade alimenta os dois sistemas; o resgate não rouba stats nem altera o budget normal.
+
+
+0.5.3 — O número da versão passa a ficar sempre visível no canto inferior direito no menu principal e durante o jogo. A checagem de version.json ocorre ao abrir, ao retornar para a aba e a cada 60 segundos; versões publicadas mais novas exibem o aviso persistente de atualização junto da versão local.
