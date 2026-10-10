@@ -29,7 +29,7 @@ The Ver.20th relations remain the foundation. Additional relationships and AP in
 - [Piximon](https://wikimon.net/Piccolomon#Digimon_Championship): Angemon and Kokatorimon links; Holy AP is adapted to wisdom and related training.
 - [Unimon](https://wikimon.net/Unimon#Digimon_Championship): the Salamon connection is retained as an additional branch with mobility-oriented training.
 
-This is not a complete import of Championship's 216-species tree. No Tamer Rank, calendar, lifespan, AP inventory or Egg Revert requirements are introduced.
+This is not a complete import of Championship's 216-species tree. No Tamer Rank, calendar, AP inventory or Egg Revert requirements are introduced. v0.5 adds a visible neglect-driven Mortality meter, but there is still no age-based lifespan requirement or death from old age.
 
 Evolution time is tracked separately for each instance. Once the minimum age is met, eligibility is tested continuously. A route normally needs training in two attributes; applicable battle gates use three stage wins, and special former 100-battle exceptions use five stage battles. Legacy overfeeding and training-count splits are replaced with specialization. Explicit fallback species require three care mistakes. Separate secondary attributes break duplicate branch requirements.
 
@@ -47,9 +47,9 @@ Every distinct route has a tested stat/care witness. All 277 obtainable species 
 
 The world has seven 300-unit zones. Pointer Events implement pet dragging, item dragging, tap-to-select tools, empty-ground panning and cancellation; wheel scrolling and zone shortcuts are also available. Save positions are world coordinates.
 
-Every 15 seconds, a valid training cage adds up to 3 points, costs 2.5 fatigue and 1.5 hunger. Fatigue 95, hunger below 10, sickness or injury prevents gains. Rest recovers 95/60 fatigue per second. Stage training budgets are 12, 24, 80, 120, 160, 200 and 240; one stat can hold at most 60% of the current budget. Outside Rest, fatigue also rises by 9 per minute. At the per-stat cap, training gives no points. At the total budget, new training redistributes existing points at half speed instead of permanently blocking a different specialization. HP and TP convert training points at 5:1 and 2:1 respectively.
+Every 15 seconds, a valid training cage adds up to 3 points, costs 2.5 fatigue and 1.5 hunger. Fatigue 95, hunger below 10, sickness or injury prevents gains. Rest recovers 95/60 fatigue per second. Permanent training budgets are 12, 30, 90, 160, 250, 360 and 480; one stat normally holds at most 50% of the current budget and never more than 240 training points. Outside Rest, fatigue also rises by 9 per minute. Training never redistributes or subtracts another stat: at a per-stat or total cap, the attempt simply grants no points. HP and TP convert training points at 5:1 and 2:1 respectively. Permanent `training` survives evolution; separate `stageTraining` resets on evolution and drives route thresholds and the four Effort dots.
 
-Food is restricted to the pet’s current cage and reserves by instance ID, expires after 90 seconds and is consumed in three 0.6-second visual phases. Hunger continues to decline during rest. Medical conditions and fatigue never delete a pet. Battle participants are temporarily locked; the other companion continues developing. Deletion alone frees a slot.
+Food is restricted to the pet’s current cage and reserves by instance ID, expires after 90 seconds and is consumed in three 0.6-second visual phases. At most six Meat objects are active at once. Hunger continues to decline during rest. Care mistakes count once per unresolved incident after two minutes. Neglect also builds Mortality: hunger at zero or ignored exhaustion is 1x, sickness/injury 2x, and three or more waste objects 0.5x, with combined pressure capped at 2x. One Mortality point requires 420 pressure-seconds. Mortality capacity is 3/4/5/6/7/8/9 from Baby I through Ultra, resets on evolution, and never rises merely from age. At the cap the partner becomes a persistent grave until the player releases that slot. Battle participants are temporarily locked; the other companion continues developing.
 
 ## Shared combat and netplay
 
@@ -84,3 +84,12 @@ The same 15 egg images now expose two Baby I candidates each. The hatch candidat
 Pendulum Color art is cut at the verified 16×16 / 17-pixel-stride grid into a transparent 12-frame atlas. Existing species prefer the new atlas when present and otherwise keep the four-frame legacy path. The final atlas is independently compared pixel-for-pixel against all six source sheets.
 
 Source-device battle evolutions recorded as 15+ battles / 80%+ wins are compressed to five stage battles while retaining the 80% ratio. Source Jogress relationships for newly added forms are represented as documented solo battle-gated adaptations because Jogress remains out of scope. The five pre-existing Jogress-only Championship forms remain unobtainable.
+
+
+## Balance revision 0.5
+
+Minimum evolution times are 30 s, 3 min, 7 min, 15 min, 25 min, 35 min and 45 min for Egg→Baby I through Mega→Ultra. Save schema is version 3; v1/v2 saves migrate by retaining permanent training and seeding `stageTraining` from the previous training distribution so an in-progress evolution is not destroyed by migration. New-stage evolution resets `stageTraining`, care mistakes and Mortality.
+
+After a completed local or Online battle, `recordBattle()` returns the newly eligible evolution target. The result UI suppresses rematch/next while that evolution is pending; the normal engine tick performs the evolution, the client returns to the nursery and centers the partner. A Netplay client whose partner evolves closes its room connection so the peer receives the normal departure signal instead of waiting indefinitely for rematch.
+
+`version.json` is the public update marker. The client checks it shortly after startup and every five minutes with a cache-busting query. When the hosted semantic version is newer than `GAME_VERSION`, a nursery-only banner recommends saving and explicitly instructs CTRL+F5 on desktop or page refresh/reload on mobile.

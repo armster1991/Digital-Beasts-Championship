@@ -8,10 +8,10 @@ A browser-based virtual pet fangame by **Armster**, inspired by **Digimon World 
 
 - Raise **up to two independent Digimon**, including two of the same species.
 - Explore a scrolling nursery with a resting area and six distinct training cages.
-- Drag companions, drop unlimited food, apply medicine, and sweep up waste with a mouse or touchscreen.
-- Develop **HP, TP, Attack, Defense, Wisdom, and Speed**. Limited training points encourage specialization while allowing you to retrain.
+- Drag companions, place up to **six active pieces of Meat**, apply medicine, and sweep up waste with a mouse or touchscreen.
+- Develop **HP, TP/Technique, Attack, Defense, Wisdom, and Speed**. Training never lowers another stat; permanent stage budgets grow from 12 points at Baby I to 480 at Ultra, with a normal 50% per-stat cap and a 240-point absolute per-stat ceiling.
 - Discover automatic, branching evolutions. Each companion has its own age and development timer.
-- Keep your companions indefinitely: there is **no automatic death or lifespan limit**. Deleting a companion requires two confirmations.
+- There is **no death from old age**: a well-cared companion can live indefinitely. Neglect fills the visible **MORTALITY** meter, however; filling every dot turns that partner into a grave until the player releases the slot.
 
 ## Prepare, then let them fight
 
@@ -40,15 +40,20 @@ Version 0.4 adds **148 new species** from six user-provided Pendulum Color sprit
 ## Play and save
 
 Open **`index.html`** to play locally, or play the hosted version in a modern browser. Local play needs no installer or account. Online matchmaking requires the Championship lobby service.
-Version 0.4.4 also updates the lobby roster to all 282 species. The public Worker must be redeployed from this build's `server/` folder so newly added Digimon can be selected in Netplay; the client now detects an older Worker roster before sending those fighters.
+Version 0.5.0 keeps the browser and Worker battle validators synchronized with the larger training budgets. The public Worker must be redeployed whenever `server/battle.js` changes so legitimate trained fighters are accepted online.
 
 Progress autosaves in the browser every 30 seconds. **Save & exit** downloads a portable `.dbcsave` backup; **Load save** imports it. This fork uses separate saves from Digital Beasts HTML / Ver.20th. Browser storage can be cleared by the browser, so keep an exported backup of progress you want to preserve.
 
-The interface supports **English and Brazilian Portuguese**, desktop, and mobile play with a portrait-first phone layout. The orientation lock was removed: on phones the nursery now occupies most of the vertical screen, with tools, partner cards and navigation arranged below it; long submenus keep internal vertical scrolling. Battle rendering uses a mild mobile camera zoom that follows the local player’s Digimon in both Colosseum and Netplay. **Settings** shows the current game version (`v0.4.4`) for easy build identification. Music and sound effects have independent volume controls and start at 10%. **TUTORIAL** replaces the old Help entry and is available beside **MAIN MENU** in the top-right, with a 12-page indexed player guide in both supported languages.
+The interface supports **English and Brazilian Portuguese**, desktop, and mobile play with a portrait-first phone layout. On phones the nursery occupies most of the vertical screen, with tools, partner cards and navigation arranged below it; long submenus keep internal vertical scrolling. Battle rendering uses a mild mobile camera zoom that follows the local player’s Digimon in both Colosseum and Netplay. **Settings** shows the current game version (`v0.5.0`) for easy build identification. The nursery also checks the hosted `version.json`: when a newer build exists it explicitly recommends saving, then tells PC players to use **CTRL+F5** and mobile players to refresh/reload the page. Music and sound effects have independent volume controls and start at 10%. **TUTORIAL** is available beside **MAIN MENU** in the top-right, with an indexed player guide in both supported languages.
+
+## Balance revision 0.5
+
+Evolution pacing is now **30 s / 3 min / 7 min / 15 min / 25 min / 35 min / 45 min** from Egg through the Mega→Ultra step. Permanent trained stats survive evolution, but a separate stage-training counter resets each evolution and drives evolution requirements and the four Effort dots. Care mistakes are recorded once per unresolved incident after two minutes instead of repeating forever. Hunger at zero or ignored exhaustion adds about one MORTALITY point per seven minutes; sickness or injury is twice as fast, while a very dirty nursery adds slower pressure. MORTALITY resets on evolution.
+
+If a completed Coliseum or Online battle immediately unlocks an evolution, the game returns to the nursery and centers that partner so the evolution animation is visible. In Online play that player leaves the room cleanly instead of leaving the opponent waiting on a rematch that cannot happen.
 
 ## About this fan project
 
 Armster created this project for personal enjoyment and for fellow virtual pet fans, and owns an original 20th anniversary V-Pet. This is an experimental, noncommercial fangame, unaffiliated with or endorsed by the owners of Digimon. Digimon characters and related artwork belong to their respective owners.
 
 Combat statistics and evolution requirements are original adaptations for this game, informed by species profiles rather than exact reproductions of another game's numbers.
-

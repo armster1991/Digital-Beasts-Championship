@@ -94,3 +94,10 @@ html[lang="pt-BR"] #main-menu{font-size:12px;letter-spacing:-.25px}
 /* v0.4.11: four-step Effort indicator used by both desktop and mobile status cards. */
 .effort-row{align-items:center}.effort-dots{display:inline-flex;align-items:center;justify-content:flex-end;gap:6px;min-width:70px}.effort-dot{display:block;width:13px;height:13px;border:2px solid #bace8d;border-radius:50%;background:#102c25;box-shadow:inset 0 0 0 2px #102c25}.effort-dot.filled{background:#d8c17a;box-shadow:inset 0 0 0 2px #d8c17a}
 @media(max-width:720px){.effort-dots{gap:4px;min-width:58px}.effort-dot{width:11px;height:11px;border-width:1px}}
+
+
+/* v0.5.0 — Mortality status and version update notice. */
+.mortality-row{align-items:center}.mortality-dots{display:inline-flex;align-items:center;justify-content:flex-end;gap:4px;min-width:70px;flex-wrap:nowrap}.mortality-dot{display:block;width:11px;height:11px;border:2px solid #d3b58a;border-radius:50%;background:#102c25;box-shadow:inset 0 0 0 1px #102c25}.mortality-dot.filled{background:#a95252;box-shadow:inset 0 0 0 1px #a95252}.mortality-na{color:#81998b}
+#update-alert{position:absolute;z-index:12;top:8px;left:50%;transform:translateX(-50%);width:min(660px,calc(100% - 28px));padding:8px 10px;border:2px solid #e5cf83;background:#243d33eF;color:#fff3bf;text-align:center;pointer-events:none;text-shadow:1px 1px #14271f;box-shadow:0 3px 0 #0b1d18}
+#update-alert[hidden]{display:none!important}#update-alert strong,#update-alert span{display:block}#update-alert strong{font-size:14px;letter-spacing:.5px}#update-alert span{margin-top:3px;font-size:11px;line-height:1.35;color:#e8eadb}
+@media(max-width:720px){.mortality-dots{gap:2px;min-width:64px}.mortality-dot{width:8px;height:8px;border-width:1px}#update-alert{top:5px;left:48px;right:5px;transform:none;width:auto;padding:5px 6px}#update-alert strong{font-size:9px;line-height:11px}#update-alert span{font-size:7px;line-height:9px;margin-top:2px}}

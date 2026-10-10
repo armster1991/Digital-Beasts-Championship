@@ -1,5 +1,5 @@
 DIGITAL BEASTS CHAMPIONSHIP — FEATURES E REFERÊNCIA
-Versão 0.4.4 • 9 de outubro de 2026
+Versão 0.5.0 • 10 de outubro de 2026
 
 Este documento descreve o que está implementado nesta versão. Ele serve como
 referência do projeto, não como promessa de funções futuras. O fork Championship
@@ -9,16 +9,17 @@ referência do projeto, não como promessa de funções futuras. O fork Champion
 
 Fangame pessoal e não comercial de Armster, inspirado em virtual pets e Digimon
 World Championship. O foco é criar, cuidar, treinar, descobrir evoluções e disputar
-batalhas automáticas. Não é um simulador com tempo de vida limitado: os pets não
-morrem automaticamente. O jogador decide quando liberar um slot por deleção.
+batalhas automáticas. Não existe morte por velhice nem um tempo máximo secreto de vida. Porém, negligência
+preenche MORTALIDADE; ao atingir o limite da fase, o pet morre e vira um túmulo.
+O slot só é liberado quando o jogador confirma a remoção desse túmulo.
 
 É um aplicativo web estático: HTML, CSS e JavaScript, com imagens, fonte e áudio
 locais. Extraindo a pasta inteira, index.html abre o jogo sem instalador. A mesma
 pasta pode ser hospedada no GitHub Pages. O modo online precisa de conexão com o
 Worker Championship; os cuidados, a DIGIDEX e o Coliseu funcionam localmente.
-Na v0.4.4, cliente e Worker anunciam um roster de 282 espécies. O Worker precisa
-ser republicado ao atualizar do roster antigo; caso contrário, Digimon adicionados
-depois do catálogo original não podem ser validados no Online.
+Cliente e Worker compartilham o catálogo de 282 espécies e o mesmo validador de
+batalha. Na v0.5.0, os novos budgets de treino também precisam existir em ambos os
+lados; por isso server/battle.js deve ser publicado junto quando essa regra mudar.
 
 A interface começa em inglês e pode mudar para português brasileiro pelo switch
 EN-US / PT-BR. Os nomes próprios das espécies permanecem os do catálogo. A fonte,
@@ -107,8 +108,9 @@ A animação das ações acontece no viveiro, sem minijogo obrigatório.
 5. COMIDA, SUJEIRA E CONDIÇÕES MÉDICAS
 
 A alimentação varia de 0 a 100 e cai cerca de 3,33 pontos por minuto. Carne não
-custa moeda. Há no máximo 12 pedaços simultâneos; cada um desaparece após 90
-segundos se não for consumido. Pets com alimentação abaixo de 85 reservam um
+custa moeda. Há no máximo 6 pedaços simultâneos; cada um desaparece após 90
+segundos se não for consumido. Assim que uma carne é comida, limpa ou expira,
+um novo espaço fica disponível. Pets com alimentação abaixo de 85 reservam um
 pedaço da própria cage, caminham até ele e o comem. Uma reserva pertence a um único
 pet e impede que ambos consumam a mesma carne.
 
@@ -131,8 +133,10 @@ informa a condição por texto. Remédio cura ambas as condições e limpa o con
 de negligência. Pet saudável recusa remédio, balança o sprite e mostra uma mensagem.
 O ícone usa med.png e a aplicação tem uma animação própria.
 
-Alimentação zerada, doença, ferimento ou fadiga extrema ignorados geram um erro de
-cuidado a cada dois minutos de condição grave contínua. Isso não mata o pet.
+Alimentação zerada, doença/ferimento ou fadiga extrema ignorados geram um erro de
+cuidado depois de dois minutos contínuos, mas apenas uma vez por incidente. O mesmo
+problema precisa ser resolvido antes de poder contar outro erro. Negligência também
+aumenta MORTALIDADE e pode matar o pet.
 
 6. FADIGA, DESCANSO E TREINAMENTO
 
@@ -164,33 +168,41 @@ Os seis atributos são:
 - Velocidade: influencia movimento, frequência dos ataques e esquiva.
 
 Cada espécie tem atributos-base próprios e tendências próprias de combate. O
-orçamento de pontos adicionais por estágio é: Baby I 12, Baby II 24, Rookie 80,
-Champion 120, Ultimate 160, Mega 200 e Ultra 240. O ovo não treina.
-Cada atributo aceita no máximo 60% do orçamento da fase. STATUS mostra o valor
-atual e seu teto, além do total de pontos distribuídos.
+orçamento permanente de pontos adicionais por estágio é: Baby I 12, Baby II 30,
+Rookie 90, Champion 160, Ultimate 250, Mega 360 e Ultra 480. O ovo não treina.
+Cada atributo aceita normalmente no máximo 50% do orçamento da fase, respeitando
+também o teto absoluto de 240 pontos de treino naquele atributo. STATUS mostra o
+valor atual e seu teto, além do total de pontos distribuídos.
 
-Ao atingir o teto do atributo escolhido, insistir nele não gera pontos nem
-transfere ganhos automaticamente para outro atributo. Não é possível maximizar
-todos os atributos simultaneamente, pois eles disputam um orçamento compartilhado.
+Treinar nunca diminui outro atributo. Ao atingir o teto do atributo escolhido ou
+esgotar o orçamento total, insistir naquele treino simplesmente não concede mais
+pontos até que uma evolução abra novo espaço. Os pontos permanentes acompanham a
+evolução. Separadamente, o treino realizado NA FASE ATUAL fica em stageTraining,
+zera ao evoluir e é usado nos requisitos evolutivos e nas quatro bolinhas de Esforço.
 
-Se ainda houver espaço no atributo, mas o orçamento total estiver cheio, treinar
-redistribui pontos já investidos nos outros atributos para o escolhido. Essa
-redistribuição ocorre à metade da eficiência: normalmente 1,5 ponto por treino,
-em vez de três. Os maiores investimentos alternativos são reduzidos primeiro.
-Assim, uma escolha anterior não condena o pet a ficar permanentemente empacado.
-Os pontos de treino acompanham a evolução e o orçamento cresce com a nova fase.
+
+MORTALIDADE / MORTALITY:
+- Egg não possui bolinhas. Baby I possui 3; Baby II 4; Rookie 5; Champion 6;
+  Ultimate 7; Mega 8; Ultra 9.
+- Fome em zero ou fadiga >=95 fora de Descanso: cerca de 1 ponto a cada 7 minutos.
+- Doença ou ferimento sem tratamento: duas vezes mais rápido (1 ponto / 3m30s).
+- Viveiro com 3 ou mais sujeiras: pressão mais lenta (1 ponto / 14 minutos).
+- Pressões combinadas são limitadas a 2x. Resolver todos os problemas antes do
+  próximo ponto descarta o progresso parcial daquela bolinha.
+- Ao preencher todas as bolinhas, o Digimon vira um túmulo e não pode treinar,
+  comer nem batalhar. Não existe morte apenas por idade.
 
 7. EVOLUÇÃO E DICAS
 
 As fases são Egg, Baby I, Baby II, Rookie, Champion, Ultimate, Mega e, nas linhas
 que possuem essa etapa, Ultra. O requisito de tempo é idade na fase atual:
-- Egg: um minuto até chocar.
-- Baby I: cinco minutos para a próxima fase.
-- Baby II: 12 minutos.
-- Rookie: 25 minutos.
-- Champion: 40 minutos.
-- Ultimate: 60 minutos.
-- Etapas sem tempo mínimo configurado ainda dependem da existência de rota.
+- Egg: 30 segundos até chocar.
+- Baby I: 3 minutos para a próxima fase.
+- Baby II: 7 minutos.
+- Rookie: 15 minutos.
+- Champion: 25 minutos.
+- Ultimate: 35 minutos.
+- Mega: 45 minutos antes de uma rota válida para Ultra.
 
 Evoluir é automático quando os requisitos de uma rota são atendidos. A checagem
 continua após a idade mínima: perder o momento inicial não elimina a oportunidade.
@@ -205,9 +217,10 @@ baseada em batalhas, enquanto os cinco Jogress-only legados continuam bloqueados
 
 Quando mais de uma rota é elegível, o jogo compara os pontos dos atributos
 relevantes, depois a prioridade da rota e, por fim, o identificador da espécie.
-Não é uma escolha aleatória. A evolução zera a idade da fase, seus contadores de
-batalha e erros de cuidado, e deixa a alimentação em zero. É necessário alimentar
-o pet recém-evoluído. O álbum registra a espécie automaticamente.
+Não é uma escolha aleatória. A evolução zera a idade da fase, seus contadores de batalha, erros de cuidado,
+treino da fase/Esforço e MORTALIDADE, e deixa a alimentação em zero. Os bônus
+permanentes de atributos permanecem. É necessário alimentar o pet recém-evoluído.
+A DIGIDEX registra a espécie automaticamente.
 
 Há animação de evolução com um anel luminoso e efeito sonoro. O pet mantém sua
 posição e identidade individual ao trocar de espécie.
@@ -393,9 +406,12 @@ extra no ícone.
 Autosave usa o armazenamento local do navegador a cada 30 segundos e em eventos
 de saída da página. Algumas ações também salvam imediatamente. SAVE & EXIT baixa
 um arquivo .dbcsave; LOAD SAVE permite reimportar o backup. CONTINUE retoma o estado
-local disponível. Saves anteriores deste fork são migrados automaticamente da
-estrutura v1 para a estrutura v2 da v0.4. IDs das 134 espécies antigas permanecem estáveis; a DIGIDEX é
-expandida e ovos ainda não chocados preservam a espécie que teriam na versão antiga.
+local disponível. Saves anteriores deste fork são migrados automaticamente para a estrutura v3 da
+v0.5.0. A migração preserva treino permanente e inicializa o treino da fase com a
+distribuição anterior para não destruir uma evolução que já estava em andamento.
+Na evolução seguinte, o novo contador por fase passa a funcionar normalmente.
+IDs das 134 espécies antigas permanecem estáveis; a DIGIDEX continua expandida e
+ovos ainda não chocados preservam a espécie que teriam na versão antiga.
 O save continua separado dos projetos anteriores.
 
 O arquivo exportado e o autosave usam ofuscação com XOR, sal aleatório e checksum.
@@ -437,3 +453,11 @@ FEATURES.txt: este inventário de funcionalidades.
 Alterações nas regras de battle.js devem ser espelhadas em server/battle.js e
 publicadas juntas. Nunca misturar versões do cliente e do Worker que calculam
 resultados diferentes para a mesma semente.
+
+
+ATUALIZAÇÕES DO CLIENTE
+
+Durante uma sessão ativa, o viveiro consulta version.json no site publicado ao entrar
+e depois a cada cinco minutos. Se a versão publicada for maior, um aviso aparece no
+viveiro recomendando salvar antes de atualizar. No PC ele instrui CTRL+F5; no mobile,
+atualizar/recarregar a página. O aviso não depende do Worker de Netplay.
