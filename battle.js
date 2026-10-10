@@ -2,7 +2,7 @@
 (function(root,factory){const api=factory(root.CHAMP_DATA||(typeof require==='function'?require('./profiles.js'):null));if(typeof module!=='undefined')module.exports=api;root.ChampBattle=api;})(globalThis,function(P){
 const DT=.1,SUDDEN_AT=90,MAX_TIME=135,keys=['hp','tp','attack','defense','wisdom','speed'];
 function seeded(seed){let x=seed|0||1;return()=>{x^=x<<13;x^=x>>>17;x^=x<<5;return(x>>>0)/4294967296;};}
-function canonical(f){const p=P[f?.species];if(!p||!f.stats||!keys.every(k=>Number.isFinite(f.stats[k])&&f.stats[k]>=p.stats[k]&&f.stats[k]<=p.stats[k]+240*(k==='hp'?5:k==='tp'?2:1)))throw Error('badFighter');const gains=keys.reduce((n,k)=>n+(f.stats[k]-p.stats[k])/(k==='hp'?5:k==='tp'?2:1),0),budget=[0,12,30,90,160,250,360,480][p.stage];if(gains>budget+3)throw Error('badFighter');return{species:f.species,stats:Object.fromEntries(keys.map(k=>[k,Math.round(f.stats[k])]))};}
+function canonical(f){const p=P[f?.species];if(!p||!f.stats||!keys.every(k=>Number.isFinite(f.stats[k])&&f.stats[k]>=p.stats[k]&&f.stats[k]<=p.stats[k]+240*(k==='hp'?5:k==='tp'?2:1)))throw Error('badFighter');const gains=keys.reduce((n,k)=>n+(f.stats[k]-p.stats[k])/(k==='hp'?5:k==='tp'?2:1),0),budgets=[0,12,30,90,160,250,360,480],extra=[0,0,18,60,70,90,110,0],budget=budgets[p.stage]+extra[p.stage];if(gains>budget+3)throw Error('badFighter');return{species:f.species,stats:Object.fromEntries(keys.map(k=>[k,Math.round(f.stats[k])]))};}
 // Fixed, player-independent Coliseum curve. Species tendencies remain visible.
 function colosseumOpponent(f,round){
  const r=Math.max(1,Math.min(P.length,Math.floor(round))),st=P[f.species].stage;

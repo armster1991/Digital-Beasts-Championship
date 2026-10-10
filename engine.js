@@ -16,6 +16,7 @@ const catalog=DATA.species,eggs=DATA.eggs,clone=x=>JSON.parse(JSON.stringify(x))
 const wcRoutes={4:[{to:27},{to:111,battleGate:true}],5:[{to:75,battleGate:true},{to:27}],22:[{to:60}],53:[{to:60}],125:[{to:36}]};
 const budget=stage=>[0,12,30,90,160,250,360,480][stage]||0;
 const stageAllowance=stage=>Math.max(0,budget(stage)-budget(stage-1));
+const extraTrainingCap=stage=>stage>=2&&stage<=6?stageAllowance(stage):0;
 const mortalityMax=stage=>[0,3,4,5,6,7,8,9][stage]||0;
 const zones=['rest',...STATS],zoneWidth=300,worldWidth=zones.length*zoneWidth;
 
@@ -43,6 +44,7 @@ function normalizeSave(input){
     p.training=Object.fromEntries(STATS.map(k=>[k,Number.isFinite(p.training?.[k])?p.training[k]:0]));
     if(!p.stageTraining||!STATS.every(k=>Number.isFinite(p.stageTraining[k])))p.stageTraining=clone(p.training);
     p.stageTrainingLegacy=oldVersion<3?true:!!p.stageTrainingLegacy;
+    p.extraTrainingSpent=Number.isFinite(p.extraTrainingSpent)?Math.max(0,p.extraTrainingSpent):0;
     p.mortality=Number.isFinite(p.mortality)?Math.max(0,Math.floor(p.mortality)):0;
     p.mortalityClock=Number.isFinite(p.mortalityClock)?Math.max(0,p.mortalityClock):0;
     p.dead=!!p.dead;
@@ -118,20 +120,44 @@ function evolutionRequirements(targetId){
 }
 function trainingCap(p,k){return Math.max(p.training?.[k]||0,Math.min(240,budget(stage(p))*.5));}
 function pencStillPossible(p,r){const eh=effortHearts(p);return !(r.careMax!==undefined&&p.careMistakes>r.careMax)&&!(r.effortMax!==undefined&&eh>r.effortMax);}
-function hints(p){
-  if(p.dead||p.speciesId===null||p.stageAge<TIMES[stage(p)]+60)return null;
-  const routes=evolutionRoutes(p);if(!routes.length||routes.some(r=>eligible(p,r)))return null;
+function evolutionOptions(p){
+  const routes=evolutionRoutes(p);if(!routes.length)return [];
   const hasLegacyCare=routes.some(x=>!x.penc&&x.care),eh=effortHearts(p);
-  const options=routes.filter(r=>r.penc?pencStillPossible(p,r):(p.careMistakes>=3&&hasLegacyCare?r.care:!r.care)).map(r=>{
-    const missing=STATS.filter(k=>(k===r.primary?r.need:k===r.secondary?Math.floor(r.need/2):0)>(p.stageTraining?.[k]||0)+.001),
+  return routes.filter(r=>r.penc?pencStillPossible(p,r):(p.careMistakes>=3&&hasLegacyCare?r.care:!r.care)).map(r=>{
+    const primaryNeed=Math.max(0,(r.need||0)-(p.stageTraining?.[r.primary]||0)),secondaryNeed=Math.max(0,Math.floor((r.need||0)/2)-(p.stageTraining?.[r.secondary]||0)),
+      missing=STATS.filter(k=>(k===r.primary?r.need:k===r.secondary?Math.floor(r.need/2):0)>(p.stageTraining?.[k]||0)+.001),
       careShort=r.penc?Math.max(0,(r.careMin||0)-p.careMistakes):0,
       effortShort=r.penc?Math.max(0,(r.effortMin||0)-eh):0,
       battleShort=Math.max(0,(r.battleNeed||0)-p.stageBattles),
       ratioShort=r.penc&&r.winRatioMin?Math.max(0,r.winRatioMin-stageWinRatio(p)):0,
       winShort=Math.max(0,(r.winNeed||0)-p.stageWins);
-    return {r,missing,careShort,effortShort,battleShort,ratioShort,winShort,score:Math.max(0,r.need-(p.stageTraining?.[r.primary]||0))+Math.max(0,Math.floor(r.need/2)-(p.stageTraining?.[r.secondary]||0))+careShort*8+effortShort*5+battleShort*2+ratioShort*20+winShort*3};
+    return {r,missing,primaryNeed,secondaryNeed,careShort,effortShort,battleShort,ratioShort,winShort,score:primaryNeed+secondaryNeed+careShort*8+effortShort*5+battleShort*2+ratioShort*20+winShort*3};
   }).sort((a,b)=>a.score-b.score||a.r.to-b.r.to);
-  const best=options[0];if(!best)return null;
+}
+function closestEvolution(p){return evolutionOptions(p)[0]||null;}
+function extraTrainingInfo(p){
+  const st=stage(p),cap=extraTrainingCap(st),spent=Math.max(0,p.extraTrainingSpent||0);
+  if(p.dead||p.speciesId===null||!cap||trainingTotal(p)<budget(st)-.001||spent>=cap-.001)return null;
+  const best=closestEvolution(p);if(!best||best.r.care)return null;
+  const allowed=blankTraining(),hardRoom=k=>Math.max(0,240-(p.training?.[k]||0));
+  let room=cap-spent;
+  const add=(k,n)=>{if(!k||n<=.001||room<=.001)return;const gain=Math.min(n,hardRoom(k),room);if(gain>.001){allowed[k]+=gain;room-=gain;}};
+  add(best.r.primary,best.primaryNeed);add(best.r.secondary,best.secondaryNeed);
+  if(best.effortShort>0&&room>.001){const basis=p.stageTrainingLegacy?budget(st):stageAllowance(st),effortNeed=Math.max(0,(best.r.effortMin||0)*(basis/4)-stageTrainingTotal(p)),direct=STATS.reduce((n,k)=>n+allowed[k],0);add(best.r.primary,Math.max(0,effortNeed-direct));}
+  const left=STATS.reduce((n,k)=>n+allowed[k],0);if(left<=.001)return null;
+  return {target:best.r.to,stats:STATS.filter(k=>allowed[k]>.001),allowed,left,total:spent+left,spent};
+}
+function canTrainStat(p,k){
+  if(p.dead||p.speciesId===null||!STATS.includes(k))return false;
+  const free=Math.max(0,budget(stage(p))-trainingTotal(p)),statFree=Math.max(0,trainingCap(p,k)-p.training[k]);
+  if(free>.001&&statFree>.001)return true;
+  const extra=extraTrainingInfo(p);return !!extra&&extra.allowed[k]>.001;
+}
+function hints(p){
+  if(p.dead||p.speciesId===null)return null;
+  const routes=evolutionRoutes(p);if(!routes.length||routes.some(r=>eligible(p,r)))return null;
+  const rescue=extraTrainingInfo(p);if(p.stageAge<TIMES[stage(p)]+60&&!rescue)return null;
+  const best=closestEvolution(p);if(!best)return null;
   let kind='tipBattles';if(best.careShort>0)kind='tipCare';else if(best.missing.length||best.effortShort>0)kind='tipStat';else if(best.battleShort>0)kind='tipBattles';else if(best.ratioShort>0||best.winShort>0)kind='tipWins';
   return {stats:best.missing.length?best.missing:[best.r.primary],kind};
 }
@@ -165,9 +191,9 @@ class Game{
   const ids=new Set();
   for(const p of s.pets){
     const e=eggs.find(x=>x.id===p?.eggId),st=p?.speciesId===null?0:catalog[p?.speciesId]?.stage||0,mm=mortalityMax(st);
-    if(!p||typeof p.instanceId!=='string'||ids.has(p.instanceId)||!e||!Number.isInteger(p.hatchSpeciesId)||!e.starts.includes(p.hatchSpeciesId)||!(p.speciesId===null||Number.isInteger(p.speciesId)&&catalog[p.speciesId])||!zones.includes(p.zone)||!finite(p.x,0,worldWidth)||!finite(p.y,100,310)||!finite(p.hunger,0,100)||!finite(p.fatigue,0,100)||!p.training||!p.stageTraining||!STATS.every(k=>finite(p.training[k],0,240)&&finite(p.stageTraining[k],0,240))||!['totalAge','stageAge','careMistakes','stageWins','stageBattles','wins','battles','trainingClock','poopClock','sicknessClock','neglectClock','mortality','mortalityClock'].every(k=>finite(p[k]))||!['sick','injured','dead'].every(k=>typeof p[k]==='boolean')||typeof p.stageTrainingLegacy!=='boolean'||!p.careState||!['hunger','fatigue','medical'].every(k=>p.careState[k]&&finite(p.careState[k].clock)&&typeof p.careState[k].counted==='boolean')||p.mortality>mm)return false;
+    if(!p||typeof p.instanceId!=='string'||ids.has(p.instanceId)||!e||!Number.isInteger(p.hatchSpeciesId)||!e.starts.includes(p.hatchSpeciesId)||!(p.speciesId===null||Number.isInteger(p.speciesId)&&catalog[p.speciesId])||!zones.includes(p.zone)||!finite(p.x,0,worldWidth)||!finite(p.y,100,310)||!finite(p.hunger,0,100)||!finite(p.fatigue,0,100)||!p.training||!p.stageTraining||!STATS.every(k=>finite(p.training[k],0,240)&&finite(p.stageTraining[k],0,240))||!['totalAge','stageAge','careMistakes','stageWins','stageBattles','wins','battles','trainingClock','poopClock','sicknessClock','neglectClock','mortality','mortalityClock'].every(k=>finite(p[k]))||!['sick','injured','dead'].every(k=>typeof p[k]==='boolean')||typeof p.stageTrainingLegacy!=='boolean'||!finite(p.extraTrainingSpent,0,extraTrainingCap(st))||!p.careState||!['hunger','fatigue','medical'].every(k=>p.careState[k]&&finite(p.careState[k].clock)&&typeof p.careState[k].counted==='boolean')||p.mortality>mm)return false;
     ids.add(p.instanceId);
-    if(trainingTotal(p)>budget(st)+.01||stageTrainingTotal(p)>budget(st)+.01)return false;
+    if(trainingTotal(p)>budget(st)+p.extraTrainingSpent+.01||stageTrainingTotal(p)>budget(st)+p.extraTrainingSpent+.01)return false;
   }
   return Array.isArray(s.food)&&s.food.length<=12&&s.food.every(f=>finite(f.x,0,worldWidth)&&finite(f.y,100,310)&&finite(f.age)&&finite(f.bites)&&typeof f.id==='string'&&(f.reserved===null||ids.has(f.reserved)))&&Array.isArray(s.waste)&&s.waste.length<=12&&s.waste.every(w=>finite(w.x,0,worldWidth)&&finite(w.y,100,310));
  }
@@ -185,7 +211,7 @@ class Game{
  adopt(eggId){
   this.refreshUnlocks();const i=eggs.findIndex(e=>e.id===eggId);if(this.s.pets.length>=2||i<0||!this.s.unlockedEggs[i])return null;
   const e=eggs[i],hatchSpeciesId=e.starts[Math.min(e.starts.length-1,Math.floor(this.random()*e.starts.length))];
-  const p={instanceId:'pet-'+this.s.nextId++,eggId,hatchSpeciesId,speciesId:null,totalAge:0,stageAge:0,hunger:80,fatigue:0,sick:false,injured:false,dead:false,mortality:0,mortalityClock:0,careState:blankCareState(),x:85+this.s.pets.length*110,y:248,zone:'rest',training:blankTraining(),stageTraining:blankTraining(),stageTrainingLegacy:false,trainingClock:0,poopClock:0,sicknessClock:0,neglectClock:0,careMistakes:0,stageWins:0,stageBattles:0,wins:0,battles:0,face:1,walkClock:0,targetX:100,targetY:248,battleLock:false};
+  const p={instanceId:'pet-'+this.s.nextId++,eggId,hatchSpeciesId,speciesId:null,totalAge:0,stageAge:0,hunger:80,fatigue:0,sick:false,injured:false,dead:false,mortality:0,mortalityClock:0,careState:blankCareState(),x:85+this.s.pets.length*110,y:248,zone:'rest',training:blankTraining(),stageTraining:blankTraining(),stageTrainingLegacy:false,extraTrainingSpent:0,trainingClock:0,poopClock:0,sicknessClock:0,neglectClock:0,careMistakes:0,stageWins:0,stageBattles:0,wins:0,battles:0,face:1,walkClock:0,targetX:100,targetY:248,battleLock:false};
   this.s.pets.push(p);return p;
  }
  delete(id){const p=this.get(id);if(!p||p.battleLock)return false;this.s.pets=this.s.pets.filter(x=>x!==p);this.s.food.forEach(f=>{if(f.reserved===id)f.reserved=null;});return true;}
@@ -196,13 +222,14 @@ class Game{
  train(p){
   const k=p.zone;if(p.dead||!STATS.includes(k)||p.fatigue>=95||p.hunger<10||p.sick||p.injured)return;
   const free=Math.max(0,budget(stage(p))-trainingTotal(p)),statFree=Math.max(0,trainingCap(p,k)-p.training[k]);
-  if(free<=.0001||statFree<=.0001){p.fullUntil=this.s.clock+1.5;return;}
-  const gain=Math.min(3,statFree,free);
-  p.training[k]+=gain;p.stageTraining[k]=(p.stageTraining[k]||0)+gain;
+  let gain=Math.min(3,statFree,free),extra=false;
+  if(gain<=.0001){const rescue=extraTrainingInfo(p),extraFree=rescue?.allowed?.[k]||0;if(extraFree>.0001){gain=Math.min(3,extraFree,240-p.training[k]);extra=true;}}
+  if(gain<=.0001){p.fullUntil=this.s.clock+1.5;return;}
+  p.training[k]+=gain;p.stageTraining[k]=(p.stageTraining[k]||0)+gain;if(extra)p.extraTrainingSpent=(p.extraTrainingSpent||0)+gain;
   p.fatigue=clamp(p.fatigue+2.5,0,100);p.hunger=clamp(p.hunger-1.5,0,100);p.action='train';p.actionStarted=this.s.clock;p.actionUntil=this.s.clock+1.5;
  }
  evolve(p,to){
-  const from=p.speciesId;p.speciesId=to;p.stageAge=0;p.stageWins=p.stageBattles=p.careMistakes=0;p.hunger=0;p.neglectClock=0;p.trainingClock=0;p.stageTraining=blankTraining();p.stageTrainingLegacy=false;delete p.fullUntil;p.mortality=0;p.mortalityClock=0;p.dead=false;p.careState=blankCareState();this.s.album[to]=1;p.evolution={from,to,until:this.s.clock+2.6};this.emit(from===null?'hatched':'evolved',p);this.refreshUnlocks();
+  const from=p.speciesId;p.speciesId=to;p.stageAge=0;p.stageWins=p.stageBattles=p.careMistakes=0;p.hunger=0;p.neglectClock=0;p.trainingClock=0;p.stageTraining=blankTraining();p.stageTrainingLegacy=false;p.extraTrainingSpent=0;delete p.fullUntil;p.mortality=0;p.mortalityClock=0;p.dead=false;p.careState=blankCareState();this.s.album[to]=1;p.evolution={from,to,until:this.s.clock+2.6};this.emit(from===null?'hatched':'evolved',p);this.refreshUnlocks();
  }
  evolutionTarget(p){
   if(p.dead)return null;
@@ -266,5 +293,5 @@ class Game{
   }
  }
 }
-return {Game,catalog,eggs,STATS,TIMES,VERSION,EDITION,zones,zoneWidth,worldWidth,stats,stage,budget,stageAllowance,mortalityMax,trainingCap,trainingTotal,stageTrainingTotal,effortHearts,stageWinRatio,hints,evolutionRoutes,evolutionRequirements,eligible,colosseum,PROFILES};
+return {Game,catalog,eggs,STATS,TIMES,VERSION,EDITION,zones,zoneWidth,worldWidth,stats,stage,budget,stageAllowance,extraTrainingCap,mortalityMax,trainingCap,trainingTotal,stageTrainingTotal,effortHearts,stageWinRatio,closestEvolution,extraTrainingInfo,canTrainStat,hints,evolutionRoutes,evolutionRequirements,eligible,colosseum,PROFILES};
 });

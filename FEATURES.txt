@@ -1,5 +1,5 @@
 DIGITAL BEASTS CHAMPIONSHIP — FEATURES E REFERÊNCIA
-Versão 0.5.1 • 10 de outubro de 2026
+Versão 0.5.2 • 10 de outubro de 2026
 
 Este documento descreve o que está implementado nesta versão. Ele serve como
 referência do projeto, não como promessa de funções futuras. O fork Championship
@@ -174,11 +174,15 @@ Cada atributo aceita normalmente no máximo 50% do orçamento da fase, respeitan
 também o teto absoluto de 240 pontos de treino naquele atributo. STATUS mostra o
 valor atual e seu teto, além do total de pontos distribuídos.
 
-Treinar nunca diminui outro atributo. Ao atingir o teto do atributo escolhido ou
-esgotar o orçamento total, insistir naquele treino simplesmente não concede mais
-pontos até que uma evolução abra novo espaço. Os pontos permanentes acompanham a
-evolução. Separadamente, o treino realizado NA FASE ATUAL fica em stageTraining,
-zera ao evoluir e é usado nos requisitos evolutivos e nas quatro bolinhas de Esforço.
+Treinar nunca diminui outro atributo. Ao atingir o teto do atributo escolhido,
+insistir naquele treino não concede pontos. Quando o orçamento normal da fase está
+cheio mas a rota evolutiva viável mais próxima ainda exige treino em um atributo,
+o jogo libera um ORÇAMENTO DE TREINO EXTRA em laranja apenas para o(s) atributo(s)
+que faltam naquela rota. DICAS?/TIPS? usa exatamente a mesma escolha de rota. Esse
+resgate não aumenta o orçamento normal e nunca redistribui ou subtrai outros stats.
+Os pontos permanentes acompanham a evolução. Separadamente, o treino realizado NA
+FASE ATUAL fica em stageTraining, zera ao evoluir e é usado nos requisitos evolutivos
+e nas quatro bolinhas de Esforço.
 
 
 MORTALIDADE / MORTALITY:
@@ -227,7 +231,9 @@ posição e identidade individual ao trocar de espécie.
 
 DICAS? / TIPS? fica centralizado no rodapé, com um olho ovalado. Começa apagado e
 só fica disponível quando pelo menos um pet permanece sem cumprir uma evolução
-por um minuto além da idade mínima da fase. A dica avalia a rota mais próxima,
+por um minuto além da idade mínima da fase. Exceção: se o orçamento normal estiver
+cheio e o resgate de treino extra estiver ativo, DICAS? fica disponível imediatamente.
+A dica avalia a rota mais próxima,
 sugerindo sutilmente os atributos ou a experiência de combate que faltam, sem
 mostrar a espécie de destino nem os números exatos dos requisitos.
 
@@ -464,3 +470,5 @@ atualizar/recarregar a página. O aviso não depende do Worker de Netplay.
 
 
 0.5.1 — DICAS?/TIPS? passa a liberar um minuto após o tempo mínimo quando há rota pendente, com destaque visual discreto. Quando o orçamento total de treino da fase OU o atributo treinado está no teto, STATUS destaca em laranja o item cheio e as tentativas periódicas mostram STATUS FULL/STATUS CHEIO no viveiro sem tocar a animação de treino. O painel TIPS sempre retorna ao Viveiro. O campo SERVER continua funcional para servidores personalizados; vazio, usa o Worker oficial mostrado como placeholder.
+
+0.5.2 — STATUS passa a exibir TECHNIQUE/TÉCNICA no lugar de TP para o atributo de treino. Ao esgotar o budget normal com requisitos de treino ainda faltando para a evolução viável mais próxima, surge um ORÇAMENTO DE TREINO EXTRA laranja, restrito aos atributos indicados por DICAS?/TIPS?. O mesmo cálculo de proximidade alimenta os dois sistemas; o resgate não rouba stats nem altera o budget normal.

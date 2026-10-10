@@ -108,3 +108,8 @@ html[lang="pt-BR"] #main-menu{font-size:12px;letter-spacing:-.25px}
 .training-budget-full,.stat-row.stat-full{color:#f0a45f;font-weight:bold;text-shadow:1px 1px #4a2919}.stat-row.stat-full .muted{color:#d99259}
 @keyframes tips-ready-pulse{0%,100%{filter:brightness(1)}50%{filter:brightness(1.12)}}
 @media(prefers-reduced-motion:reduce){#tips.tips-ready{animation:none}}
+
+/* v0.5.2 — evolution rescue training is shown only when the normal budget is exhausted. */
+.extra-training-budget{margin:7px 0 2px;color:#f0a45f;font-weight:bold;text-shadow:1px 1px #4a2919}
+.extra-training-help{margin:2px 0 7px;color:#f0a45f;font-size:11px;line-height:1.35}
+@media(max-width:720px){.extra-training-budget{font-size:10px}.extra-training-help{font-size:9px;line-height:1.25}}
