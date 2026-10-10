@@ -19,7 +19,7 @@
   function packet(state,settings){return {magic:MAGIC,created:new Date().toISOString(),state,settings:{...defaults,...settings}};}
   function download(state,settings){
     const blob=new Blob([encode(packet(state,settings))],{type:'application/octet-stream'});
-    const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download='digital-beasts-championship-'+new Date().toISOString().slice(0,10)+'.dbcsave';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download='DBCsave.dbcsave';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
   }
   async function readFile(file){if(file.size>2000000)throw Error('invalidSave');const text=await file.text();const p=decode(text);if(!p||p.magic!==MAGIC||!p.state)throw new Error('invalidSave');return p;}
   root.DMStore={CACHE_KEY,SETTINGS_KEY,MAGIC,defaults,encode,decode,loadCache,saveCache,clearCache,loadSettings,saveSettings,download,readFile};

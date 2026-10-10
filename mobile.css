@@ -1,4 +1,4 @@
-/* v0.4.9 mobile UI layer. Desktop rules remain in style.css untouched. */
+/* v0.4.10 mobile UI layer. */
 .mobile-only{display:none!important}
 
 @media(max-width:720px) and (orientation:portrait){
@@ -31,7 +31,7 @@
   #tools img{width:30px;height:30px;flex:0 0 auto}
 
   /* Tips becomes a small translucent eye that follows the visible viewport, not the world camera. */
-  #world>#tips{position:absolute;z-index:8;top:8px;left:8px;width:42px;height:27px;min-width:42px;min-height:27px;padding:0;border-radius:999px;background:rgba(35,67,58,.72);opacity:.88;font-size:0;line-height:0}
+  #world>#tips{position:absolute;z-index:8;top:8px;left:8px;width:42px;height:27px;min-width:42px;min-height:27px;padding:0;border-radius:0;background:rgba(35,67,58,.72);opacity:.88;font-size:0;line-height:0}
   #world>#tips:before{content:'';display:block;width:22px;height:13px;margin:auto;border:2px solid #ead797;border-radius:70% 70%;background:radial-gradient(circle,#ead797 0 3px,transparent 3.5px)}
   #world>#tips:disabled{opacity:.34}
 
@@ -79,12 +79,12 @@
   .colosseum-info{grid-column:2;grid-row:1}
   .colosseum-actions{grid-column:2;grid-row:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}
   .colosseum-actions button{min-width:0;width:100%;min-height:34px;border-radius:0;padding:3px 2px;font-size:8px}
-  .colosseum-online-card.mobile-only{display:grid!important;grid-template-columns:100px minmax(0,1fr);grid-template-rows:auto auto}
+  .colosseum-online-card{display:grid!important;grid-template-columns:100px minmax(0,1fr);grid-template-rows:auto auto}
   .colosseum-vs{grid-column:1;grid-row:1 / 3;width:100px;align-self:stretch;display:flex;align-items:center;justify-content:center;border-right:1px solid #4b715d;font-size:28px;line-height:1;color:#ead797;letter-spacing:1px}
   .colosseum-online-info{display:flex;align-items:flex-end}
   .colosseum-online-info h3{margin:0}
   .colosseum-online-actions{grid-template-columns:1fr}
-  #mobile-online{display:block!important}
+  #colosseum-online{display:block!important}
 
   /* Keep the existing gentle player-follow battle camera, but fit controls to portrait. */
   #panel-content:has(.battle-screen){padding:4px;overflow:hidden}
@@ -108,7 +108,7 @@
 }
 
 @media(max-width:380px) and (orientation:portrait){
-  .colosseum-card,.colosseum-online-card.mobile-only{grid-template-columns:88px minmax(0,1fr);min-height:100px}
+  .colosseum-card,.colosseum-online-card{grid-template-columns:88px minmax(0,1fr);min-height:100px}
   .colosseum-card .portrait,.colosseum-vs{width:88px}
   .colosseum-vs{font-size:24px}
 }
