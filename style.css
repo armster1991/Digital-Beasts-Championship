@@ -90,3 +90,7 @@ html[lang="pt-BR"] #main-menu{font-size:12px;letter-spacing:-.25px}
  .colosseum-online-info{grid-column:2;grid-row:1}
  .colosseum-online-actions{grid-column:2;grid-row:2}
 }
+
+/* v0.4.11: four-step Effort indicator used by both desktop and mobile status cards. */
+.effort-row{align-items:center}.effort-dots{display:inline-flex;align-items:center;justify-content:flex-end;gap:6px;min-width:70px}.effort-dot{display:block;width:13px;height:13px;border:2px solid #bace8d;border-radius:50%;background:#102c25;box-shadow:inset 0 0 0 2px #102c25}.effort-dot.filled{background:#d8c17a;box-shadow:inset 0 0 0 2px #d8c17a}
+@media(max-width:720px){.effort-dots{gap:4px;min-width:58px}.effort-dot{width:11px;height:11px;border-width:1px}}
